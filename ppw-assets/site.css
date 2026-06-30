@@ -148,7 +148,7 @@ footer .small{color:var(--ink-faint);font-size:13px;line-height:1.6}
 
 /* ===== inner edition: clean skyline banner, content below ===== */
 .edition-banner{position:relative;height:clamp(330px,48vh,560px);background-size:cover;background-position:center 36%}
-.edition-banner::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 0%,transparent 66%,rgba(8,11,18,.22) 82%,rgba(8,11,18,.8) 96%,var(--bg) 100%)}
+.edition-banner::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 0%,transparent 72%,rgba(8,11,18,.42) 88%,rgba(8,11,18,.9) 98%,var(--bg) 100%)}
 .edition-intro{text-align:center;padding:34px 0 6px}
 .edition-intro .wrap{max-width:760px}
 .edition-intro .eyebrow{justify-content:center;margin-bottom:16px;font-size:13px;letter-spacing:2.5px}
