@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Sponsorships — Post | Production World Conference</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#080b12; --bg-2:#0e1422; --panel:#121b2e; --panel-2:#172138;
+    --line:#212d49; --line-2:#2c3a5c; --ink:#eef2fb; --ink-dim:#a3b2d2; --ink-faint:#6b7b9e;
+    --accent:#3b82f6; --accent-2:#2dd4ff; --gold:#f6cf6a;
+    --radius:18px; --maxw:1200px; --shadow:0 24px 60px rgba(0,0,0,.45);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  body{margin:0;color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;font-size:16px;
+    font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    background:radial-gradient(1100px 720px at 86% -6%, rgba(124,58,237,.24), transparent 60%),
+      radial-gradient(1000px 640px at -12% 6%, rgba(45,130,246,.20), transparent 58%),
+      radial-gradient(1200px 900px at 50% 112%, rgba(109,40,217,.20), transparent 62%),var(--bg);background-attachment:fixed}
+  a{color:inherit}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  h1,h2,h3{font-family:"Satoshi","Inter",sans-serif;text-wrap:balance;margin:0}
+  p,.sec-desc,.hero-sub{text-wrap:pretty}
+  .ic{width:1em;height:1em;display:inline-block;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+  .proto-banner{background:linear-gradient(90deg,#19233c,#141d33);border-bottom:1px solid var(--line);
+    font-size:12.5px;color:var(--ink-dim);text-align:center;padding:8px 16px;letter-spacing:.2px}
+  .proto-banner b{color:var(--ink)}
+
+  /* nav (shared) */
+  header.nav{position:sticky;top:0;z-index:60;background:rgba(8,11,18,.78);backdrop-filter:blur(16px) saturate(1.2);border-bottom:1px solid var(--line)}
+  .nav-inner{display:flex;align-items:center;gap:22px;height:86px}
+  .nav-logo{height:34px;width:auto;display:block}
+  .nav-links{display:flex;gap:30px;margin-left:auto;align-items:center;font-size:14.5px}
+  .nav-links a{text-decoration:none;color:var(--ink-dim);font-weight:500;transition:color .15s}
+  .nav-links a:hover,.nav-links a.active{color:var(--ink)}
+  .dd{position:relative;display:flex;align-items:center}
+  .dd-btn{display:inline-flex;align-items:center;gap:6px;background:none;border:0;color:var(--ink-dim);font:inherit;font-size:14.5px;font-weight:500;cursor:pointer;padding:0}
+  .dd-btn .ic{width:15px;height:15px;transition:transform .2s}
+  .dd:hover .dd-btn,.dd:focus-within .dd-btn{color:var(--ink)}
+  .dd:hover .dd-btn .ic{transform:rotate(180deg)}
+  .dd-menu{position:absolute;top:calc(100% + 18px);left:50%;transform:translateX(-50%) translateY(8px);
+    min-width:288px;background:var(--panel-2);border:1px solid var(--line-2);border-radius:16px;padding:8px;
+    opacity:0;visibility:hidden;transition:.18s ease;box-shadow:var(--shadow);z-index:70}
+  .dd:hover .dd-menu,.dd:focus-within .dd-menu{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+  .dd-menu::before{content:"";position:absolute;top:-18px;left:0;right:0;height:18px}
+  .dd-menu a{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 14px;border-radius:11px;text-decoration:none}
+  .dd-menu a:hover{background:rgba(255,255,255,.05)}
+  .dd-menu .lft{display:flex;align-items:center;gap:11px}
+  .dd-menu .ic{width:16px;height:16px;color:var(--accent-2)}
+  .dd-menu .c{font-weight:700;font-size:14px;color:var(--ink)}
+  .dd-menu .d{font-size:12.5px;color:var(--ink-faint);white-space:nowrap}
+  .dd-menu .all{justify-content:center;color:var(--accent-2);font-weight:700;font-size:13px;margin-top:2px;border-top:1px solid var(--line);border-radius:0 0 11px 11px}
+  .btn{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(115deg,#8b5cf6 0%,#5b8def 55%,#22d3ee 125%);
+    color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:13px 22px;border-radius:999px;
+    border:1px solid rgba(255,255,255,.18);box-shadow:0 10px 30px rgba(99,102,241,.42);white-space:nowrap;transition:transform .15s,box-shadow .15s}
+  .btn:hover{transform:translateY(-1px);box-shadow:0 14px 40px rgba(99,102,241,.6)}
+  .btn .ic{width:16px;height:16px}
+  .btn.ghost{background:transparent;box-shadow:none;border-color:var(--line-2);color:var(--ink)}
+  .btn.ghost:hover{background:rgba(255,255,255,.05);box-shadow:none}
+  .btn.gold{background:linear-gradient(115deg,#8b5cf6 0%,#5b8def 55%,#22d3ee 125%);color:#fff;border-color:rgba(255,255,255,.18);box-shadow:0 10px 30px rgba(99,102,241,.42)}
+  .btn.gold:hover{box-shadow:0 14px 40px rgba(99,102,241,.6)}
+  header.nav .btn{padding:10px 18px;font-size:13.5px;margin-left:10px}
+  @media(max-width:900px){.nav-links{display:none}}
+
+  /* hero */
+  .hero{position:relative;overflow:hidden;padding:74px 0 60px;text-align:center}
+  .hero-bg{position:absolute;inset:0;background:url(ppw-assets/hero.jpg) center 40%/cover;filter:brightness(.55) saturate(1.1);opacity:.8;z-index:0}
+  .hero::after{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(8,11,18,.45),rgba(8,11,18,.7) 70%,var(--bg))}
+  .hero .wrap{position:relative;z-index:1}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent-2);font-weight:700;margin-bottom:22px}
+  .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--accent-2);box-shadow:0 0 16px var(--accent-2)}
+  h1.title{font-size:clamp(34px,6vw,60px);line-height:1.04;font-weight:800;letter-spacing:-1.4px;max-width:900px;margin:0 auto 22px;
+    background:linear-gradient(180deg,#fff,#bcccea);-webkit-background-clip:text;background-clip:text;color:transparent}
+  h1.title .hl{color:var(--accent-2);-webkit-text-fill-color:var(--accent-2)}
+  .hero-sub{font-size:clamp(17px,2.1vw,20px);color:#e4ebfa;font-weight:500;max-width:680px;margin:0 auto 30px;line-height:1.6;text-shadow:0 2px 16px rgba(0,0,0,.6)}
+  .hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+  section.block{padding:76px 0;border-top:1px solid var(--line)}
+  .sec-head{margin-bottom:42px;max-width:760px}
+  .sec-head.center{margin-inline:auto;text-align:center}
+  .sec-kicker{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent-2);font-weight:700}
+  .sec-title{font-size:clamp(27px,3.8vw,40px);margin-top:12px;font-weight:800;letter-spacing:-.8px;line-height:1.12}
+  .sec-desc{color:var(--ink-dim);margin-top:14px;font-size:16.5px;line-height:1.6}
+  .sec-head.center .sec-desc{max-width:600px;margin-inline:auto;text-wrap:balance}
+
+  /* pillars */
+  .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  @media(max-width:820px){.pillars{grid-template-columns:1fr}}
+  .pillar{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:30px;transition:border-color .18s,transform .18s}
+  .pillar:hover{border-color:var(--line-2);transform:translateY(-3px)}
+  .pillar .ibox{width:50px;height:50px;border-radius:13px;display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(160deg,rgba(45,212,255,.18),rgba(59,130,246,.10));border:1px solid var(--line-2);color:var(--accent-2)}
+  .pillar .ibox .ic{width:24px;height:24px}
+  .pillar h3{font-size:18px;margin:18px 0 8px;font-weight:700}
+  .pillar p{margin:0;color:var(--ink-dim);font-size:14.5px;line-height:1.6}
+
+  /* touchpoints */
+  .touch-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 30px}
+  @media(max-width:760px){.touch-grid{grid-template-columns:1fr}}
+  .touch{display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-bottom:1px solid var(--line)}
+  .touch .ck{flex:none;width:26px;height:26px;border-radius:8px;background:rgba(45,212,255,.14);color:var(--accent-2);display:flex;align-items:center;justify-content:center}
+  .touch .ck .ic{width:15px;height:15px}
+  .touch b{color:#fff;font-weight:700}
+  .touch span.t{font-size:15px;color:var(--ink-dim);line-height:1.5}
+
+  /* reach cards */
+  .reach{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  @media(max-width:820px){.reach{grid-template-columns:1fr}}
+  .rcard{background:linear-gradient(160deg,var(--panel),var(--bg-2));border:1px solid var(--line);border-radius:18px;padding:28px}
+  .rcard h3{font-size:17px;margin:0 0 10px;font-weight:700;color:#fff}
+  .rcard p{margin:0;color:var(--ink-dim);font-size:14.5px;line-height:1.6}
+
+  /* comparison table */
+  .cmp{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:18px;overflow:hidden;font-size:14.5px}
+  .cmp-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .cmp th,.cmp td{padding:16px 18px;text-align:center;border-bottom:1px solid var(--line);white-space:nowrap}
+  .cmp thead th{background:var(--panel-2);font-family:"Satoshi","Inter",sans-serif;font-size:15px;font-weight:700}
+  .cmp thead th.core{color:var(--accent-2)} .cmp thead th.plat{color:var(--gold)}
+  .cmp tbody th{text-align:left;font-weight:600;color:var(--ink-dim);background:rgba(255,255,255,.015);min-width:240px;white-space:normal}
+  .cmp td .ic{width:20px;height:20px;color:var(--accent-2)}
+  .cmp td.no{color:var(--ink-faint)}
+  .cmp .val{font-weight:700;color:#fff;font-size:14px}
+  .cmp tbody tr:last-child th,.cmp tbody tr:last-child td{border-bottom:0}
+  .cmp col.c-core{background:rgba(45,212,255,.05)} .cmp col.c-plat{background:rgba(246,207,106,.04)}
+  .cmp-note{font-size:13px;color:var(--ink-faint);margin-top:16px;text-align:center;line-height:1.6}
+
+  /* extras */
+  .extras{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  @media(max-width:820px){.extras{grid-template-columns:1fr}}
+  .extra{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:26px}
+  .extra .ibox{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,rgba(246,207,106,.16),rgba(246,207,106,.05));border:1px solid rgba(246,207,106,.3);color:var(--gold)}
+  .extra .ibox .ic{width:22px;height:22px}
+  .extra h3{font-size:16.5px;margin:16px 0 7px;font-weight:700}
+  .extra p{margin:0;color:var(--ink-dim);font-size:14px;line-height:1.55}
+
+  /* cta */
+  .cta-strip{position:relative;overflow:hidden;text-align:center;background:linear-gradient(160deg,var(--panel),var(--bg-2));border:1px solid var(--line-2);border-radius:26px;padding:60px 30px}
+  .cta-strip .glow{position:absolute;inset:0;background:radial-gradient(600px 240px at 50% 0,rgba(45,212,255,.14),transparent 70%)}
+  .cta-strip h2{position:relative;font-size:clamp(28px,4vw,40px);font-weight:800;letter-spacing:-.6px;margin-bottom:14px}
+  .cta-strip p{position:relative;color:var(--ink-dim);max-width:580px;margin:0 auto 30px;font-size:16.5px}
+  .cta-strip .hero-cta{position:relative}
+
+  .hero-stats{display:flex;flex-wrap:wrap;justify-content:center;gap:20px 54px;margin-top:44px}
+  .hero-stats>div{text-align:center;min-width:120px}
+  .hero-stats .hn{font-family:"Satoshi","Inter",sans-serif;font-size:48px;font-weight:900;line-height:1;letter-spacing:-1px;
+    background:linear-gradient(180deg,#fff,#9fb0d4);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero-stats .hl{font-size:13.5px;color:var(--ink-dim);margin-top:10px;font-weight:600}
+  footer{padding:54px 0 64px;border-top:1px solid var(--line);text-align:center}
+  .foot-logo{height:30px;margin:0 auto 18px;display:block;opacity:.92}
+  footer .small{color:var(--ink-faint);font-size:13px;line-height:1.6}
+
+
+  /* ===== premium pass ===== */
+  section.block{padding:90px 0;position:relative}
+  section.block:not(.sponsors-light):not(#ai)::before{content:"";position:absolute;top:0;left:0;right:0;height:340px;background:radial-gradient(640px 220px at 50% 0,rgba(99,102,241,.1),transparent 72%);pointer-events:none;z-index:0}
+  section.block>.wrap{position:relative;z-index:1}
+  .sec-title{background:linear-gradient(180deg,#fff,#c9d5ee);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sponsors-light .sec-title{background:none;color:#0e1626;-webkit-text-fill-color:#0e1626}
+  .sponsors-light{clip-path:polygon(0 38px,100% 0,100% 100%,0 100%)}
+  .loc{transition:transform .2s,border-color .2s,box-shadow .25s}
+  .loc:hover{box-shadow:0 24px 60px rgba(0,0,0,.45),0 0 0 1px rgba(124,58,237,.28),0 18px 50px rgba(124,58,237,.2)}
+  .who,.fcard{transition:transform .2s,border-color .2s,box-shadow .25s}
+  .who:hover,.fcard:hover{box-shadow:0 22px 50px rgba(0,0,0,.4),0 0 40px rgba(99,102,241,.13)}
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  .review-strip{background:rgba(245,196,81,.1);border-bottom:1px solid rgba(245,196,81,.34);color:#f3cd72;font-size:12px;text-align:center;padding:7px 16px;letter-spacing:.2px}
+  .review-strip b{color:#ffe6a6}
+  .review-flag{max-width:var(--maxw,1200px);margin:18px auto 0;padding:10px 16px;font-size:12.5px;line-height:1.5;color:#f3cd72;background:rgba(245,196,81,.07);border:1px dashed rgba(245,196,81,.4);border-radius:10px}
+  .review-flag b{color:#ffe6a6}
+footer{position:relative;overflow:hidden;border-top:1px solid var(--line);padding:0;margin-top:10px}
+.foot-glow{position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(124,58,237,.16) 55%,rgba(45,130,246,.13));pointer-events:none}
+.foot-inner{position:relative;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;padding:60px 24px 38px;text-align:left}
+.foot-ppw{height:42px;width:auto;margin-bottom:16px;display:block}
+.foot-brand p{color:var(--ink-dim);font-size:14px;line-height:1.6;max-width:330px;margin:0 0 20px}
+.fb-btn{display:inline-flex;align-items:center;gap:10px;background:#1877f2;color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:11px 18px;border-radius:12px;box-shadow:0 10px 26px rgba(24,119,242,.4);transition:transform .15s}
+.fb-btn:hover{transform:translateY(-1px)}
+.fb-btn svg{width:18px;height:18px;fill:#fff}
+.foot-col h4{font-size:12px;letter-spacing:1.6px;text-transform:uppercase;color:var(--ink-faint);margin:6px 0 16px;font-weight:700}
+.foot-col a{display:block;color:var(--ink-dim);text-decoration:none;font-size:14px;padding:6px 0}
+.foot-col a:hover{color:var(--ink)}
+.foot-bottom{position:relative;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;border-top:1px solid var(--line);padding:22px 24px 44px}
+.foot-fmc{height:24px;width:auto;opacity:.9}
+footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
+@media(max-width:760px){.foot-inner{grid-template-columns:1fr 1fr;gap:30px;padding:46px 22px 30px}.foot-brand{grid-column:1/-1}}
+
+  .nav-brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .nb-ppw{height:48px;width:auto;display:block}
+  .nb-by{font-size:9.5px;letter-spacing:1px;text-transform:uppercase;color:var(--ink-dim);font-weight:600;white-space:nowrap}
+  .nb-fmc{height:20px;width:auto;display:block}
+  @media(max-width:600px){.nb-by{display:none}.nb-ppw{height:40px}.nb-fmc{height:17px}}
+  .fb-link{display:inline-block}.fb-link img{width:236px;max-width:100%;height:auto;display:block;border-radius:8px}
+  .spon-bridge .sb-text{flex:1 1 440px;max-width:660px}
+  .spon-bridge p{text-wrap:pretty}
+  .deck-slide{display:block;width:100%;max-width:1080px;margin:0 auto;border-radius:16px;border:1px solid var(--line-2);box-shadow:0 26px 64px rgba(0,0,0,.45)}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></symbol>
+  <symbol id="i-grad" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1 2.7 3 6 3s6-2 6-3v-5"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+  <symbol id="i-mega" viewBox="0 0 24 24"><path d="m3 11 16-6v14L3 13v-2Z"/><path d="M11.6 16.8 11 21H7l-.5-5"/></symbol>
+  <symbol id="i-tools" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0 5 5l-7 7a4 4 0 0 1-5-5Z"/><path d="m9 9-4 4"/></symbol>
+  <symbol id="i-party" viewBox="0 0 24 24"><path d="M2 22 13 11M5.5 8.5 9 12M2 22l5.5-1.5M2 22l1.5-5.5"/><path d="M14 6.5a3.5 3.5 0 0 1 3.5-3.5M22 10a3.5 3.5 0 0 0-3.5-3.5M18 13l1 1M14 2l1 1"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m10 9 5 3-5 3V9Z"/></symbol>
+  <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.5 14.9 8.4 21.4 9.3 16.7 13.9 17.8 20.4 12 17.3 6.2 20.4 7.3 13.9 2.6 9.3 9.1 8.4Z"/></symbol>
+  <symbol id="i-screen" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+</svg>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="nav-brand"><img class="nb-ppw" src="ppw-assets/ppw-logo.webp" alt="Post | Production World"><img class="nb-fmc" src="ppw-assets/fmc-logo.webp" alt="FMC"></a>
+    <nav class="nav-links">
+      <div class="dd">
+        <button class="dd-btn" aria-haspopup="true">Locations <svg class="ic"><use href="#i-chev"/></svg></button>
+        <div class="dd-menu" role="menu">
+          <a href="new-york.html" role="menuitem"><span class="lft"><svg class="ic"><use href="#i-pin"/></svg><span class="c">New York</span></span><span class="d">Oct 20–21, 2026</span></a>
+          <a href="https://www.abishow.com/postproduction.aspx" target="_blank" rel="noopener" role="menuitem"><span class="lft"><svg class="ic"><use href="#i-pin"/></svg><span class="c">Mumbai · South Asia</span></span><span class="d">Oct 2026</span></a>
+          <a href="https://www.nabshow.com/las-vegas/conferences-and-workshops/post-production-world/" target="_blank" rel="noopener" role="menuitem"><span class="lft"><svg class="ic"><use href="#i-pin"/></svg><span class="c">Las Vegas</span></span><span class="d">Apr 2027</span></a>
+          <a href="https://www.mediaproductionshow.com/ppw-europe" target="_blank" rel="noopener" role="menuitem"><span class="lft"><svg class="ic"><use href="#i-pin"/></svg><span class="c">London · Europe</span></span><span class="d">May 2027</span></a>
+          <a href="index.html#locations" class="all" role="menuitem">View all editions</a>
+        </div>
+      </div>
+      <a href="index.html#attendees">Who Attends</a>
+      <a href="ppw-sponsorships.html" class="active">Sponsorships</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap">
+    <div class="eyebrow"><span class="dot"></span>Global Sponsorship</div>
+    <h1 class="title">Your gateway to the <span class="hl">global creative industry</span></h1>
+    <p class="hero-sub">From Las Vegas to London, Mumbai to New York, P|PW Global puts your brand in front of the professionals who shape what the industry creates — and buys — next. One partnership. Year-round, worldwide visibility.</p>
+    <div class="hero-cta">
+      <a class="btn gold" href="#contact">Request Details <svg class="ic"><use href="#i-arrow"/></svg></a>
+      <a class="btn ghost" href="#tiers">See what's included</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="hn">1</div><div class="hl">simple relationship</div></div>
+      <div><div class="hn">4</div><div class="hl">in-person events</div></div>
+      <div><div class="hn">4</div><div class="hl">quarterly webinars</div></div>
+      <div><div class="hn">4</div><div class="hl">database blasts / yr</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <img class="deck-slide" src="ppw-assets/deck/slide-07.jpg" alt="Why partner with P|PW — global brand leadership, world-class training, premium creative audience" loading="lazy">
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <img class="deck-slide" src="ppw-assets/deck/slide-08.jpg" alt="End-to-end visibility, all year long — a robust multi-touchpoint marketing opportunity" loading="lazy">
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <img class="deck-slide" src="ppw-assets/deck/slide-09.jpg" alt="Marketing & audience reach — regional campaigns, integrated marketing, premium engagement" loading="lazy">
+  </div>
+</section>
+
+<section class="block" id="tiers">
+  <div class="wrap">
+    <div class="sec-head center">
+      <div class="sec-kicker">Sponsorship tiers</div>
+      <h2 class="sec-title">What your partnership gets you</h2>
+      <p class="sec-desc">Choose the level of visibility that fits your goals. Every tier scales your presence across the program, the platform, and the audience.</p>
+    </div>
+    <div class="cmp-scroll">
+      <table class="cmp">
+        <colgroup><col><col class="c-core"><col class="c-plat"><col><col></colgroup>
+        <thead>
+          <tr><th></th><th class="core">Core</th><th class="plat">Platinum</th><th>Gold</th><th>Silver</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>Logo on website, signage &amp; marketing campaigns</th>
+            <td><svg class="ic"><use href="#i-check"/></svg></td><td><svg class="ic"><use href="#i-check"/></svg></td><td><svg class="ic"><use href="#i-check"/></svg></td><td><svg class="ic"><use href="#i-check"/></svg></td></tr>
+          <tr><th>Logo on live sessions + recordings</th>
+            <td><svg class="ic"><use href="#i-check"/></svg></td><td><svg class="ic"><use href="#i-check"/></svg></td><td><svg class="ic"><use href="#i-check"/></svg></td><td><svg class="ic"><use href="#i-check"/></svg></td></tr>
+          <tr><th>Complimentary VIP conference passes</th>
+            <td><span class="val">20</span></td><td><span class="val">10</span></td><td><span class="val">6</span></td><td><span class="val">4</span></td></tr>
+          <tr><th>Opt-in attendee database</th>
+            <td><span class="val">Ownership</span></td><td><span class="val">Ownership</span></td><td><span class="val">2× access</span></td><td><span class="val">1× access</span></td></tr>
+          <tr><th>Keynote session opportunity</th>
+            <td><svg class="ic"><use href="#i-check"/></svg></td><td><svg class="ic"><use href="#i-check"/></svg></td><td class="no">—</td><td class="no">—</td></tr>
+          <tr><th>Raffle prize contribution</th>
+            <td><svg class="ic"><use href="#i-check"/></svg></td><td><svg class="ic"><use href="#i-check"/></svg></td><td><svg class="ic"><use href="#i-check"/></svg></td><td class="no">—</td></tr>
+          <tr><th>Co-branded webinar session</th>
+            <td><svg class="ic"><use href="#i-check"/></svg></td><td><svg class="ic"><use href="#i-check"/></svg></td><td><svg class="ic"><use href="#i-check"/></svg></td><td class="no">—</td></tr>
+          <tr><th>30-second video ad before keynote &amp; networking</th>
+            <td><svg class="ic"><use href="#i-check"/></svg></td><td class="no">—</td><td class="no">—</td><td class="no">—</td></tr>
+          <tr><th>Video ad in post-event VOD bundle</th>
+            <td><svg class="ic"><use href="#i-check"/></svg></td><td class="no">—</td><td class="no">—</td><td class="no">—</td></tr>
+          <tr><th>Exclusive “In association with / Made possible by” billing</th>
+            <td><svg class="ic"><use href="#i-check"/></svg></td><td class="no">—</td><td class="no">—</td><td class="no">—</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="cmp-note">Core is an exclusive, single-partner tier — no other software vendor shares the position. Inclusions vary by market and availability; contact us for the full prospectus tailored to your goals.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <img class="deck-slide" src="ppw-assets/deck/slide-10.jpg" alt="Bonus value additions — demo tables, dedicated webinars, branded content, database access, and more" loading="lazy">
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head center">
+      <div class="sec-kicker">Beyond the booth</div>
+      <h2 class="sec-title">More ways to engage the audience</h2>
+    </div>
+    <div class="extras">
+      <div class="extra">
+        <div class="ibox"><svg class="ic"><use href="#i-tools"/></svg></div>
+        <h3>P|PW Field Workshops</h3>
+        <p>Hands-on, off-site training sessions give sponsors a unique, intimate environment to showcase gear and engage attendees one-on-one.</p>
+      </div>
+      <div class="extra">
+        <div class="ibox"><svg class="ic"><use href="#i-party"/></svg></div>
+        <h3>The Annual Networking Party</h3>
+        <p>Celebrating connection and collaboration — a premium moment to align your brand with the community's biggest night.</p>
+      </div>
+      <div class="extra">
+        <div class="ibox"><svg class="ic"><use href="#i-play"/></svg></div>
+        <h3>VOD Library</h3>
+        <p>40+ hours of on-demand training content carry your brand far beyond the show floor, all year long.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="contact">
+  <div class="wrap">
+    <div class="cta-strip">
+      <div class="glow"></div>
+      <h2>Let's build something global together.</h2>
+      <p>Tell us about your goals and markets, and we'll send a tailored proposal. Platinum and Core positions are limited.</p>
+      <div class="hero-cta">
+        <a class="btn gold" href="mailto:info@ppw-conference.com?subject=P%7CPW%20Global%20Sponsorship%20Inquiry">Request a proposal <svg class="ic"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-glow"></div>
+  <div class="wrap foot-inner">
+    <div class="foot-brand">
+      <img class="foot-ppw" src="ppw-assets/ppw-logo.webp" alt="Post | Production World Conference">
+      <p>The global training platform for media professionals — four editions, one community.</p>
+      <a class="fb-link" href="https://www.facebook.com/groups/postproductionworld" target="_blank" rel="noopener"><img src="ppw-assets/fb-group.svg" alt="Join the Facebook Group"></a>
+    </div>
+    <div class="foot-col">
+      <h4>Editions</h4>
+      <a href="new-york.html">New York</a>
+      <a href="mumbai.html">Mumbai · South Asia</a>
+      <a href="vegas.html">Las Vegas</a>
+      <a href="london.html">London · Europe</a>
+    </div>
+    <div class="foot-col">
+      <h4>Explore</h4>
+      <a href="index.html#attendees">Who attends</a>
+      <a href="index.html#ai">AI focus</a>
+      <a href="index.html#networking">Networking</a>
+      <a href="ppw-sponsorships.html">Sponsorships</a>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <img class="foot-fmc" src="ppw-assets/fmc-logo.webp" alt="Powered by FMC — Future Media Concepts">
+    <div class="small">© 2026 Post | Production World Conference · A global platform powered by Future Media Concepts.</div>
+  </div>
+</footer>
+
+<script>(function(){try{var els=[].slice.call(document.querySelectorAll("section.block .sec-head,.loc,.who,.fcard,.ai-wrap,.collage,.cta-strip,.pillar,.rcard,.extra,.cmp,.hero-stats"));els.forEach(function(el){el.classList.add("reveal");});function check(){var h=window.innerHeight||800;for(var i=els.length-1;i>=0;i--){if(els[i].getBoundingClientRect().top<h*0.9){els[i].classList.add("in");els.splice(i,1);}}}check();window.addEventListener("scroll",check,{passive:true});window.addEventListener("resize",check);setTimeout(check,250);setTimeout(function(){els.forEach(function(el){el.classList.add("in");});els=[];},2600);}catch(e){}})();</script>
+</body>
+</html>
