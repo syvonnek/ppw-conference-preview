@@ -353,6 +353,19 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
   .partners .row{flex-wrap:nowrap}
   .partners img{height:36px!important}
   @media(max-width:600px){.partners .row{flex-wrap:wrap}}
+
+  .city-sec{display:block;position:relative;height:clamp(420px,56vh,600px);overflow:hidden;text-decoration:none;border-top:1px solid var(--line)}
+  .city-img{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .7s ease}
+  .city-sec:hover .city-img{transform:scale(1.045)}
+  .city-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,8,18,.12),transparent 32%,rgba(8,8,18,.2) 56%,rgba(8,8,18,.84))}
+  .city-info{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:0 0 clamp(28px,4vw,50px)}
+  .city-row{display:flex;align-items:flex-end;justify-content:space-between;gap:28px}
+  .city-ev{font-size:13px;letter-spacing:1.6px;text-transform:uppercase;color:var(--accent-2);font-weight:700;margin-bottom:9px;text-shadow:0 2px 10px rgba(0,0,0,.6)}
+  .city-h{font-family:"Satoshi","Inter",sans-serif;font-size:clamp(28px,3.6vw,44px);color:#fff;font-weight:800;margin:0 0 12px;letter-spacing:-.5px;text-shadow:0 3px 18px rgba(0,0,0,.6)}
+  .city-d{color:#e6ebf6;font-size:clamp(14.5px,1.3vw,16.5px);max-width:580px;margin:0;line-height:1.55;text-shadow:0 2px 14px rgba(0,0,0,.6)}
+  .city-cta{text-align:right;flex:none}
+  .city-date{color:#fff;font-weight:700;font-size:17px;margin-bottom:14px;white-space:nowrap;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+  @media(max-width:780px){.city-sec{height:clamp(360px,62vh,520px)}.city-row{flex-direction:column;align-items:flex-start;gap:16px}.city-cta{text-align:left}}
 </style>
 </head>
 <body>
@@ -433,56 +446,38 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
   </div>
 </div>
 
-<section class="block editions-b" id="locations" style="padding-top:48px">
-  <div class="wave-top"><svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0,34 C320,72 720,0 1080,30 C1260,45 1380,40 1440,30 L1440,0 L0,0 Z" fill="var(--bg)"/></svg></div>
-  <div class="edb-bg"></div>
-  <div class="wrap" style="position:relative;z-index:2">
-    <div class="sec-head center"><h2 class="sec-title">2026-2027 Global Editions</h2><p class="sec-desc" style="margin-inline:auto">One platform, four global markets — the same world-class, hands-on training wherever you are.</p></div>
-    <div class="edb-grid">
-      <a class="edb-card" href="new-york.html" style="--rc:#5b9dff">
-        <div class="edb-img" style="background-image:url(ppw-assets/city-nyc.webp)"></div>
-        <div class="edb-body"><div class="edb-name">P|PW New York</div><div class="edb-meta">Oct 20–21, 2026 · NAB Show New York</div><p class="edb-copy">East Coast edition with a complete two-day program across post, production, AI, immersive media, and creator workflows.</p><span class="edb-go">View the program <svg class="ic"><use href="#i-arrow"/></svg></span></div>
-      </a>
-      <a class="edb-card" href="mumbai.html" style="--rc:#2dd4bf">
-        <div class="edb-img" style="background-image:url(ppw-assets/city-mumbai.webp)"></div>
-        <div class="edb-body"><div class="edb-name">P|PW South Asia</div><div class="edb-meta">October 2026 · Broadcast India, Mumbai</div><p class="edb-copy">A new regional edition bringing P|PW's hands-on production, post, and AI training to one of the fastest-growing media markets.</p><span class="edb-go">View edition <svg class="ic"><use href="#i-arrow"/></svg></span></div>
-      </a>
-      <a class="edb-card" href="vegas.html" style="--rc:#ff8a4c">
-        <div class="edb-img" style="background-image:url(ppw-assets/city-vegas.webp)"></div>
-        <div class="edb-body"><div class="edb-name">P|PW Las Vegas</div><div class="edb-meta">April 2027 · NAB Show</div><p class="edb-copy">The flagship edition inside the world’s largest media-technology event, with the deepest P|PW training footprint.</p><span class="edb-go">View edition <svg class="ic"><use href="#i-arrow"/></svg></span></div>
-      </a>
-      <a class="edb-card" href="london.html" style="--rc:#b794f6">
-        <div class="edb-img" style="background-image:url(ppw-assets/city-london.webp)"></div>
-        <div class="edb-body"><div class="edb-name">P|PW Europe</div><div class="edb-meta">May 2027 · MPTS, London</div><p class="edb-copy">A European edition built around practical, high-level training for post, broadcast, content creation, and AI workflows.</p><span class="edb-go">View edition <svg class="ic"><use href="#i-arrow"/></svg></span></div>
-      </a>
-    </div>
-  </div>
+<section class="block" id="locations" style="padding-bottom:6px;text-align:center">
+  <div class="wrap"><div class="sec-head center" style="margin-bottom:0"><div class="sec-kicker">One platform · four markets</div><h2 class="sec-title">2026–2027 Global Editions</h2></div></div>
 </section>
 
-<section class="block upcoming">
-  <div class="up-bg"></div>
-  <div class="wrap" style="position:relative;z-index:1">
-    <h2 class="up-title">Upcoming Post | Production World Conference Locations</h2>
-    <div class="ucard-grid">
-      <a class="ucard" href="mumbai.html">
-        <div class="ucard-img" style="background-image:url(ppw-assets/city-mumbai.webp)"></div>
-        <div class="ucard-body"><img class="ucard-wm" src="ppw-assets/wm-mumbai.webp" alt=""><img class="ucard-host" src="ppw-assets/host-abi.png" alt=""><span class="ucard-btn">Learn More</span></div>
-      </a>
-      <a class="ucard" href="new-york.html">
-        <div class="ucard-img" style="background-image:url(ppw-assets/city-nyc.webp)"></div>
-        <div class="ucard-body"><img class="ucard-wm" src="ppw-assets/wm-nyc.png" alt=""><img class="ucard-host" src="ppw-assets/host-nab.webp" alt=""><span class="ucard-btn">Learn More</span></div>
-      </a>
-      <a class="ucard" href="vegas.html">
-        <div class="ucard-img" style="background-image:url(ppw-assets/city-vegas.webp)"></div>
-        <div class="ucard-body"><img class="ucard-wm" src="ppw-assets/wm-vegas.png" alt=""><img class="ucard-host" src="ppw-assets/host-nab.webp" alt=""><span class="ucard-btn">Learn More</span></div>
-      </a>
-      <a class="ucard" href="london.html">
-        <div class="ucard-img" style="background-image:url(ppw-assets/city-london.webp)"></div>
-        <div class="ucard-body"><img class="ucard-wm" src="ppw-assets/wm-london.png" alt=""><span class="ucard-btn">Learn More</span></div>
-      </a>
-    </div>
-  </div>
-</section>
+<a class="city-sec" href="new-york.html">
+  <div class="city-img" style="background-image:url(ppw-assets/city-nyc-hi.jpg)"></div>
+  <div class="city-info"><div class="wrap city-row">
+    <div class="city-text"><div class="city-ev">at NAB Show New York</div><h2 class="city-h">P|PW New York</h2><p class="city-d">East Coast edition — a complete two-day program across post, production, AI, immersive media, and creator workflows.</p></div>
+    <div class="city-cta"><div class="city-date">Oct 20–21, 2026</div><span class="btn">Explore New York <svg class="ic"><use href="#i-arrow"/></svg></span></div>
+  </div></div>
+</a>
+<a class="city-sec" href="mumbai.html">
+  <div class="city-img" style="background-image:url(ppw-assets/city-mumbai-hi.jpg)"></div>
+  <div class="city-info"><div class="wrap city-row">
+    <div class="city-text"><div class="city-ev">at Broadcast India · Mumbai</div><h2 class="city-h">P|PW South Asia</h2><p class="city-d">A new regional edition bringing P|PW’s hands-on production, post, and AI training to one of the fastest-growing media markets.</p></div>
+    <div class="city-cta"><div class="city-date">October 2026</div><span class="btn">Explore South Asia <svg class="ic"><use href="#i-arrow"/></svg></span></div>
+  </div></div>
+</a>
+<a class="city-sec" href="vegas.html">
+  <div class="city-img" style="background-image:url(ppw-assets/city-vegas-hi.jpg)"></div>
+  <div class="city-info"><div class="wrap city-row">
+    <div class="city-text"><div class="city-ev">at NAB Show · Las Vegas</div><h2 class="city-h">P|PW Las Vegas</h2><p class="city-d">The flagship edition inside the world’s largest media-technology event — the deepest P|PW training footprint.</p></div>
+    <div class="city-cta"><div class="city-date">April 2027</div><span class="btn">Explore Las Vegas <svg class="ic"><use href="#i-arrow"/></svg></span></div>
+  </div></div>
+</a>
+<a class="city-sec" href="london.html">
+  <div class="city-img" style="background-image:url(ppw-assets/city-london-hi.jpg)"></div>
+  <div class="city-info"><div class="wrap city-row">
+    <div class="city-text"><div class="city-ev">at MPTS · London</div><h2 class="city-h">P|PW Europe</h2><p class="city-d">A European edition built around practical, high-level training for post, broadcast, content creation, and AI workflows.</p></div>
+    <div class="city-cta"><div class="city-date">May 2027</div><span class="btn">Explore Europe <svg class="ic"><use href="#i-arrow"/></svg></span></div>
+  </div></div>
+</a>
 
 <section class="block light-sec" id="attendees">
   <div class="wrap">
