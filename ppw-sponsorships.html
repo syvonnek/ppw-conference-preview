@@ -270,6 +270,19 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
   .extra .ibox .ic{width:30px!important;height:30px!important}
   .extra h3{font-size:18px!important;margin-top:18px!important}
   .cmp th,.cmp td{padding:18px 20px!important}
+
+  /* distinct background per deck section */
+  .deck-a{background:linear-gradient(160deg,#2c1b50,#1d1742 55%,#141633)}
+  .deck-a .deck-bg::after{background:radial-gradient(54% 56% at 50% 20%,rgba(246,207,106,.16),transparent 60%),radial-gradient(50% 50% at 50% 40%,rgba(124,58,237,.3),transparent 66%)}
+  .deck-b{background:linear-gradient(150deg,#3a1838,#241640 52%,#141633)}
+  .deck-b .deck-bg{background-position:left center;opacity:.13}
+  .deck-b .deck-bg::after{background:radial-gradient(54% 64% at 14% 42%,rgba(244,114,182,.26),transparent 64%),radial-gradient(46% 60% at 92% 64%,rgba(124,58,237,.18),transparent 70%)}
+  .deck-c{background:linear-gradient(160deg,#132a47,#16213f 54%,#121634)}
+  .deck-c .deck-bg{background-position:right center;opacity:.14}
+  .deck-c .deck-bg::after{background:radial-gradient(52% 62% at 86% 44%,rgba(45,212,255,.22),transparent 64%),radial-gradient(46% 56% at 12% 60%,rgba(59,130,246,.16),transparent 70%)}
+  .deck-d{background:linear-gradient(160deg,#341641,#221541 54%,#141633)}
+  .deck-d .deck-bg{background-position:center 70%;opacity:.13}
+  .deck-d .deck-bg::after{background:radial-gradient(60% 56% at 50% 78%,rgba(168,80,200,.26),transparent 66%),radial-gradient(40% 50% at 50% 16%,rgba(246,207,106,.12),transparent 70%)}
 </style>
 </head>
 <body>
@@ -329,7 +342,7 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
   </div>
 </section>
 
-<section class="block deck-sec">
+<section class="block deck-sec deck-a">
   <div class="deck-bg"></div>
   <div class="wrap">
     <div class="sec-head center"><div class="sec-kicker">Global Platinum Sponsorship</div><h2 class="sec-title">A platform built for brand leaders</h2></div>
@@ -341,7 +354,7 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
   </div>
 </section>
 
-<section class="block deck-sec">
+<section class="block deck-sec deck-b">
   <div class="deck-bg"></div>
   <div class="wrap">
     <div class="sec-head center"><div class="sec-kicker">End-to-End Visibility, All Year Long</div><h2 class="sec-title">A robust, multi-touchpoint partnership</h2></div>
@@ -357,7 +370,7 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
   </div>
 </section>
 
-<section class="block deck-sec">
+<section class="block deck-sec deck-c">
   <div class="deck-bg"></div>
   <div class="wrap">
     <div class="sec-head center"><div class="sec-kicker">Marketing &amp; Audience Reach</div><h2 class="sec-title">Amplified across four continents</h2></div>
@@ -410,7 +423,7 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
   </div>
 </section>
 
-<section class="block deck-sec">
+<section class="block deck-sec deck-d">
   <div class="deck-bg"></div>
   <div class="wrap">
     <div class="sec-head center"><div class="sec-kicker">Bonus Value Additions</div><h2 class="sec-title">Beyond the core benefits</h2><p class="sec-desc" style="margin-inline:auto;color:#cdd4ea">Platinum and Core partners unlock broader reach and lasting visibility well past the show floor.</p></div>
