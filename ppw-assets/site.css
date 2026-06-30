@@ -201,6 +201,6 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
 .nb-by{font-size:9.5px;letter-spacing:1px;text-transform:uppercase;color:var(--ink-dim);font-weight:600;white-space:nowrap}
 .nb-fmc{height:20px;width:auto;display:block}
 @media(max-width:600px){.nb-by{display:none}.nb-ppw{height:40px}.nb-fmc{height:17px}}
-.fb-link{display:inline-block}.fb-link img{width:236px;max-width:100%;height:auto;display:block;border-radius:8px}
+.fb-link{display:inline-block}.fb-link img{width:330px;max-width:100%;height:auto;display:block;border-radius:8px}
 .spon-bridge .sb-text{flex:1 1 440px;max-width:660px}
 .spon-bridge p{text-wrap:pretty}
