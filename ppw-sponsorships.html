@@ -285,14 +285,14 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
   .deck-d .deck-bg::after{background:radial-gradient(60% 56% at 50% 78%,rgba(168,80,200,.26),transparent 66%),radial-gradient(40% 50% at 50% 16%,rgba(246,207,106,.12),transparent 70%)}
 
   .ring-png{width:104px;height:104px;display:block;margin:0 auto 16px;object-fit:contain;filter:drop-shadow(0 8px 22px rgba(0,0,0,.4))}
-  .deck-a .deck-bg{background:url(ppw-assets/global-map.webp) center/cover;opacity:.22}
-  .deck-b .deck-bg{background:url(ppw-assets/bg-cities.jpg) center/cover;opacity:.24;background-position:center 30%}
-  .deck-c .deck-bg{background:url(ppw-assets/bg-map2.jpg) center/cover;opacity:.3}
-  .deck-d .deck-bg{background:url(ppw-assets/global-map.webp) center 78%/cover;opacity:.16}
+  .deck-a .deck-bg{background:url(ppw-assets/conf-bg2.jpg) center/cover!important}
+  .deck-b .deck-bg{background:url(ppw-assets/conf-bg1.jpg) center/cover!important}
+  .deck-c .deck-bg{background:url(ppw-assets/conf-bg3.jpg) center 30%/cover!important}
+  .deck-d .deck-bg{background:url(ppw-assets/conf-bg4.jpg) center/cover!important}
 
   /* dark cinematic deck backgrounds */
   .deck-sec{background:#0b0a18!important}
-  .deck-bg{opacity:.5!important}
+  .deck-bg{opacity:.4!important}
   .deck-a .deck-bg{background:url(ppw-assets/bg-cities.jpg) center 22%/cover!important}
   .deck-b .deck-bg{background:url(ppw-assets/bg-map2.jpg) center 35%/cover!important}
   .deck-c .deck-bg{background:url(ppw-assets/global-map.webp) center/cover!important}
@@ -301,6 +301,14 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
   .deck-b .deck-bg::after{background:radial-gradient(116% 96% at 50% 32%,transparent 16%,rgba(7,7,16,.84) 92%),radial-gradient(50% 50% at 16% 40%,rgba(244,114,182,.22),transparent 70%)!important}
   .deck-c .deck-bg::after{background:radial-gradient(116% 96% at 50% 32%,transparent 16%,rgba(7,7,16,.84) 92%),radial-gradient(50% 50% at 85% 45%,rgba(45,212,255,.22),transparent 70%)!important}
   .deck-d .deck-bg::after{background:radial-gradient(116% 96% at 50% 32%,transparent 16%,rgba(7,7,16,.84) 92%),radial-gradient(56% 50% at 50% 76%,rgba(168,80,200,.24),transparent 70%)!important}
+
+  .deck-sec h2,.deck-sec .pillar h3,.deck-sec .pc,.deck-sec .tpill span{text-shadow:0 2px 14px rgba(0,0,0,.55)}
+  .sgallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:152px;gap:12px}
+  .sgallery a{overflow:hidden;border-radius:14px;border:1px solid var(--line);display:block}
+  .sgallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s}
+  .sgallery a:hover img{transform:scale(1.05)}
+  .sgallery .big{grid-column:span 2;grid-row:span 2}
+  @media(max-width:700px){.sgallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:120px}}
 </style>
 </head>
 <body>
@@ -396,6 +404,19 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
       <div class="pillar"><img class="ring-png" src="ppw-assets/ic-pin.png" alt=""><h3>Regional Campaigns</h3><p>Extensive local marketing driven by NAB Show in the U.S., MPTS in London, and Broadcast India in Asia — each engaging its own vibrant community.</p></div>
       <div class="pillar"><img class="ring-png" src="ppw-assets/ic-network.png" alt=""><h3>Integrated Marketing</h3><p>Global PR, social, and email campaigns powered by FMC amplify every regional effort with unified press, newsletters, and creative partnerships.</p></div>
       <div class="pillar"><img class="ring-png" src="ppw-assets/ic-brain.png" alt=""><h3>Premium Engagement</h3><p>Year-round exposure, unified branding, AI-driven analytics, and direct engagement with decision-makers worldwide.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head center"><div class="sec-kicker">The room you reach</div><h2 class="sec-title">Thousands of creative professionals, in person</h2></div>
+    <div class="sgallery">
+      <a class="big" href="ppw-assets/conf-g1.jpg" target="_blank"><img src="ppw-assets/conf-g1.jpg" alt="P|PW session" loading="lazy"></a>
+      <a href="ppw-assets/conf-g3.jpg" target="_blank"><img src="ppw-assets/conf-g3.jpg" alt="" loading="lazy"></a>
+      <a href="ppw-assets/conf-g4.jpg" target="_blank"><img src="ppw-assets/conf-g4.jpg" alt="" loading="lazy"></a>
+      <a href="ppw-assets/conf-g2.jpg" target="_blank"><img src="ppw-assets/conf-g2.jpg" alt="" loading="lazy"></a>
+      <a href="ppw-assets/conf-g5.jpg" target="_blank"><img src="ppw-assets/conf-g5.jpg" alt="" loading="lazy"></a>
     </div>
   </div>
 </section>
