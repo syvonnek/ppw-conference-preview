@@ -66,21 +66,21 @@
   .dd-menu .all{justify-content:center;color:var(--accent-2);font-weight:700;font-size:13px;margin-top:2px;border-top:1px solid var(--line);border-radius:0 0 11px 11px}
   .btn{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(115deg,#8b5cf6 0%,#5b8def 55%,#22d3ee 125%);
     color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:13px 22px;border-radius:999px;
-    border:1px solid rgba(255,255,255,.18);box-shadow:0 10px 30px rgba(99,102,241,.42);white-space:nowrap;transition:transform .15s,box-shadow .15s}
+    box-shadow:0 10px 30px rgba(99,102,241,.42);white-space:nowrap;transition:transform .15s,box-shadow .15s}
   .btn:hover{transform:translateY(-1px);box-shadow:0 14px 40px rgba(99,102,241,.6)}
   .btn .ic{width:16px;height:16px}
   .btn.ghost{background:transparent;box-shadow:none;border-color:var(--line-2);color:var(--ink)}
   .btn.ghost:hover{background:rgba(255,255,255,.05);box-shadow:none}
-  .btn.gold{background:linear-gradient(115deg,#8b5cf6 0%,#5b8def 55%,#22d3ee 125%);color:#fff;border-color:rgba(255,255,255,.18);box-shadow:0 10px 30px rgba(99,102,241,.42)}
+  .btn.gold{background:linear-gradient(115deg,#8b5cf6 0%,#5b8def 55%,#22d3ee 125%);color:#fff;border-color:transparent;box-shadow:0 10px 30px rgba(99,102,241,.42)}
   .btn.gold:hover{box-shadow:0 14px 40px rgba(99,102,241,.6)}
   header.nav .btn{padding:10px 18px;font-size:13.5px;margin-left:10px}
   @media(max-width:900px){.nav-links{display:none}}
 
   /* ---------- hero ---------- */
-  .hero{position:relative;overflow:hidden;min-height:86vh;display:flex;align-items:flex-end;padding:0 0 44px;text-align:center}
+  .hero{position:relative;overflow:hidden;min-height:90vh;display:flex;align-items:center;padding:104px 0 64px;text-align:center}
   .hero-bg{position:absolute;inset:0;z-index:0;background-size:cover;background-position:center center;opacity:1}
-  .hero-scrim{position:absolute;inset:0;z-index:0;background:radial-gradient(46% 36% at 50% 47%,rgba(8,11,18,.62),transparent 70%),linear-gradient(180deg,rgba(8,11,18,.4) 0%,rgba(8,11,18,.06) 14%,transparent 38%,transparent 56%,rgba(8,11,18,.55) 80%,rgba(8,11,18,.96) 98%,var(--bg))}
-  .hero-h1{font-family:"Satoshi","Inter",sans-serif;font-size:clamp(28px,4.6vw,54px);font-weight:800;letter-spacing:-1px;line-height:1.1;padding-bottom:.08em;white-space:nowrap;margin:0 auto 18px;max-width:none;background:linear-gradient(180deg,#fff,#c7d4ee);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero-scrim{position:absolute;inset:0;z-index:0;background:radial-gradient(50% 42% at 50% 50%,rgba(8,11,18,.5),transparent 72%),linear-gradient(180deg,rgba(8,11,18,.34) 0%,transparent 22%,transparent 60%,rgba(8,11,18,.58) 84%,rgba(8,11,18,.96) 99%,var(--bg))}
+  .hero-h1{font-family:"Satoshi","Inter",sans-serif;font-size:clamp(28px,4.6vw,54px);font-weight:800;letter-spacing:-1px;line-height:1.1;padding-bottom:.08em;white-space:nowrap;margin:0 auto 9px;max-width:none;background:linear-gradient(180deg,#fff,#c7d4ee);-webkit-background-clip:text;background-clip:text;color:transparent}
   .hero-h1 .hl{color:var(--accent-2);-webkit-text-fill-color:var(--accent-2)}
   .hero-logo{height:74px;width:auto;margin:26px auto 28px;display:block;filter:drop-shadow(0 8px 30px rgba(0,0,0,.95))}
   .hero .wrap{position:relative;z-index:1}
@@ -92,11 +92,28 @@
   .hero-sub{font-size:clamp(17px,2.1vw,20px);color:#e4ebfa;font-weight:500;max-width:680px;margin:0 auto 32px;line-height:1.6;text-shadow:0 2px 16px rgba(0,0,0,.6)}
   .hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
   /* hero partner strip */
-  .partners{margin-top:50px;padding-top:34px;border-top:1px solid rgba(255,255,255,.12);max-width:780px;margin-inline:auto}
-  .partners .lbl{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--ink-dim);font-weight:700;margin-bottom:22px}
-  .partners .row{display:flex;align-items:center;gap:clamp(30px,5vw,58px);flex-wrap:wrap;justify-content:center}
-  .partners img{height:31px;width:auto;object-fit:contain;opacity:.95;transition:opacity .2s}
-  .partners img:hover{opacity:1}
+  .partners{max-width:960px;margin:58px auto 0;padding-top:46px;border-top:1px solid rgba(255,255,255,.12)}
+  .partner-tier{text-align:center}
+  .gold-tier{margin-top:42px}
+  .partner-tier-label{font-size:12.5px;letter-spacing:.3em;text-transform:uppercase;color:rgba(210,220,245,.74);font-weight:700}
+  .partner-grid{display:grid;align-items:center;justify-items:center}
+  .partner-grid.platinum{grid-template-columns:repeat(4,minmax(0,1fr));gap:34px 64px;max-width:900px;margin:36px auto 0}
+  .partner-grid.gold{grid-template-columns:repeat(2,minmax(0,1fr));gap:34px 96px;max-width:470px;margin:30px auto 0}
+  .pslot{width:100%;max-width:210px;height:58px;display:flex;align-items:center;justify-content:center}
+  .plogo{display:block;width:auto;height:auto;object-fit:contain;opacity:.94;filter:brightness(1.08);transition:opacity .2s}
+  .plogo:hover{opacity:1}
+  .logo-nvidia{max-width:142px;max-height:34px}
+  .logo-dell{max-width:152px;max-height:30px}
+  .logo-adobe{max-width:126px;max-height:40px}
+  .logo-maxon{max-width:150px;max-height:34px}
+  .logo-blackmagic{max-width:162px;max-height:44px}
+  .logo-intel{max-width:110px;max-height:42px}
+  @media(max-width:768px){
+    .partner-grid.platinum{grid-template-columns:repeat(2,1fr);gap:28px 38px;max-width:400px}
+    .partner-grid.gold{grid-template-columns:repeat(2,1fr);gap:28px 44px;max-width:360px}
+    .pslot{height:52px;max-width:160px}
+    .logo-nvidia{max-width:clamp(108px,32vw,138px)}.logo-dell{max-width:clamp(116px,34vw,146px)}.logo-adobe{max-width:clamp(98px,28vw,120px)}.logo-maxon{max-width:clamp(114px,33vw,140px)}.logo-blackmagic{max-width:clamp(124px,36vw,150px)}.logo-intel{max-width:clamp(84px,24vw,105px)}
+  }
 
   /* ---------- stat band ---------- */
   .statband{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(255,255,255,.015)}
@@ -233,8 +250,9 @@
   .ai-card{background:rgba(18,27,47,.5);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:28px;box-shadow:0 16px 40px rgba(0,0,0,.3)}
   .ai-card h3{font-size:19px;margin:0 0 9px;font-weight:600}
   .ai-card p{margin:0;color:#c2cee6;font-size:14.5px;line-height:1.65}
-  .ai-badges{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:40px}
-  .ai-badge{display:flex;flex-direction:column;align-items:center;gap:9px;width:128px;text-align:center;
+  .ai-badges{display:flex;flex-wrap:wrap;gap:20px 26px;justify-content:center;margin-top:44px}
+  .ai-badge-img{width:clamp(96px,11vw,128px);height:auto;display:block}
+  .ai-badge{display:flex;align-items:center;justify-content:center;width:auto;
     background:rgba(18,27,47,.5);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:18px 10px 12px}
   .ai-badge svg{width:50px;height:50px}
   .ai-badge .bl{font-size:13px;font-weight:700;letter-spacing:.2px;color:var(--ink);line-height:1.25}
@@ -350,9 +368,6 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
   .proof .pc{margin:0;color:#d7ddf2;font-size:clamp(14.5px,1.25vw,17px);line-height:1.4;max-width:23ch;font-weight:500}
   @media(max-width:780px){.proof-band{clip-path:polygon(0 14px,100% 0,100% 100%,0 calc(100% - 14px));padding:56px 0}.proof-grid{grid-template-columns:1fr;gap:30px}}
   /* hero partners uniform + inline */
-  .partners .row{flex-wrap:nowrap}
-  .partners img{height:36px!important}
-  @media(max-width:600px){.partners .row{flex-wrap:wrap}}
 
   .city-sec{display:block;position:relative;height:clamp(420px,56vh,600px);overflow:hidden;text-decoration:none;border-top:1px solid var(--line)}
   .city-img{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .7s ease}
@@ -364,7 +379,7 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
   .city-h{font-family:"Satoshi","Inter",sans-serif;font-size:clamp(28px,3.6vw,44px);color:#fff;font-weight:800;margin:0 0 12px;letter-spacing:-.5px;text-shadow:0 3px 18px rgba(0,0,0,.6)}
   .city-d{color:#e6ebf6;font-size:clamp(14.5px,1.3vw,16.5px);max-width:580px;margin:0;line-height:1.55;text-shadow:0 2px 14px rgba(0,0,0,.6)}
   .city-cta{text-align:right;flex:none}
-  .city-date{color:#fff;font-weight:700;font-size:17px;margin-bottom:14px;white-space:nowrap;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+  .city-date{color:#fff;font-weight:700;font-size:21px;margin-bottom:14px;white-space:nowrap;text-shadow:0 2px 12px rgba(0,0,0,.6)}
   @media(max-width:780px){.city-sec{height:clamp(360px,62vh,520px)}.city-row{flex-direction:column;align-items:flex-start;gap:16px}.city-cta{text-align:left}}
 
   /* premium spacing pass */
@@ -378,11 +393,15 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
   .city-sec{border-top:0}
   #locations{padding:120px 0 28px}
   .cards3,.who-grid{gap:22px}
-  .partners{margin-top:60px;padding-top:42px}
-  .hero-brand{display:flex;flex-direction:column;align-items:center;gap:9px;margin:8px auto 24px}
+  .hero-brand{display:flex;flex-direction:column;align-items:center;gap:12px;margin:0 auto 22px}
+  .hero-og{height:74px;width:auto;filter:drop-shadow(0 8px 28px rgba(0,0,0,.85))}
   .hero-ring{width:66px;height:66px;filter:drop-shadow(0 8px 26px rgba(0,0,0,.75))}
   .hb-main{font-family:"Satoshi","Inter",sans-serif;font-weight:800;font-size:clamp(28px,3.3vw,42px);color:#fff;letter-spacing:-.5px;line-height:1;text-shadow:0 3px 18px rgba(0,0,0,.6)}
   .hb-tag{font-size:14px;letter-spacing:5px;text-transform:uppercase;color:var(--accent-2);font-weight:700}
+  #locations .sec-title,#attendees .sec-title{padding-bottom:0}
+  .spon-bridge p,.spon-bridge .sb-text p{text-wrap:balance;max-width:640px}
+  .btn{line-height:1;padding-top:11px;padding-bottom:15px}
+  header.nav .btn{padding-top:9px;padding-bottom:11px}
 </style>
 </head>
 <body>
@@ -425,7 +444,7 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
   <div class="hero-bg" style="background-image:url(ppw-assets/hero.jpg)"></div>
   <div class="hero-scrim"></div>
   <div class="wrap">
-    <div class="hero-brand"><img class="hero-ring" src="ppw-assets/ppw-ring.png" alt="Post Production World Global"><div class="hb-main">Post Production World</div><div class="hb-tag">Global</div></div>
+    <div class="hero-brand"><img class="hero-og" src="ppw-assets/ppw-logo.webp" alt="Post Production World"><div class="hb-tag">Global</div></div>
     <div class="eyebrow"><span style="color:#ff8a4c">Las&nbsp;Vegas</span> · <span style="color:#5b9dff">New&nbsp;York</span> · <span style="color:#b794f6">London</span> · <span style="color:#43d9b8">Mumbai</span></div>
     <h1 class="hero-h1">Empowering creatives <span class="hl">globally</span></h1>
     <p class="hero-sub">The world's leading training conference for video, TV, film, motion graphics, and AI - one marketing platform, four premier markets, all year long.</p>
@@ -434,17 +453,21 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
       <a class="btn" href="#attendees" style="background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.45);box-shadow:none;color:#fff">Who attends</a>
     </div>
     <div class="partners">
-      <div class="lbl">Platinum partners</div>
-      <div class="row">
-        <img src="ppw-assets/spon-nvidia.webp" alt="NVIDIA">
-        <img src="ppw-assets/spon-dell.webp" alt="Dell Technologies">
-        <img src="ppw-assets/spon-adobe.webp" alt="Adobe">
-        <img src="ppw-assets/spon-maxon.webp" alt="Maxon">
+      <div class="partner-tier">
+        <div class="partner-tier-label">Platinum Partners</div>
+        <div class="partner-grid platinum">
+          <div class="pslot"><img class="plogo logo-nvidia" src="ppw-assets/spon-nvidia.webp" alt="NVIDIA"></div>
+          <div class="pslot"><img class="plogo logo-dell" src="ppw-assets/spon-dell.webp" alt="Dell Technologies"></div>
+          <div class="pslot"><img class="plogo logo-adobe" src="ppw-assets/spon-adobe.webp" alt="Adobe"></div>
+          <div class="pslot"><img class="plogo logo-maxon" src="ppw-assets/spon-maxon.webp" alt="Maxon"></div>
+        </div>
       </div>
-      <div class="lbl" style="margin-top:30px">Gold partners</div>
-      <div class="row">
-        <img src="ppw-assets/spon-bmd-ko.webp" alt="Blackmagic Design">
-        <img src="ppw-assets/spon-intel-ko.webp" alt="Intel">
+      <div class="partner-tier gold-tier">
+        <div class="partner-tier-label">Gold Partners</div>
+        <div class="partner-grid gold">
+          <div class="pslot"><img class="plogo logo-blackmagic" src="ppw-assets/spon-bmd-ko.webp" alt="Blackmagic Design"></div>
+          <div class="pslot"><img class="plogo logo-intel" src="ppw-assets/spon-intel-ko.webp" alt="Intel"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -463,7 +486,7 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
 </div>
 
 <section class="block" id="locations" style="padding-bottom:6px;text-align:center">
-  <div class="wrap"><div class="sec-head center" style="margin-bottom:0"><div class="sec-kicker">One marketing platform • four premier markets</div><h2 class="sec-title">2026–2027 Locations</h2></div></div>
+  <div class="wrap"><div class="sec-head center" style="margin-bottom:0"><div class="sec-kicker">One marketing platform • four premier markets</div><h2 class="sec-title">2026-2027 Locations</h2></div></div>
 </section>
 
 <a class="city-sec" href="new-york.html">
@@ -498,7 +521,7 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
 <section class="block light-sec" id="attendees">
   <div class="wrap">
     <div class="sec-head center">
-      <div class="sec-kicker">Post Production World Attendees</div>
+      <div class="sec-kicker">Conference Attendees</div>
       <h2 class="sec-title">Who attends Post Production World</h2>
       <p class="sec-desc">The editors, artists, producers, and creators who shape what the industry makes — and who come to PPW to sharpen their craft.</p>
     </div>
@@ -543,11 +566,13 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
         <div class="ai-card"><h3>Specialized AI Workshops</h3><p>In-person workshops tailored to varying skill levels — covering editing, design, VFX, motion, sound, legal, and more — taught by world-renowned Certified Instructors.</p></div>
       </div>
       <div class="ai-badges">
-        <div class="ai-badge"><svg viewBox="0 0 40 40"><path fill-rule="evenodd" clip-rule="evenodd" d="M20 4 36 34H4L20 4Zm0 18a4 4 0 100 8 4 4 0 000-8Z" fill="#a78bfa"/></svg><div class="bl">AI Video<br>Editing</div><div class="bc">Certified</div></div>
-        <div class="ai-badge"><svg viewBox="0 0 40 40"><path fill-rule="evenodd" clip-rule="evenodd" d="M20 4 36 34H4L20 4Zm0 18a4 4 0 100 8 4 4 0 000-8Z" fill="#f6cf6a"/></svg><div class="bl">AI<br>Design</div><div class="bc">Certified</div></div>
-        <div class="ai-badge"><svg viewBox="0 0 40 40"><path fill-rule="evenodd" clip-rule="evenodd" d="M20 4 36 34H4L20 4Zm0 18a4 4 0 100 8 4 4 0 000-8Z" fill="#ff6b5b"/></svg><div class="bl">AI VFX<br>&amp; Motion</div><div class="bc">Certified</div></div>
-        <div class="ai-badge"><svg viewBox="0 0 40 40"><path fill-rule="evenodd" clip-rule="evenodd" d="M20 4 36 34H4L20 4Zm0 18a4 4 0 100 8 4 4 0 000-8Z" fill="#4a90ff"/></svg><div class="bl">AI Sound<br>Mastering</div><div class="bc">Certified</div></div>
-        <div class="ai-badge"><svg viewBox="0 0 40 40"><path fill-rule="evenodd" clip-rule="evenodd" d="M20 4 36 34H4L20 4Zm0 18a4 4 0 100 8 4 4 0 000-8Z" fill="#2dd4ff"/></svg><div class="bl">AI<br>Legal</div><div class="bc">Certified</div></div>
+        <div class="ai-badge"><img class="ai-badge-img" src="ppw-assets/ai/edit.webp" alt="AI Video Editing Certified"></div>
+        <div class="ai-badge"><img class="ai-badge-img" src="ppw-assets/ai/design.webp" alt="AI Design Certified"></div>
+        <div class="ai-badge"><img class="ai-badge-img" src="ppw-assets/ai/vfx.webp" alt="AI VFX & Motion Certified"></div>
+        <div class="ai-badge"><img class="ai-badge-img" src="ppw-assets/ai/sound.webp" alt="AI Sound Mastering Certified"></div>
+        <div class="ai-badge"><img class="ai-badge-img" src="ppw-assets/ai/legal.webp" alt="AI Legal Certified"></div>
+        <div class="ai-badge"><img class="ai-badge-img" src="ppw-assets/ai/tv.webp" alt="AI Broadcast TV Certified"></div>
+        <div class="ai-badge"><img class="ai-badge-img" src="ppw-assets/ai/radio.webp" alt="AI Broadcast Radio Certified"></div>
       </div>
     </div>
   </div>

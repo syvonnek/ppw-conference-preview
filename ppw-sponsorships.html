@@ -59,7 +59,7 @@
   .dd-menu .all{justify-content:center;color:var(--accent-2);font-weight:700;font-size:13px;margin-top:2px;border-top:1px solid var(--line);border-radius:0 0 11px 11px}
   .btn{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(115deg,#8b5cf6 0%,#5b8def 55%,#22d3ee 125%);
     color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:13px 22px;border-radius:999px;
-    border:1px solid rgba(255,255,255,.18);box-shadow:0 10px 30px rgba(99,102,241,.42);white-space:nowrap;transition:transform .15s,box-shadow .15s}
+    box-shadow:0 10px 30px rgba(99,102,241,.42);white-space:nowrap;transition:transform .15s,box-shadow .15s}
   .btn:hover{transform:translateY(-1px);box-shadow:0 14px 40px rgba(99,102,241,.6)}
   .btn .ic{width:16px;height:16px}
   .btn.ghost{background:transparent;box-shadow:none;border-color:var(--line-2);color:var(--ink)}
@@ -309,6 +309,8 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
   .sgallery a:hover img{transform:scale(1.05)}
   .sgallery .big{grid-column:span 2;grid-row:span 2}
   @media(max-width:700px){.sgallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:120px}}
+  .btn{line-height:1;padding-top:11px;padding-bottom:15px}
+  header.nav .btn{padding-top:9px;padding-bottom:11px}
 </style>
 </head>
 <body>
