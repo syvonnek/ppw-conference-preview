@@ -64,7 +64,7 @@
   .dd-menu .c{font-weight:700;font-size:14px;color:var(--ink)}
   .dd-menu .d{font-size:12.5px;color:var(--ink-faint);white-space:nowrap}
   .dd-menu .all{justify-content:center;color:var(--accent-2);font-weight:700;font-size:13px;margin-top:2px;border-top:1px solid var(--line);border-radius:0 0 11px 11px}
-  .btn{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(115deg,#8b5cf6 0%,#5b8def 55%,#22d3ee 125%);
+  .btn{display:inline-flex;align-items:center;gap:7px;background:linear-gradient(115deg,#8b5cf6 0%,#5b8def 55%,#22d3ee 125%);
     color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:13px 22px;border-radius:999px;
     box-shadow:0 10px 30px rgba(99,102,241,.42);white-space:nowrap;transition:transform .15s,box-shadow .15s}
   .btn:hover{transform:translateY(-1px);box-shadow:0 14px 40px rgba(99,102,241,.6)}
@@ -80,7 +80,7 @@
   .hero{position:relative;overflow:hidden;min-height:90vh;display:flex;align-items:center;padding:104px 0 64px;text-align:center}
   .hero-bg{position:absolute;inset:0;z-index:0;background-size:cover;background-position:center center;opacity:1}
   .hero-scrim{position:absolute;inset:0;z-index:0;background:radial-gradient(50% 42% at 50% 50%,rgba(8,11,18,.5),transparent 72%),linear-gradient(180deg,rgba(8,11,18,.34) 0%,transparent 22%,transparent 60%,rgba(8,11,18,.58) 84%,rgba(8,11,18,.96) 99%,var(--bg))}
-  .hero-h1{font-family:"Satoshi","Inter",sans-serif;font-size:clamp(28px,4.6vw,54px);font-weight:800;letter-spacing:-1px;line-height:1.1;padding-bottom:.08em;white-space:nowrap;margin:0 auto 9px;max-width:none;background:linear-gradient(180deg,#fff,#c7d4ee);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero-h1{font-family:"Satoshi","Inter",sans-serif;font-size:clamp(28px,4.6vw,54px);font-weight:800;letter-spacing:-1px;line-height:1.1;padding-bottom:.08em;white-space:nowrap;margin:0 auto 15px;max-width:none;background:linear-gradient(180deg,#fff,#c7d4ee);-webkit-background-clip:text;background-clip:text;color:transparent}
   .hero-h1 .hl{color:var(--accent-2);-webkit-text-fill-color:var(--accent-2)}
   .hero-logo{height:74px;width:auto;margin:26px auto 28px;display:block;filter:drop-shadow(0 8px 30px rgba(0,0,0,.95))}
   .hero .wrap{position:relative;z-index:1}
@@ -90,14 +90,14 @@
   .hero-banner{max-width:880px;width:100%;height:auto;margin:0 auto 30px;display:block;border-radius:20px;
     border:1px solid rgba(255,255,255,.14);box-shadow:0 40px 100px rgba(0,0,0,.65)}
   .hero-sub{font-size:clamp(17px,2.1vw,20px);color:#e4ebfa;font-weight:500;max-width:680px;margin:0 auto 32px;line-height:1.6;text-shadow:0 2px 16px rgba(0,0,0,.6)}
-  .hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .hero-cta{display:flex;gap:29px;justify-content:center;flex-wrap:wrap}
   /* hero partner strip */
   .partners{max-width:1060px;margin:60px auto 0;padding-top:48px;border-top:1px solid rgba(255,255,255,.12)}
   .partner-tier{text-align:center}
   .gold-tier{margin-top:23px}
   .partner-tier-label{font-size:12.5px;letter-spacing:.3em;text-transform:uppercase;color:rgba(210,220,245,.74);font-weight:700}
   .partner-grid{display:grid;align-items:center;justify-items:center}
-  .partner-grid.platinum{grid-template-columns:repeat(4,minmax(0,1fr));gap:40px 26px;max-width:1040px;margin:8px auto 0}
+  .partner-grid.platinum{grid-template-columns:repeat(4,minmax(0,1fr));gap:40px 4px;max-width:1040px;margin:8px auto 0}
   .partner-grid.gold{grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 0;max-width:388px;margin:30px auto 0}
   .pslot{width:100%;max-width:230px;height:74px;display:flex;align-items:center;justify-content:center}
   .plogo{display:block;width:auto;height:auto;object-fit:contain;opacity:.94;filter:brightness(1.08);transition:opacity .2s}
@@ -252,7 +252,7 @@
   @media(max-width:600px){.ai-wrap{padding:30px}}
   .ai-cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}
   @media(max-width:760px){.ai-cards{grid-template-columns:1fr}}
-  .ai-card{background:rgba(18,27,47,.5);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:28px;box-shadow:0 16px 40px rgba(0,0,0,.3)}
+  .ai-card{background:rgba(18,27,47,.5);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:22px;box-shadow:0 16px 40px rgba(0,0,0,.3)}
   .ai-card h3{font-size:19px;margin:0 0 9px;font-weight:600}
   .ai-card p{margin:0;color:#c2cee6;font-size:14.5px;line-height:1.65}
   .ai-badges{display:flex;flex-wrap:wrap;gap:20px 26px;justify-content:center;margin-top:44px}
@@ -381,7 +381,7 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
   .city-info{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:0 0 clamp(28px,4vw,50px)}
   .city-row{display:flex;align-items:flex-end;justify-content:space-between;gap:28px}
   .city-ev{font-size:13px;letter-spacing:1.6px;text-transform:uppercase;color:var(--accent-2);font-weight:700;margin-bottom:9px;text-shadow:0 2px 10px rgba(0,0,0,.6)}
-  .city-h{font-family:"Satoshi","Inter",sans-serif;font-size:clamp(28px,3.6vw,44px);color:#fff;font-weight:800;margin:0 0 12px;letter-spacing:-.5px;text-shadow:0 3px 18px rgba(0,0,0,.6)}
+  .city-h{font-family:"Satoshi","Inter",sans-serif;font-size:clamp(28px,3.6vw,44px);color:#fff;font-weight:800;margin:0 0 1px;letter-spacing:-.5px;text-shadow:0 3px 18px rgba(0,0,0,.6)}
   .city-d{color:#e6ebf6;font-size:clamp(14.5px,1.3vw,16.5px);max-width:580px;margin:0;line-height:1.55;text-shadow:0 2px 14px rgba(0,0,0,.6)}
   .city-cta{text-align:right;flex:none}
   .city-date{color:#fff;font-weight:700;font-size:21px;margin-bottom:14px;white-space:nowrap;text-shadow:0 2px 12px rgba(0,0,0,.6)}
@@ -482,6 +482,67 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
   header.nav .btn{padding-top:10px!important;padding-bottom:10px!important}
   .btn .ic{transform:translateY(-0.5px)!important}
   .btn .bt{display:inline-block!important;transform:translateY(1px)!important}
+
+  /* ===== batch: hero / buttons / stats / who / AI / sponsor sizing ===== */
+  /* hero: more space below gold partners + slightly stronger divider bar */
+  .gold-tier{margin-bottom:42px!important}
+  .partners{border-top-color:rgba(255,255,255,.19)!important}
+  /* stats: reduce top/bottom padding ~30% (96 -> 67) */
+  .proof-band{padding:67px 0!important}
+  /* who attends: icons +20% except Editors & Post Pros; tighter title/body */
+  .who .ibox .ic{width:34px!important;height:34px!important}
+  .who:nth-child(1) .ibox .ic{width:28px!important;height:28px!important}
+  .who h4{margin:20px 0 0!important}
+  /* AI: bright-white heading + full-bleed image covering entire section */
+  #ai::before{left:50%!important;right:auto!important;transform:translateX(-50%)!important;width:100vw!important;top:0!important;bottom:0!important;background:url(ppw-assets/ai-bg.jpg) center/cover!important;opacity:1!important}
+  .ai-wrap .sec-title{color:#fff!important;-webkit-text-fill-color:#fff!important;background:none!important;text-shadow:0 2px 20px rgba(0,0,0,.85)!important}
+  /* sponsor wall: balance Adobe + Dell against NVIDIA/Maxon */
+  .wall.plat .tile img[alt="Adobe"]{height:46px!important;max-width:180px!important}
+  .wall.plat .tile img[alt="Dell Technologies"]{max-width:185px!important}
+  /* CTA + ghost button text nudged UP 2px; arrow position untouched */
+  .btn .bt{display:inline-block!important;transform:translateY(-2px)!important}
+
+  /* ===== batch 2: headline wrap, hero-sub sizing, AI cards center, sponsor balance, button down 1px ===== */
+  .hero-h1{white-space:normal!important}
+  .hero-sub{font-size:clamp(17px,2.1vw,18px)!important;line-height:1.4!important}
+  .ai-card{text-align:center!important}
+  .wall.plat .tile img[alt="Adobe"]{height:34px!important;max-width:135px!important}
+  .wall.plat .tile img[alt="Dell Technologies"]{transform:translateY(2px)!important}
+  .wall.plat .tile img[alt="Maxon"]{transform:translateY(2px)!important}
+  .wall.gold .tile img[alt="Intel"]{transform:translateX(-15px)!important}
+  .wall.marketing .tile img[alt="ProductionHUB"]{height:56px!important;max-width:220px!important}
+  .wall.marketing .tile img[alt="Ripple Training"]{height:56px!important;max-width:220px!important;transform:translateX(-10px)!important}
+  .btn .bt{transform:translateY(-1px)!important}
+
+  /* ===== batch 3 ===== */
+  .hero-sub{text-wrap:balance!important}
+  .hero-cta{margin-top:15px!important}
+  .partner-grid.gold{margin:14px auto 0!important}
+  .sec-desc{line-height:1.5!important}
+  .city-d{text-wrap:balance!important}
+  .net-eyebrow{font-size:16px!important;letter-spacing:.06em!important;margin-top:21px!important;color:#8ed4e5!important;text-transform:none!important}
+  @media(max-width:620px){.np-br{display:none}}
+  /* sponsor sizing */
+  .wall.plat .tile img{height:67px!important;max-width:250px!important}
+  .wall.plat .tile img[alt="Adobe"]{height:23px!important;max-width:135px!important}
+  .wall.gold .tile img[alt="Intel"]{height:52px!important}
+  /* footer: push link cols right + tighten gap */
+  .foot-inner{grid-template-columns:2.6fr 1fr 1fr!important;gap:26px!important}
+  /* AI: full-width section-level cover, crop dark photo edge */
+  #ai::before{display:none!important}
+  #ai{position:relative;overflow:hidden;background-image:url(ppw-assets/ai-bg.jpg)!important;background-size:auto 132%!important;background-position:center 30%!important;background-repeat:no-repeat!important;padding-bottom:72px!important}
+  .ai-wrap{background:transparent!important;border:0!important;backdrop-filter:none!important;box-shadow:none!important}
+  .nav-links{gap:40px!important}
+  .dd-menu{min-width:300px!important} .dd-menu .c{white-space:nowrap!important}
+  .foot-inner{grid-template-columns:2.9fr 1fr 1fr!important}
+  .wall.plat .tile img[alt="Adobe"]{height:22px!important;max-width:135px!important}
+
+  .proof-grid .proof:nth-child(3) .pn{white-space:nowrap!important;text-wrap:nowrap;font-size:clamp(22px,2.3vw,31px)!important}
+  .sec-desc{margin-top:10px!important}
+  .foot-inner{grid-template-columns:1fr auto auto!important;gap:56px!important}
+  .lb-overlay{position:fixed;inset:0;background:rgba(5,8,16,.86);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;z-index:300;padding:40px;cursor:zoom-out}
+  .lb-overlay.open{display:flex}
+  .lb-overlay img{max-width:min(1000px,92vw);max-height:86vh;border-radius:14px;box-shadow:0 0 0 1px rgba(255,255,255,.14),0 30px 80px rgba(0,0,0,.65),0 0 70px rgba(124,58,237,.35);cursor:default}
 </style>
 </head>
 <body>
@@ -508,14 +569,14 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
       <div class="dd">
         <button class="dd-btn" aria-haspopup="true">Locations <svg class="ic"><use href="#i-chev"/></svg></button>
         <div class="dd-menu" role="menu">
-          <a href="new-york.html" role="menuitem"><span class="lft"><svg class="ic"><use href="#i-pin"/></svg><span class="c">New York</span></span><span class="d">Oct 20–21, 2026</span></a>
+          <a href="new-york.html" role="menuitem"><span class="lft"><svg class="ic"><use href="#i-pin"/></svg><span class="c">New York</span></span><span class="d">Oct 20-21, 2026</span></a>
           <a href="mumbai.html" role="menuitem"><span class="lft"><svg class="ic"><use href="#i-pin"/></svg><span class="c">Mumbai · South Asia</span></span><span class="d">Oct 2026</span></a>
           <a href="vegas.html" role="menuitem"><span class="lft"><svg class="ic"><use href="#i-pin"/></svg><span class="c">Las Vegas</span></span><span class="d">Apr 2027</span></a>
           <a href="london.html" role="menuitem"><span class="lft"><svg class="ic"><use href="#i-pin"/></svg><span class="c">London · Europe</span></span><span class="d">May 2027</span></a>
         </div>
       </div>
       <a href="#attendees">Who Attends</a>
-      <a href="ppw-sponsorships.html">Sponsorships</a>
+      <a href="ppw-sponsorships.html">Sponsorship</a>
     </nav>
   </div>
 </header>
@@ -526,10 +587,10 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
   <div class="wrap">
     <div class="hero-brand"><img class="hero-og" src="ppw-assets/ppw-logo.webp" alt="Post Production World"></div>
     <div class="eyebrow"><span style="color:#ff8a4c">Las&nbsp;Vegas</span> · <span style="color:#5b9dff">New&nbsp;York</span> · <span style="color:#b794f6">London</span> · <span style="color:#43d9b8">Mumbai</span></div>
-    <h1 class="hero-h1">Empowering creatives <span class="hl">globally</span></h1>
-    <p class="hero-sub">The world's leading training conference for video, TV, film, motion graphics, and AI - one marketing platform, four premier markets, all year long.</p>
+    <h1 class="hero-h1">One conference. <span class="hl">Four major markets.</span></h1>
+    <p class="hero-sub">The world's leading training conference for video, TV, film, motion graphics, and AI. Four premier markets, all year long.</p>
     <div class="hero-cta" id="heroCta">
-      <a class="btn gold" href="#locations"><span class="bt">Explore Locations</span> <svg class="ic"><use href="#i-arrow"/></svg></a>
+      <a class="btn gold" href="#locations"><span class="bt">Explore PPW Locations</span> <svg class="ic"><use href="#i-arrow"/></svg></a>
       <a class="btn" href="#attendees" style="background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.45);box-shadow:none;color:#fff"><span class="bt">Who attends</span></a>
     </div>
     <div class="partners">
@@ -558,7 +619,7 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
     <div class="proof-grid">
       <div class="proof"><div class="pn">91%</div><div class="prow"><span class="bar" style="background:linear-gradient(180deg,#ff8a4c,#f472b6)"></span><p class="pc">attendee satisfaction score on content and presenters</p></div></div>
       <div class="proof"><div class="pn">Since 2004</div><div class="prow"><span class="bar" style="background:linear-gradient(180deg,#8b5cf6,#2dd4ff)"></span><p class="pc">a trusted training platform for the industry</p></div></div>
-      <div class="proof"><div class="pn">Tens of<br>Thousands Trained</div><div class="prow"><span class="bar" style="background:linear-gradient(180deg,#f472b6,#2dd4ff)"></span><p class="pc">creators and teams worldwide</p></div></div>
+      <div class="proof"><div class="pn"><span style="display:block;white-space:nowrap">Tens of</span><span style="display:block;white-space:nowrap">Thousands Trained</span></div><div class="prow"><span class="bar" style="background:linear-gradient(180deg,#f472b6,#2dd4ff)"></span><p class="pc">creators and teams worldwide</p></div></div>
     </div>
   </div>
 </div>
@@ -566,20 +627,20 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
 </div>
 
 <section class="block" id="locations" style="padding-bottom:6px;text-align:center">
-  <div class="wrap"><div class="sec-head center" style="margin-bottom:0"><div class="sec-kicker">One marketing platform • four premier markets</div><h2 class="sec-title">2026-2027 Locations</h2></div></div>
+  <div class="wrap"><div class="sec-head center" style="margin-bottom:0"><div class="sec-kicker">One marketing platform • four premier markets</div><h2 class="sec-title">2026 - 2027 Global Locations</h2></div></div>
 </section>
 
 <a class="city-sec" href="new-york.html">
   <div class="city-img" style="background-image:url(ppw-assets/city-nyc-hi.jpg)"></div>
   <div class="city-info"><div class="wrap city-row">
     <div class="city-text"><div class="city-ev">at NAB Show New York</div><h2 class="city-h">Post Production World New York</h2><p class="city-d">East Coast edition — a complete two-day program across post, production, AI, immersive media, and creator workflows.</p></div>
-    <div class="city-cta"><div class="city-date">Oct 20–21, 2026</div><span class="btn"><span class="bt">Explore New York</span> <svg class="ic"><use href="#i-arrow"/></svg></span></div>
+    <div class="city-cta"><div class="city-date">Oct 20-21, 2026</div><span class="btn"><span class="bt">Explore New York</span> <svg class="ic"><use href="#i-arrow"/></svg></span></div>
   </div></div>
 </a>
 <a class="city-sec" href="mumbai.html">
   <div class="city-img" style="background-image:url(ppw-assets/city-mumbai-hi.jpg)"></div>
   <div class="city-info"><div class="wrap city-row">
-    <div class="city-text"><div class="city-ev">at Broadcast India · Mumbai</div><h2 class="city-h">Post Production World South Asia</h2><p class="city-d">A new regional edition bringing PPW’s hands-on production, post, and AI training to one of the fastest-growing media markets.</p></div>
+    <div class="city-text"><div class="city-ev">at Broadcast India · Mumbai</div><h2 class="city-h">Post Production World • South Asia</h2><p class="city-d">A regional event bringing Post Production World Conference to this growing media market.</p></div>
     <div class="city-cta"><div class="city-date">October 2026</div><span class="btn"><span class="bt">Explore South Asia</span> <svg class="ic"><use href="#i-arrow"/></svg></span></div>
   </div></div>
 </a>
@@ -593,7 +654,7 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
 <a class="city-sec" href="london.html">
   <div class="city-img" style="background-image:url(ppw-assets/city-london-hi.jpg)"></div>
   <div class="city-info"><div class="wrap city-row">
-    <div class="city-text"><div class="city-ev">at MPTS · London</div><h2 class="city-h">Post Production World London</h2><p class="city-d">A European training conference built around practical, high-level education for post, broadcast, content creation, and AI workflows.</p></div>
+    <div class="city-text"><div class="city-ev">at MPTS · London</div><h2 class="city-h">Post Production Conference • Europe</h2><p class="city-d">A European training conference built around practical, high-level education for post, broadcast, content creation, and AI workflows.</p></div>
     <div class="city-cta"><div class="city-date">May 2027</div><span class="btn"><span class="bt">Explore Europe</span> <svg class="ic"><use href="#i-arrow"/></svg></span></div>
   </div></div>
 </a>
@@ -602,7 +663,7 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
   <div class="wrap">
     <div class="sec-head center">
       <div class="sec-kicker">Conference Attendees</div>
-      <h2 class="sec-title">Who attends Post Production World</h2>
+      <h2 class="sec-title">Who Attends Post Production World</h2>
       <p class="sec-desc">The editors, artists, producers, and creators who shape what the industry makes — and who come to PPW to sharpen their craft.</p>
     </div>
     <div class="who-grid">
@@ -619,9 +680,9 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
 <section class="block" id="networking">
   <div class="wrap">
     <div class="sec-head center">
-      <div class="sec-kicker">After hours</div>
-      <h2 class="sec-title">The PPW Networking Party</h2>
-      <p class="sec-desc" style="margin-inline:auto">Join us in the evening for the industry's favorite social gathering — build and strengthen connections with creatives from around the world.</p>
+      <h2 class="sec-title">The Post Production World<br class="np-br"> Networking Party</h2>
+      <div class="sec-kicker net-eyebrow">Networking is key in today’s world.</div>
+      <p class="sec-desc" style="margin-inline:auto">Join us in the evening for the industry's favorite social gathering. Build and strengthen connections with creatives and vendors from around the world.</p>
     </div>
 <div class="collage">
       <a class="big" href="ppw-assets/g-net-banner.webp" target="_blank"><img src="ppw-assets/g-net-banner.webp" alt="PPW networking party" loading="lazy"></a>
@@ -722,7 +783,7 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
   <div class="wrap foot-inner">
     <div class="foot-brand">
       <img class="foot-ppw" src="ppw-assets/ppw-logo.webp" alt="Post Production World Conference">
-      <p>The global training platform for media professionals — four locations, one community.</p>
+      <p>The global training platform for media professionals — four premier markets, one marketing platform.</p>
       <a class="fb-link" href="https://www.facebook.com/groups/postproductionworld" target="_blank" rel="noopener"><img src="ppw-assets/fb-group.svg" alt="Join the Facebook Group"></a>
     </div>
     <div class="foot-col">
@@ -736,16 +797,16 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
       <h4>Explore</h4>
       <a href="index.html#attendees">Who attends</a>
       <a href="index.html#ai">AI focus</a>
-      <a href="index.html#networking">Networking</a>
-      <a href="ppw-sponsorships.html">Sponsorships</a>
+      <a href="ppw-sponsorships.html">Sponsorship</a>
     </div>
   </div>
   <div class="wrap foot-bottom">
     <img class="foot-fmc" src="ppw-assets/fmc-logo.webp" alt="Powered by FMC — Future Media Concepts">
-    <div class="small"><strong style="color:var(--ink);font-size:15px">Four locations. One community.</strong><br>Post Production World · powered by Future Media Concepts · © 2026</div>
+    <div class="small">Post Production World · powered by Future Media Concepts · © 2026</div>
   </div>
 </footer>
 
 <script>(function(){try{var els=[].slice.call(document.querySelectorAll("section.block .sec-head,.loc,.who,.fcard,.ai-wrap,.collage,.cta-strip,.pillar,.rcard,.extra,.cmp,.hero-stats"));els.forEach(function(el){el.classList.add("reveal");});function check(){var h=window.innerHeight||800;for(var i=els.length-1;i>=0;i--){if(els[i].getBoundingClientRect().top<h*0.9){els[i].classList.add("in");els.splice(i,1);}}}check();window.addEventListener("scroll",check,{passive:true});window.addEventListener("resize",check);setTimeout(check,250);setTimeout(function(){els.forEach(function(el){el.classList.add("in");});els=[];},2600);}catch(e){}})();</script>
+<script>(function(){var imgs=document.querySelectorAll(".collage a");if(!imgs.length)return;var ov=document.createElement("div");ov.className="lb-overlay";var im=document.createElement("img");ov.appendChild(im);document.body.appendChild(ov);function close(){ov.classList.remove("open");}imgs.forEach(function(a){a.addEventListener("click",function(e){e.preventDefault();im.src=a.getAttribute("href");ov.classList.add("open");});});ov.addEventListener("click",close);document.addEventListener("keydown",function(e){if(e.key==="Escape")close();});})();</script>
 </body>
 </html>

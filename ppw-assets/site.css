@@ -30,7 +30,7 @@ p,.sec-desc,.hero-sub,.desc{text-wrap:pretty}
 header.nav{position:sticky;top:0;z-index:60;background:rgba(8,11,18,.8);backdrop-filter:blur(16px) saturate(1.2);border-bottom:1px solid var(--line)}
 .nav-inner{display:flex;align-items:center;gap:22px;height:86px;max-width:var(--maxw);margin:0 auto;padding:0 24px}
 .nav-logo{height:46px;width:auto;display:block}
-.nav-links{display:flex;gap:30px;margin-left:auto;align-items:center;font-size:14.5px}
+.nav-links{display:flex;gap:40px;margin-left:auto;align-items:center;font-size:14.5px}
 .nav-links a{text-decoration:none;color:var(--ink-dim);font-weight:500;transition:color .15s}
 .nav-links a:hover,.nav-links a.active{color:var(--ink)}
 .dd{position:relative;display:flex;align-items:center}
@@ -50,11 +50,11 @@ header.nav{position:sticky;top:0;z-index:60;background:rgba(8,11,18,.8);backdrop
 .dd-menu .c{font-weight:700;font-size:14px;color:var(--ink)}
 .dd-menu .d{font-size:12.5px;color:var(--ink-faint);white-space:nowrap}
 .dd-menu .all{justify-content:center;color:var(--accent-2);font-weight:700;font-size:13px;margin-top:2px;border-top:1px solid var(--line);border-radius:0 0 11px 11px}
-.btn{display:inline-flex;align-items:center;gap:9px;background:var(--grad);color:#fff;text-decoration:none;font-weight:700;font-size:14px;
+.btn{display:inline-flex;align-items:center;gap:7px;background:var(--grad);color:#fff;text-decoration:none;font-weight:700;font-size:14px;
   padding:13px 22px;border-radius:999px;box-shadow:0 10px 30px rgba(99,102,241,.42);white-space:nowrap;transition:transform .15s,box-shadow .15s}
 .btn:hover{transform:translateY(-1px);box-shadow:0 14px 40px rgba(99,102,241,.6)}
 .btn .ic{width:16px;height:16px}
-.btn.ghost{background:transparent;box-shadow:none;border-color:var(--line-2);color:var(--ink)}
+.btn.ghost{background:transparent;box-shadow:none;border:1.5px solid var(--line-2);color:var(--ink)}
 .btn.ghost:hover{background:rgba(255,255,255,.05);box-shadow:none}
 header.nav .btn{padding:10px 18px;font-size:13.5px;margin-left:10px}
 @media(max-width:900px){.nav-links{display:none}}
@@ -70,15 +70,15 @@ header.nav .btn{padding:10px 18px;font-size:13.5px;margin-left:10px}
 .hero-h1{font-size:clamp(38px,6.5vw,68px);font-weight:800;letter-spacing:-1.4px;line-height:1.12;margin:0 auto 18px;max-width:900px;padding-bottom:.12em;
   background:linear-gradient(180deg,#fff,#c7d4ee);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero-h1 .hl{color:var(--accent-2);-webkit-text-fill-color:var(--accent-2)}
-.hero-sub{font-size:clamp(17px,2.1vw,20px);color:#e4ebfa;font-weight:500;max-width:680px;margin:0 auto 30px;line-height:1.6;text-shadow:0 2px 16px rgba(0,0,0,.6)}
+.hero-sub{font-size:clamp(17px,2.1vw,18px);color:#e4ebfa;font-weight:500;max-width:680px;margin:0 auto 30px;line-height:1.4;text-shadow:0 2px 16px rgba(0,0,0,.6)}
 .hero-meta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:28px}
-.hero-meta span{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:9px 15px;font-size:14px;font-weight:600;backdrop-filter:blur(6px)}
+.hero-meta span{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:9px 18px 11px 17px;font-size:14px;font-weight:600;backdrop-filter:blur(6px)}
 .hero-meta .ic{width:16px;height:16px;color:var(--accent-2)}
 .hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 
 /* sections */
 section.block{padding:106px 0;border-top:1px solid var(--line)}
-.sec-head{margin-bottom:56px;max-width:760px}
+.sec-head{margin-bottom:26px;max-width:760px}
 .sec-head.center{margin-inline:auto;text-align:center}
 .sec-kicker{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent-2);font-weight:700}
 .sec-title{font-size:clamp(28px,4vw,42px);margin-top:18px;font-weight:800;letter-spacing:-.8px;line-height:1.18;padding-bottom:.04em}
@@ -147,16 +147,16 @@ footer .small{color:var(--ink-faint);font-size:13px;line-height:1.6}
   .reveal.in{opacity:1;transform:none}
 
 /* ===== inner edition: clean skyline banner, content below ===== */
-.edition-banner{position:relative;height:clamp(330px,48vh,560px);background-size:cover;background-position:center 36%}
+.edition-banner{position:relative;height:clamp(380px,58vh,640px);background-size:cover;background-position:center 36%}
 .edition-banner::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 0%,transparent 72%,rgba(8,11,18,.42) 88%,rgba(8,11,18,.9) 98%,var(--bg) 100%)}
 .edition-intro{text-align:center;padding:34px 0 6px}
 .edition-intro .wrap{max-width:760px}
 .edition-intro .eyebrow{justify-content:center;margin-bottom:16px;font-size:13px;letter-spacing:2.5px}
 .edition-intro .hero-h1{margin:0 auto 16px}
-.edition-intro .hero-sub{margin:0 auto 26px;color:var(--ink-dim);text-shadow:none;font-weight:400}
+.edition-intro .hero-sub{margin:0 auto 26px}
 .edition-intro .hero-meta{justify-content:center;margin-bottom:26px}
 .edition-intro .hero-cta{justify-content:center}
-@media(max-width:760px){.edition-banner{height:clamp(190px,30vh,280px)}.edition-intro{padding:26px 0 6px}}
+@media(max-width:760px){.edition-banner{height:clamp(240px,40vh,360px)}.edition-intro{padding:26px 0 6px}}
 
 .review-strip{background:rgba(245,196,81,.1);border-bottom:1px solid rgba(245,196,81,.34);color:#f3cd72;font-size:12px;text-align:center;padding:7px 16px;letter-spacing:.2px}
 .review-strip b{color:#ffe6a6}
@@ -165,13 +165,13 @@ footer .small{color:var(--ink-faint);font-size:13px;line-height:1.6}
 
 footer{position:relative;overflow:hidden;border-top:1px solid var(--line);padding:0;margin-top:10px}
 .foot-glow{position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(124,58,237,.16) 55%,rgba(45,130,246,.13));pointer-events:none}
-.foot-inner{position:relative;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;padding:60px 24px 38px;text-align:left}
-.foot-ppw{height:42px;width:auto;margin-bottom:16px;display:block}
+.foot-inner{position:relative;display:grid;grid-template-columns:1fr auto auto;gap:56px;padding:60px 24px 38px;text-align:left}
+.foot-ppw{height:59px;width:auto;margin-bottom:16px;display:block}
 .foot-brand p{color:var(--ink-dim);font-size:14px;line-height:1.6;max-width:330px;margin:0 0 20px}
 .fb-btn{display:inline-flex;align-items:center;gap:10px;background:#1877f2;color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:11px 18px;border-radius:12px;box-shadow:0 10px 26px rgba(24,119,242,.4);transition:transform .15s}
 .fb-btn:hover{transform:translateY(-1px)}
 .fb-btn svg{width:18px;height:18px;fill:#fff}
-.foot-col h4{font-size:12px;letter-spacing:1.6px;text-transform:uppercase;color:var(--ink-faint);margin:6px 0 16px;font-weight:700}
+.foot-col h4{font-size:12px;letter-spacing:1.6px;text-transform:uppercase;color:var(--ink-faint);margin:17px 0 16px;font-weight:700}
 .foot-col a{display:block;color:var(--ink-dim);text-decoration:none;font-size:14px;padding:6px 0}
 .foot-col a:hover{color:var(--ink)}
 .foot-bottom{position:relative;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;border-top:1px solid var(--line);padding:22px 24px 44px}
@@ -192,7 +192,7 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
 .host-badge{font-family:"Satoshi","Inter",sans-serif;font-weight:800;font-size:18px;color:var(--accent-2);flex:none;border:1px solid var(--line-2);border-radius:12px;padding:12px 16px}
 .host-text{flex:1;min-width:260px}
 .host-text h3{font-size:19px;margin:0 0 6px;font-weight:800}
-.host-text p{margin:0;color:var(--ink-dim);font-size:14.5px;line-height:1.55}
+.host-text p{margin:0;color:var(--ink-dim);font-size:14.5px;line-height:1.55;text-wrap:balance}
 @media(max-width:640px){.host-mod{padding:24px}}
 
 
@@ -220,3 +220,15 @@ header.nav .btn{padding-top:8px;padding-bottom:12px}
 header.nav .btn{padding-top:10px;padding-bottom:10px}
 .btn .ic{transform:translateY(-0.5px)}
 .btn .bt{display:inline-block;transform:translateY(1px)}
+
+.btn .bt{display:inline-block;transform:translateY(-2px)}
+
+.edition-intro .hero-sub{font-weight:300}
+.edition-intro{padding-bottom:40px}
+.btn .bt{transform:translateY(-1px)}
+
+.dd-menu{min-width:300px}
+.dd-menu .c{white-space:nowrap}
+.partner-note a{margin-left:7px}
+
+.cta-strip p{text-wrap:balance}

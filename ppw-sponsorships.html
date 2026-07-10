@@ -62,7 +62,7 @@
     box-shadow:0 10px 30px rgba(99,102,241,.42);white-space:nowrap;transition:transform .15s,box-shadow .15s}
   .btn:hover{transform:translateY(-1px);box-shadow:0 14px 40px rgba(99,102,241,.6)}
   .btn .ic{width:16px;height:16px}
-  .btn.ghost{background:transparent;box-shadow:none;border-color:var(--line-2);color:var(--ink)}
+  .btn.ghost{background:transparent;box-shadow:none;border:1.5px solid var(--line-2);color:var(--ink)}
   .btn.ghost:hover{background:rgba(255,255,255,.05);box-shadow:none}
   .btn.gold{background:linear-gradient(115deg,#8b5cf6 0%,#5b8def 55%,#22d3ee 125%);color:#fff;border-color:rgba(255,255,255,.18);box-shadow:0 10px 30px rgba(99,102,241,.42)}
   .btn.gold:hover{box-shadow:0 14px 40px rgba(99,102,241,.6)}
@@ -79,7 +79,7 @@
   h1.title{font-size:clamp(34px,6vw,60px);line-height:1.04;font-weight:800;letter-spacing:-1.4px;max-width:900px;margin:0 auto 22px;
     background:linear-gradient(180deg,#fff,#bcccea);-webkit-background-clip:text;background-clip:text;color:transparent}
   h1.title .hl{color:var(--accent-2);-webkit-text-fill-color:var(--accent-2)}
-  .hero-sub{font-size:clamp(17px,2.1vw,20px);color:#e4ebfa;font-weight:500;max-width:680px;margin:0 auto 30px;line-height:1.6;text-shadow:0 2px 16px rgba(0,0,0,.6)}
+  .hero-sub{font-size:clamp(17px,2.1vw,18px);color:#e4ebfa;font-weight:500;max-width:680px;margin:0 auto 30px;line-height:1.4;text-shadow:0 2px 16px rgba(0,0,0,.6)}
   .hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 
   section.block{padding:76px 0;border-top:1px solid var(--line)}
@@ -211,7 +211,7 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
   .ring-icon svg{width:30px;height:30px;color:#f6cf6a}
   .deck-pillars{display:grid;grid-template-columns:repeat(3,1fr);margin-top:36px;text-align:center}
   .deck-pillars .pillar{padding:0 28px}.deck-pillars .pillar+.pillar{border-left:1px solid rgba(255,255,255,.13)}
-  .deck-pillars h3{font-size:18px;color:#fff;margin:0 0 9px;font-weight:600}.deck-pillars .pillar b{color:#f6cf6a}
+  .deck-pillars h3{font-size:18px;color:#fff;margin:0 0 9px;font-weight:600}.deck-pillars .pillar b{color:#a2e8f4;display:block}
   .deck-pillars p{color:#cdd4ea;font-size:14px;line-height:1.55;margin:0}
   .touch-pills{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:32px}
   .tpill{display:flex;align-items:center;gap:14px;padding:17px 20px;border-radius:13px;color:#fff;box-shadow:0 10px 26px rgba(0,0,0,.25)}
@@ -320,6 +320,8 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
   header.nav .btn{padding-top:10px!important;padding-bottom:10px!important}
   .btn .ic{transform:translateY(-0.5px)!important}
   .btn .bt{display:inline-block!important;transform:translateY(1px)!important}
+  .btn .bt{display:inline-block!important;transform:translateY(-2px)!important}
+  .btn .bt{transform:translateY(-1px)!important}
 </style>
 </head>
 <body>
@@ -347,14 +349,14 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
       <div class="dd">
         <button class="dd-btn" aria-haspopup="true">Locations <svg class="ic"><use href="#i-chev"/></svg></button>
         <div class="dd-menu" role="menu">
-          <a href="new-york.html" role="menuitem"><span class="lft"><svg class="ic"><use href="#i-pin"/></svg><span class="c">New York</span></span><span class="d">Oct 20–21, 2026</span></a>
-          <a href="https://www.abishow.com/postproduction.aspx" target="_blank" rel="noopener" role="menuitem"><span class="lft"><svg class="ic"><use href="#i-pin"/></svg><span class="c">Mumbai · South Asia</span></span><span class="d">Oct 2026</span></a>
+          <a href="new-york.html" role="menuitem"><span class="lft"><svg class="ic"><use href="#i-pin"/></svg><span class="c">New York</span></span><span class="d">Oct 20-21, 2026</span></a>
+          <a href="https://www.abishow.com" target="_blank" rel="noopener" role="menuitem"><span class="lft"><svg class="ic"><use href="#i-pin"/></svg><span class="c">Mumbai · South Asia</span></span><span class="d">Oct 2026</span></a>
           <a href="https://www.nabshow.com/las-vegas/conferences-and-workshops/post-production-world/" target="_blank" rel="noopener" role="menuitem"><span class="lft"><svg class="ic"><use href="#i-pin"/></svg><span class="c">Las Vegas</span></span><span class="d">Apr 2027</span></a>
           <a href="https://www.mediaproductionshow.com/ppw-europe" target="_blank" rel="noopener" role="menuitem"><span class="lft"><svg class="ic"><use href="#i-pin"/></svg><span class="c">London · Europe</span></span><span class="d">May 2027</span></a>
         </div>
       </div>
       <a href="index.html#attendees">Who Attends</a>
-      <a href="ppw-sponsorships.html" class="active">Sponsorships</a>
+      <a href="ppw-sponsorships.html" class="active">Sponsorship</a>
     </nav>
   </div>
 </header>
@@ -542,12 +544,12 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
       <a href="index.html#attendees">Who attends</a>
       <a href="index.html#ai">AI focus</a>
       <a href="index.html#networking">Networking</a>
-      <a href="ppw-sponsorships.html">Sponsorships</a>
+      <a href="ppw-sponsorships.html">Sponsorship</a>
     </div>
   </div>
   <div class="wrap foot-bottom">
     <img class="foot-fmc" src="ppw-assets/fmc-logo.webp" alt="Powered by FMC — Future Media Concepts">
-    <div class="small"><strong style="color:var(--ink);font-size:15px">Four locations. One community.</strong><br>Post Production World · powered by Future Media Concepts · © 2026</div>
+    <div class="small">Post Production World · powered by Future Media Concepts · © 2026</div>
   </div>
 </footer>
 
