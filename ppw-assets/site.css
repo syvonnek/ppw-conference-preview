@@ -207,3 +207,16 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
 
 .btn{line-height:1;padding-top:11px;padding-bottom:15px}
 header.nav .btn{padding-top:9px;padding-bottom:11px}
+
+.btn .ic{transform:translateY(1.5px)}
+
+.btn{padding-top:10px;padding-bottom:16px}
+.btn .ic{transform:translateY(2.5px)}
+header.nav .btn{padding-top:8px;padding-bottom:12px}
+
+.btn .bt{display:inline-block;transform:translateY(1px)}
+
+.btn{padding-top:13px;padding-bottom:13px}
+header.nav .btn{padding-top:10px;padding-bottom:10px}
+.btn .ic{transform:translateY(-0.5px)}
+.btn .bt{display:inline-block;transform:translateY(1px)}
