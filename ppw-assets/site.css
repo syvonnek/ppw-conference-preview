@@ -81,7 +81,7 @@ section.block{padding:106px 0;border-top:1px solid var(--line)}
 .sec-head{margin-bottom:26px;max-width:760px}
 .sec-head.center{margin-inline:auto;text-align:center}
 .sec-kicker{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent-2);font-weight:700}
-.sec-title{font-size:clamp(28px,4vw,42px);margin-top:18px;font-weight:800;letter-spacing:-.8px;line-height:1.18;padding-bottom:.04em}
+.sec-title{font-size:clamp(28px,4vw,42px);margin-top:18px;font-weight:800;letter-spacing:-.8px;line-height:1.24;padding-bottom:.14em}
 .sec-desc{color:var(--ink-dim);margin-top:14px;font-size:16.5px;line-height:1.6}
 .sec-head.center .sec-desc{max-width:600px;margin-inline:auto;text-wrap:balance}
 
@@ -166,7 +166,7 @@ footer .small{color:var(--ink-faint);font-size:13px;line-height:1.6}
 footer{position:relative;overflow:hidden;border-top:1px solid var(--line);padding:0;margin-top:10px}
 .foot-glow{position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(124,58,237,.16) 55%,rgba(45,130,246,.13));pointer-events:none}
 .foot-inner{position:relative;display:grid;grid-template-columns:1fr auto auto;gap:44px;padding:53px 36px 38px;text-align:left}
-.foot-ppw{height:59px;width:auto;margin-bottom:16px;display:block}
+.foot-ppw{height:66px;width:auto;margin-bottom:16px;display:block}
 .foot-brand p{color:var(--ink-dim);font-size:14px;line-height:1.6;max-width:330px;margin:0 0 20px}
 .fb-btn{display:inline-flex;align-items:center;gap:10px;background:#1877f2;color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:11px 18px;border-radius:12px;box-shadow:0 10px 26px rgba(24,119,242,.4);transition:transform .15s}
 .fb-btn:hover{transform:translateY(-1px)}
@@ -232,3 +232,5 @@ header.nav .btn{padding-top:10px;padding-bottom:10px}
 .partner-note a{margin-left:7px}
 
 .cta-strip p{text-wrap:balance}
+
+.foot-inner > .foot-col:nth-child(2){transform:translateX(-20px)}

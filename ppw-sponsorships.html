@@ -86,7 +86,7 @@
   .sec-head{margin-bottom:56px;max-width:760px}
   .sec-head.center{margin-inline:auto;text-align:center}
   .sec-kicker{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent-2);font-weight:700}
-  .sec-title{font-size:clamp(27px,3.8vw,40px);margin-top:12px;font-weight:800;letter-spacing:-.8px;line-height:1.12}
+  .sec-title{font-size:clamp(27px,3.8vw,40px);margin-top:12px;font-weight:800;letter-spacing:-.8px;line-height:1.24;padding-bottom:.14em}
   .sec-desc{color:var(--ink-dim);margin-top:14px;font-size:16.5px;line-height:1.6}
   .sec-head.center .sec-desc{max-width:600px;margin-inline:auto;text-wrap:balance}
 
@@ -132,9 +132,11 @@
   .cmp-note{font-size:13px;color:var(--ink-faint);margin-top:16px;text-align:center;line-height:1.6}
 
   /* extras */
-  .extras{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .extras{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
   @media(max-width:820px){.extras{grid-template-columns:1fr}}
-  .extra{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:26px}
+  .extra{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:0;overflow:hidden}
+  .extra-img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+  .extra-body{padding:26px 28px 30px}
   .extra .ibox{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,rgba(246,207,106,.16),rgba(246,207,106,.05));border:1px solid rgba(246,207,106,.3);color:var(--gold)}
   .extra .ibox .ic{width:22px;height:22px}
   .extra h3{font-size:16.5px;margin:16px 0 7px;font-weight:700}
@@ -245,7 +247,7 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
   .deck-foot{margin-top:36px;font-size:15.5px}
   .cmp th,.cmp td{padding:17px 18px!important}
   .extras{gap:18px}
-  .extra{padding:32px!important}
+  .extra{padding:0!important}
   .extra .ibox{width:56px!important;height:56px!important;border-radius:15px!important}
   .extra .ibox .ic{width:27px!important;height:27px!important}
   .extra h3{font-size:18px!important;margin-top:16px!important}
@@ -265,7 +267,8 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
   .bonus .ic{width:42px;height:42px}.bonus h4{font-size:17px}.bonus p{font-size:13.6px}
   .deck-foot{margin-top:42px}
   .extras{gap:22px;margin-top:8px}
-  .extra{padding:38px 30px!important;text-align:center}
+  .extra{padding:0!important;text-align:center}
+  .extra-body{padding:30px 32px 34px!important}
   .extra .ibox{width:62px!important;height:62px!important;margin:0 auto 4px!important;border-radius:16px!important}
   .extra .ibox .ic{width:30px!important;height:30px!important}
   .extra h3{font-size:18px!important;margin-top:18px!important}
@@ -322,6 +325,18 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
   .btn .bt{display:inline-block!important;transform:translateY(1px)!important}
   .btn .bt{display:inline-block!important;transform:translateY(-2px)!important}
   .btn .bt{transform:translateY(-1px)!important}
+  .deck-a .deck-bg{background-image:url(ppw-assets/conf-a.webp)!important;opacity:.32!important}
+  .deck-b .deck-bg{background-image:url(ppw-assets/conf-b.webp)!important;opacity:.30!important;background-position:center!important}
+  .deck-c .deck-bg{background-image:url(ppw-assets/conf-c.webp)!important;opacity:.30!important}
+  .deck-d .deck-bg{background-image:url(ppw-assets/conf-d.webp)!important;opacity:.30!important}
+  /* more breathing room on every section */
+  .block{padding-top:118px!important;padding-bottom:118px!important}
+  .deck-sec{padding-top:126px!important;padding-bottom:126px!important}
+  /* topic-relevant artwork, darker + subdued */
+  .deck-a .deck-bg{background-image:url(ppw-assets/globe-map.webp)!important;background-size:cover!important;background-position:center 60%!important;opacity:.20!important}
+  .deck-b .deck-bg{background-image:url(ppw-assets/deck-abstract.webp)!important;background-size:cover!important;background-position:center!important;opacity:.22!important}
+  .deck-c .deck-bg{background-image:url(ppw-assets/conf-c.webp)!important;background-size:cover!important;opacity:.16!important;filter:saturate(.8)}
+  .deck-d .deck-bg{background-image:url(ppw-assets/deck-arc.webp)!important;background-size:cover!important;opacity:.20!important}
 </style>
 </head>
 <body>
@@ -497,14 +512,20 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
     </div>
     <div class="extras">
       <div class="extra">
-        <div class="ibox"><svg class="ic"><use href="#i-tools"/></svg></div>
-        <h3>PPW Field Workshops</h3>
-        <p>Hands-on, off-site training sessions give sponsors a unique, intimate environment to showcase gear and engage attendees one-on-one.</p>
+        <img class="extra-img" src="ppw-assets/extra-field.webp" alt="PPW Field Workshop" loading="lazy">
+        <div class="extra-body">
+          <div class="ibox"><svg class="ic"><use href="#i-tools"/></svg></div>
+          <h3>PPW Field Workshops</h3>
+          <p>Hands-on, off-site training sessions give sponsors a unique, intimate environment to showcase gear and engage attendees one-on-one.</p>
+        </div>
       </div>
       <div class="extra">
-        <div class="ibox"><svg class="ic"><use href="#i-party"/></svg></div>
-        <h3>The Annual Networking Party</h3>
-        <p>Celebrating connection and collaboration — a premium moment to align your brand with the community's biggest night.</p>
+        <img class="extra-img" src="ppw-assets/extra-party.webp" alt="PPW Networking Party" loading="lazy">
+        <div class="extra-body">
+          <div class="ibox"><svg class="ic"><use href="#i-party"/></svg></div>
+          <h3>The Annual Networking Party</h3>
+          <p>Celebrating connection and collaboration — a premium moment to align your brand with the community's biggest night.</p>
+        </div>
       </div>
       
     </div>

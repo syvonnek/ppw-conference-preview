@@ -25,7 +25,7 @@
   .mq-card{flex:0 0 300px;background:linear-gradient(170deg,var(--panel-2),var(--panel));border:1px solid var(--line);border-radius:16px;padding:22px;text-align:left}
   .mq-card p{color:var(--ink);font-size:14.5px;line-height:1.55;margin:0 0 12px}
   .mq-card .attr{color:var(--ink-faint);font-size:12px;font-weight:600;letter-spacing:.03em}
-  @media(prefers-reduced-motion:reduce){.marquee-track{animation:none;flex-wrap:wrap;width:auto;justify-content:center}}
+  @media(prefers-reduced-motion:reduce){.marquee-track{animation:none;flex-wrap:wrap;width:auto;justify-content:center}.mq-dup{display:none}.marquee{-webkit-mask-image:none;mask-image:none}}
   /* party sponsor */
   .party-spon{display:flex;align-items:center;justify-content:center;gap:0px;margin:22px auto 0;color:var(--ink-faint);font-size:12px;letter-spacing:.04em}
   .party-spon img{height:22px;width:auto;opacity:.95}
@@ -49,6 +49,9 @@
   .lb-overlay{position:fixed;inset:0;background:rgba(5,8,16,.86);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;z-index:300;padding:40px;cursor:zoom-out}
   .lb-overlay.open{display:flex}
   .lb-overlay img{max-width:min(1000px,92vw);max-height:86vh;border-radius:14px;box-shadow:0 0 0 1px rgba(255,255,255,.14),0 30px 80px rgba(0,0,0,.65),0 0 70px rgba(124,58,237,.35);cursor:default}
+  .photo-shot{display:block;aspect-ratio:4/3;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+  .photo-shot img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s}
+  .photo-shot:hover img{transform:scale(1.05)}
 </style>
 </head>
 <body>
@@ -150,18 +153,25 @@
       </div>
       <div class="marquee">
         <div class="marquee-track">
-          <div class="mq-card"><p>"The best two days of training I do all year. I always leave with something I use the next week."</p><div class="attr">PPW Las Vegas Attendee</div></div>
-          <div class="mq-card"><p>"World-class instructors and real, hands-on sessions — not just slideware. Worth every minute."</p><div class="attr">Post-Production Editor</div></div>
-          <div class="mq-card"><p>"The AI track completely changed how our team approaches post. Game-changing."</p><div class="attr">Motion &amp; VFX Artist</div></div>
-          <div class="mq-card"><p>"I've attended for years and it keeps getting better. The community alone is worth it."</p><div class="attr">Broadcast Producer</div></div>
-          <div class="mq-card"><p>"The best two days of training I do all year. I always leave with something I use the next week."</p><div class="attr">PPW Las Vegas Attendee</div></div>
-          <div class="mq-card"><p>"World-class instructors and real, hands-on sessions — not just slideware. Worth every minute."</p><div class="attr">Post-Production Editor</div></div>
-          <div class="mq-card"><p>"The AI track completely changed how our team approaches post. Game-changing."</p><div class="attr">Motion &amp; VFX Artist</div></div>
-          <div class="mq-card"><p>"I've attended for years and it keeps getting better. The community alone is worth it."</p><div class="attr">Broadcast Producer</div></div>
+          <div class="mq-card"><p>"This class alone will help pay for the conference over the next year. Excellent instructor, content and value!"</p><div class="attr">AI Filmmaking session · PPW Las Vegas 2026</div></div>
+          <div class="mq-card"><p>"One of the best sessions that I attended at Post Production World — super useful information that was all new to me."</p><div class="attr">Production-Safe AI session · PPW Las Vegas 2026</div></div>
+          <div class="mq-card"><p>"Probably the single most informative and insightful session so far at NAB. Practical and inspiring session."</p><div class="attr">Corporate Production session · PPW Las Vegas 2026</div></div>
+          <div class="mq-card"><p>"Amazing shortcuts. Most useful session of my whole NAB course load."</p><div class="attr">Premiere Workflow session · PPW Las Vegas 2026</div></div>
+          <div class="mq-card"><p>"He gave us actionable tips and tools that I’ll use in my production workflow right away."</p><div class="attr">AI &amp; Motion Graphics session · PPW Las Vegas 2026</div></div>
+          <div class="mq-card"><p>"Great at making boring things fun — educational for all levels. My coworker is new to GFX whereas I have a decade under my belt, and we both came away feeling like we learned something new."</p><div class="attr">Typography for Video session · PPW Las Vegas 2026</div></div>
+          <div class="mq-card"><p>"The most informative session I’ve been to so far. Valuable info."</p><div class="attr">Colour Management session · PPW Las Vegas 2026</div></div>
+          <div class="mq-card"><p>"This was the reason for coming!!!"</p><div class="attr">Staying Relevant in the Age of AI · PPW Las Vegas 2026</div></div>
+          <div class="mq-card mq-dup" aria-hidden="true"><p>"This class alone will help pay for the conference over the next year. Excellent instructor, content and value!"</p><div class="attr">AI Filmmaking session · PPW Las Vegas 2026</div></div>
+          <div class="mq-card mq-dup" aria-hidden="true"><p>"One of the best sessions that I attended at Post Production World — super useful information that was all new to me."</p><div class="attr">Production-Safe AI session · PPW Las Vegas 2026</div></div>
+          <div class="mq-card mq-dup" aria-hidden="true"><p>"Probably the single most informative and insightful session so far at NAB. Practical and inspiring session."</p><div class="attr">Corporate Production session · PPW Las Vegas 2026</div></div>
+          <div class="mq-card mq-dup" aria-hidden="true"><p>"Amazing shortcuts. Most useful session of my whole NAB course load."</p><div class="attr">Premiere Workflow session · PPW Las Vegas 2026</div></div>
+          <div class="mq-card mq-dup" aria-hidden="true"><p>"He gave us actionable tips and tools that I’ll use in my production workflow right away."</p><div class="attr">AI &amp; Motion Graphics session · PPW Las Vegas 2026</div></div>
+          <div class="mq-card mq-dup" aria-hidden="true"><p>"Great at making boring things fun — educational for all levels. My coworker is new to GFX whereas I have a decade under my belt, and we both came away feeling like we learned something new."</p><div class="attr">Typography for Video session · PPW Las Vegas 2026</div></div>
+          <div class="mq-card mq-dup" aria-hidden="true"><p>"The most informative session I’ve been to so far. Valuable info."</p><div class="attr">Colour Management session · PPW Las Vegas 2026</div></div>
+          <div class="mq-card mq-dup" aria-hidden="true"><p>"This was the reason for coming!!!"</p><div class="attr">Staying Relevant in the Age of AI · PPW Las Vegas 2026</div></div>
         </div>
       </div>
     </div>
-    <p class="partner-note" style="text-align:center;margin-top:22px">Sample testimonials — replace with verified attendee quotes.</p>
   </div>
 </section>
 
@@ -170,11 +180,19 @@
     <div class="sec-head center"><div class="sec-kicker">After hours</div><h2 class="sec-title">The Post Production World Networking Party</h2>
       <p class="sec-desc" style="margin-inline:auto">Join us in the evening for the industry's favorite social gathering. Build and strengthen connections with creatives and vendors from around the world.</p></div>
     <div class="collage">
-      <a class="big" href="ppw-assets/g-net-banner.webp" target="_blank"><img src="ppw-assets/g-net-banner.webp" alt="PPW networking party" loading="lazy"></a>
-      <a href="ppw-assets/g-net-04.webp" target="_blank"><img src="ppw-assets/g-net-04.webp" alt="PPW networking party" loading="lazy"></a>
-      <a href="ppw-assets/g-net-06.webp" target="_blank"><img src="ppw-assets/g-net-06.webp" alt="PPW networking party" loading="lazy"></a>
-      <a href="ppw-assets/g-net-08.webp" target="_blank"><img src="ppw-assets/g-net-08.webp" alt="PPW networking party" loading="lazy"></a>
-      <a href="ppw-assets/g-net-13.webp" target="_blank"><img src="ppw-assets/g-net-13.webp" alt="PPW networking party" loading="lazy"></a>
+      <a class="big" href="ppw-assets/pty-026.webp" target="_blank"><img src="ppw-assets/pty-026.webp" alt="PPW Las Vegas networking party" loading="lazy"></a>
+      <a href="ppw-assets/pty-030.webp" target="_blank"><img src="ppw-assets/pty-030.webp" alt="PPW Las Vegas networking party" loading="lazy"></a>
+      <a href="ppw-assets/pty-027.webp" target="_blank"><img src="ppw-assets/pty-027.webp" alt="PPW Las Vegas networking party" loading="lazy"></a>
+      <a href="ppw-assets/pty-033.webp" target="_blank"><img src="ppw-assets/pty-033.webp" alt="PPW Las Vegas networking party" loading="lazy"></a>
+      <a href="ppw-assets/pty-029.webp" target="_blank"><img src="ppw-assets/pty-029.webp" alt="PPW Las Vegas networking party" loading="lazy"></a>
+      <a href="ppw-assets/pty-031.webp" target="_blank"><img src="ppw-assets/pty-031.webp" alt="PPW Las Vegas networking party" loading="lazy"></a>
+      <a href="ppw-assets/pty-025.webp" target="_blank"><img src="ppw-assets/pty-025.webp" alt="PPW Las Vegas networking party" loading="lazy"></a>
+      <a href="ppw-assets/pty-115.webp" target="_blank"><img src="ppw-assets/pty-115.webp" alt="PPW Las Vegas networking party" loading="lazy"></a>
+      <a href="ppw-assets/pty-118.webp" target="_blank"><img src="ppw-assets/pty-118.webp" alt="PPW Las Vegas networking party" loading="lazy"></a>
+      <a href="ppw-assets/pty-032.webp" target="_blank"><img src="ppw-assets/pty-032.webp" alt="PPW Las Vegas networking party" loading="lazy"></a>
+      <a href="ppw-assets/pty-028.webp" target="_blank"><img src="ppw-assets/pty-028.webp" alt="PPW Las Vegas networking party" loading="lazy"></a>
+      <a href="ppw-assets/pty-117.webp" target="_blank"><img src="ppw-assets/pty-117.webp" alt="PPW Las Vegas networking party" loading="lazy"></a>
+      <a href="ppw-assets/pty-049.webp" target="_blank"><img src="ppw-assets/pty-049.webp" alt="PPW Las Vegas networking party" loading="lazy"></a>
     </div>
     <div class="party-spon">Sponsored by <img src="ppw-assets/spon-adobe.webp" alt="Adobe"></div>
   </div>
@@ -184,12 +202,12 @@
   <div class="wrap">
     <div class="sec-head center"><div class="sec-kicker">From past conferences</div><h2 class="sec-title">On the floor at PPW Las Vegas</h2></div>
     <div class="photo-grid">
-      <div class="photo-ph"><svg><use href="#i-cam"/></svg><span>Photo coming soon</span></div>
-      <div class="photo-ph"><svg><use href="#i-cam"/></svg><span>Photo coming soon</span></div>
-      <div class="photo-ph"><svg><use href="#i-cam"/></svg><span>Photo coming soon</span></div>
-      <div class="photo-ph"><svg><use href="#i-cam"/></svg><span>Photo coming soon</span></div>
-      <div class="photo-ph"><svg><use href="#i-cam"/></svg><span>Photo coming soon</span></div>
-      <div class="photo-ph"><svg><use href="#i-cam"/></svg><span>Photo coming soon</span></div>
+      <a class="photo-shot" href="ppw-assets/lab-105.webp" target="_blank"><img src="ppw-assets/lab-105.webp" alt="PPW Las Vegas session" loading="lazy"></a>
+      <a class="photo-shot" href="ppw-assets/lab-110.webp" target="_blank"><img src="ppw-assets/lab-110.webp" alt="PPW Las Vegas session" loading="lazy"></a>
+      <a class="photo-shot" href="ppw-assets/lab-112.webp" target="_blank"><img src="ppw-assets/lab-112.webp" alt="PPW Las Vegas session" loading="lazy"></a>
+      <a class="photo-shot" href="ppw-assets/lab-106.webp" target="_blank"><img src="ppw-assets/lab-106.webp" alt="PPW Las Vegas session" loading="lazy"></a>
+      <a class="photo-shot" href="ppw-assets/lab-113.webp" target="_blank"><img src="ppw-assets/lab-113.webp" alt="PPW Las Vegas session" loading="lazy"></a>
+      <a class="photo-shot" href="ppw-assets/lab-108.webp" target="_blank"><img src="ppw-assets/lab-108.webp" alt="PPW Las Vegas session" loading="lazy"></a>
     </div>
   </div>
 </section>
@@ -275,6 +293,6 @@
   </div>
 </footer>
 <script>(function(){try{var els=[].slice.call(document.querySelectorAll("section.block .sec-head,.loc,.who,.fcard,.track-chip,.sat-wrap,.collage,.photo-ph,.pricing-card,.host-mod,.cta-strip,.partner-strip"));els.forEach(function(el){el.classList.add("reveal");});function check(){var h=window.innerHeight||800;for(var i=els.length-1;i>=0;i--){if(els[i].getBoundingClientRect().top<h*0.9){els[i].classList.add("in");els.splice(i,1);}}}check();window.addEventListener("scroll",check,{passive:true});window.addEventListener("resize",check);setTimeout(check,250);setTimeout(function(){els.forEach(function(el){el.classList.add("in");});els=[];},2600);}catch(e){}})();</script>
-<script>(function(){var imgs=document.querySelectorAll(".collage a");if(!imgs.length)return;var ov=document.createElement("div");ov.className="lb-overlay";var im=document.createElement("img");ov.appendChild(im);document.body.appendChild(ov);function close(){ov.classList.remove("open");}imgs.forEach(function(a){a.addEventListener("click",function(e){e.preventDefault();im.src=a.getAttribute("href");ov.classList.add("open");});});ov.addEventListener("click",close);document.addEventListener("keydown",function(e){if(e.key==="Escape")close();});})();</script>
+<script>(function(){var imgs=document.querySelectorAll(".collage a, .photo-shot");if(!imgs.length)return;var ov=document.createElement("div");ov.className="lb-overlay";var im=document.createElement("img");ov.appendChild(im);document.body.appendChild(ov);function close(){ov.classList.remove("open");}imgs.forEach(function(a){a.addEventListener("click",function(e){e.preventDefault();im.src=a.getAttribute("href");ov.classList.add("open");});});ov.addEventListener("click",close);document.addEventListener("keydown",function(e){if(e.key==="Escape")close();});})();</script>
 </body>
 </html>

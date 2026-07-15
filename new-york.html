@@ -342,6 +342,12 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
   .btn .bt{display:inline-block!important;transform:translateY(1px)!important}
   .btn .bt{display:inline-block!important;transform:translateY(-2px)!important}
   .btn .bt{transform:translateY(-1px)!important}
+  #sponsors .partner-strip{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:26px 46px;margin-inline:auto}
+  #sponsors .partner-strip img{opacity:.94;object-fit:contain;width:auto}
+  #sponsors .tier-label{text-align:center;font-size:12.5px;letter-spacing:2px;text-transform:uppercase;color:var(--ink-faint);font-weight:700;margin:52px 0 26px}
+  #sponsors .sec-head{margin-bottom:14px;text-align:center;max-width:760px;margin-left:auto;margin-right:auto}
+  #sponsors .partner-note{text-align:center;color:var(--ink-faint);font-size:13.5px;margin-top:46px}
+  #sponsors .partner-note a{margin-left:7px;color:var(--accent-2);text-decoration:none;font-weight:600}
 </style>
 </head>
 <!-- DATE-DISCREPANCY (internal): PPW uses Oct 20-21, 2026; NAB Show NY public site lists Oct 21-22, 2026. Preserving PPW dates pending source-of-truth confirmation. -->
@@ -438,22 +444,27 @@ footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
 
 <section class="block" id="sponsors">
   <div class="wrap">
-    <div class="sec-head">
+    <div class="sec-head center">
       <div class="sec-kicker">Backed by the best</div>
       <h2 class="sec-title">2026 Sponsors</h2>
     </div>
-    <div class="tier">
-      <h4>Platinum</h4>
-      <div class="logos"><span class="logo plat">Adobe</span><span class="logo plat">Maxon</span></div>
+    <div class="tier-label">Platinum</div>
+    <div class="partner-strip">
+      <img src="ppw-assets/spon-adobe.webp" alt="Adobe" style="height:36px">
+      <img src="ppw-assets/spon-maxon.webp" alt="Maxon" style="height:44px">
     </div>
-    <div class="tier">
-      <h4>Gold</h4>
-      <div class="logos"><span class="logo">Blackmagic Design</span></div>
+    <div class="tier-label">Gold</div>
+    <div class="partner-strip">
+      <img src="ppw-assets/spon-bmd-ko.webp" alt="Blackmagic Design" style="height:40px">
     </div>
-    <div class="tier">
-      <h4>Tabletop</h4>
-      <div class="logos"><span class="logo">AMD</span><span class="logo">Atomos</span><span class="logo">HP</span><span class="logo">Fujifilm</span></div>
+    <div class="tier-label">Tabletop</div>
+    <div class="partner-strip">
+      <img src="ppw-assets/ko-amd.webp" alt="AMD" style="height:27px">
+      <img src="ppw-assets/ko-atomos.webp" alt="Atomos" style="height:34px">
+      <img src="ppw-assets/ko-hp.webp" alt="HP" style="height:34px">
+      <img src="ppw-assets/ko-fujifilm.webp" alt="Fujifilm" style="height:24px">
     </div>
+    <p class="partner-note">A selection of PPW's global partners. <a href="ppw-sponsorships.html">Explore sponsorship &rarr;</a></p>
   </div>
 </section>
 
