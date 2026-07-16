@@ -53,8 +53,8 @@
   /* ---------- hero ---------- */
   .hero{position:relative;overflow:hidden;min-height:90vh;display:flex;align-items:center;padding:104px 0 64px;text-align:center}
   .hero-bg{position:absolute;inset:0;z-index:0;background-size:cover;background-position:center center;opacity:1}
-  .hero-scrim{position:absolute;inset:0;z-index:0;background:radial-gradient(50% 42% at 50% 50%,rgba(8,11,18,.5),transparent 72%),linear-gradient(180deg,rgba(8,11,18,.34) 0%,transparent 22%,transparent 60%,rgba(8,11,18,.58) 84%,rgba(8,11,18,.96) 99%,var(--bg))}
-  .hero-h1 .hl{color:var(--accent-2);-webkit-text-fill-color:var(--accent-2)}
+  .hero-scrim{position:absolute;inset:0;z-index:0;background:radial-gradient(110% 144% at 39% 50%,rgba(8,11,18,.5),transparent 127%),linear-gradient(180deg,rgba(8,11,18,.34) 0%,transparent 22%,transparent 60%,rgba(8,11,18,.58) 84%,rgba(8,11,18,.96) 99%,var(--bg))}
+  .hero-h1 .hl{color:#bef1ff;-webkit-text-fill-color:#93c7ff}
   .hero-logo{height:74px;width:auto;margin:26px auto 28px;display:block;filter:drop-shadow(0 8px 30px rgba(0,0,0,.95))}
   .hero .wrap{position:relative;z-index:1}
   .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:14.5px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-2);font-weight:700;margin-bottom:24px;text-shadow:0 2px 10px rgba(0,0,0,.5)}
@@ -129,7 +129,7 @@
   /* ---------- who attends ---------- */
   .who-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
   @media(max-width:780px){.who-grid{grid-template-columns:1fr}}
-  .who{background:linear-gradient(170deg,var(--panel-2),var(--panel));border:1px solid var(--line);border-radius:18px;padding:30px;transition:border-color .18s,transform .18s}
+  .who{background:linear-gradient(170deg,var(--panel-2),var(--panel));border:1px solid var(--line);border-radius:18px;padding:30px;transition:border-color .18s,transform .18s;text-align:center;display:flex;flex-direction:column;align-items:center}
   .who:hover{border-color:var(--line-2);transform:translateY(-4px)}
   .who .ibox{width:58px;height:58px;border-radius:16px;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,rgba(45,212,255,.22),rgba(59,130,246,.10));border:1px solid var(--line-2);color:var(--accent-2);box-shadow:0 8px 24px rgba(45,130,246,.16)}
   .who:nth-child(2) .ibox{background:linear-gradient(160deg,rgba(167,139,250,.26),rgba(167,139,250,.08));color:#b794f6}
@@ -206,14 +206,14 @@
   .review-strip b{color:#ffe6a6}
   .review-flag{max-width:var(--maxw);margin:18px auto 0;padding:10px 16px;font-size:12.5px;line-height:1.5;color:#f3cd72;background:rgba(245,196,81,.07);border:1px dashed rgba(245,196,81,.4);border-radius:10px}
   .review-flag b{color:#ffe6a6}
-  .spon-bridge{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap;background:linear-gradient(160deg,rgba(124,58,237,.14),rgba(45,130,246,.05));border:1px solid var(--line-2);border-radius:20px;padding:30px 38px}
-  .spon-bridge .sb-h{font-family:"Satoshi","Inter",sans-serif;font-size:23px;font-weight:800;margin:8px 0 8px;letter-spacing:-.4px}
+  .spon-bridge{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap;background:linear-gradient(160deg,rgba(124,58,237,.14),rgba(45,130,246,.05));border:1px solid var(--line-2);border-radius:20px;padding:30px 49px}
+  .spon-bridge .sb-h{font-family:"Satoshi","Inter",sans-serif;font-size:25px;font-weight:800;margin:8px 0 6px;letter-spacing:-.4px}
   @media(max-width:700px){.spon-bridge{padding:26px 24px}}
   footer{text-align:center;position:relative;overflow:hidden;border-top:1px solid var(--line);padding:0;margin-top:10px}
   .foot-glow{position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(124,58,237,.16) 55%,rgba(45,130,246,.13));pointer-events:none}
   .foot-inner{position:relative;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;padding:60px 24px 38px;text-align:left}
-  .foot-ppw{height:66px;width:auto;margin-bottom:16px;display:block}
-  .foot-brand p{color:var(--ink-dim);font-size:14px;line-height:1.6;max-width:330px;margin:0 0 20px}
+  .foot-ppw{height:68px;width:auto;margin-bottom:13px;display:block}
+  .foot-brand p{color:#ffffff;font-size:15px;line-height:1.4;max-width:340px;margin:0 0 20px}
   .fb-btn{display:inline-flex;align-items:center;gap:10px;background:#1877f2;color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:11px 18px;border-radius:12px;box-shadow:0 10px 26px rgba(24,119,242,.4);transition:transform .15s}
   .fb-btn:hover{transform:translateY(-1px)}
   .fb-btn svg{width:18px;height:18px;fill:#fff}
@@ -221,7 +221,7 @@
   .foot-col a{display:block;color:var(--ink-dim);text-decoration:none;font-size:14px;padding:6px 0}
   .foot-col a:hover{color:var(--ink)}
   .foot-bottom{position:relative;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;border-top:1px solid var(--line);padding:22px 36px 44px}
-  .foot-fmc{height:24px;width:auto;opacity:.9}
+  .foot-fmc{height:26px;width:auto;opacity:.9;padding-left:9px}
   footer .small{color:var(--ink-faint);font-size:12.5px;line-height:1.5}
   @media(max-width:760px){.foot-inner{grid-template-columns:1fr 1fr;gap:30px;padding:46px 22px 30px}.foot-brand{grid-column:1/-1}}
   /* comparison labels */
@@ -261,9 +261,9 @@
   .nb-fmc{height:20px;width:auto;display:block}
   @media(max-width:600px){.nb-by{display:none}.nb-ppw{height:40px}.nb-fmc{height:17px}}
   .fb-link{display:inline-block}
-  .fb-link img{width:330px;max-width:100%;height:auto;display:block;border-radius:8px}
+  .fb-link img{width:328px;max-width:100%;height:auto;display:block;border-radius:8px}
   .spon-bridge .sb-text{flex:1 1 440px;max-width:660px}
-  .spon-bridge p{margin:0;color:var(--ink-dim);font-size:15px;line-height:1.55;text-wrap:pretty}
+  .spon-bridge p{margin:0;color:var(--ink-dim);font-size:17px;line-height:1.45;text-wrap:pretty}
   .upcoming{position:relative;overflow:hidden}
   .up-bg{position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,#251b50,#191540)}
   .up-bg::after{content:"";position:absolute;inset:0;background:url(ppw-assets/global-map.webp) center/cover;opacity:.18}
@@ -296,12 +296,12 @@
   @media(max-width:780px){.city-sec{height:clamp(360px,62vh,520px)}.city-row{flex-direction:column;align-items:flex-start;gap:16px}.city-cta{text-align:left}}
   /* premium spacing pass */
   section.block{border-top:1px solid var(--line);position:relative;padding:112px 0}
-  .light-sec,#ai{padding:74px 0 84px}
+  .light-sec,#ai{padding:54px 0 84px}
   .sec-head{max-width:740px;margin-bottom:58px}
-  .sec-kicker{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent-2);font-weight:700;display:inline-block;margin-bottom:6px}
+  .sec-kicker{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent-2);font-weight:700;display:inline-block;margin-bottom:0px}
   .sec-title{font-size:clamp(28px,4vw,42px);font-weight:800;letter-spacing:-.8px;line-height:1.24;padding-bottom:.14em;background:linear-gradient(180deg,#fff,#c9d5ee);-webkit-background-clip:text;background-clip:text;color:transparent;margin-top:16px}
   .city-sec{border-top:0}
-  #locations{padding:120px 0 28px}
+  #locations{padding:40px 0 28px;min-height:auto}
   .cards3,.who-grid{gap:22px}
   .hero-brand{display:flex;flex-direction:column;align-items:center;gap:12px;margin:0 auto 22px}
   .hero-og{height:85px;width:auto;filter:drop-shadow(0 8px 28px rgba(0,0,0,.85))}
@@ -354,7 +354,7 @@
   .pslot .logo-maxon{transform:translateX(-10px)!important}
   .proof .bar{flex:none;width:4px;border-radius:3px;align-self:stretch;display:none!important}
   #heroCta .btn{transform:scale(1.05);transform-origin:center}
-  .btn{display:inline-flex;align-items:center;gap:7px;background:linear-gradient(115deg,#8b5cf6 0%,#5b8def 55%,#22d3ee 125%);color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:13px 22px;border-radius:999px;box-shadow:0 10px 30px rgba(99,102,241,.42);white-space:nowrap;transition:transform .15s,box-shadow .15s;line-height:1;padding-top:13px!important;padding-bottom:13px!important}
+  .btn{display:inline-flex;align-items:center;gap:7px;background:linear-gradient(115deg,#8b5cf6 0%,#5b8def 55%,#22d3ee 125%);color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:14px 29px;border-radius:999px;box-shadow:0 10px 30px rgba(99,102,241,.42);white-space:nowrap;transition:transform .15s,box-shadow .15s;line-height:1;padding-top:14px!important;padding-bottom:13px!important}
   header.nav .btn{padding:10px 18px;font-size:13.5px;margin-left:10px;padding-top:10px!important;padding-bottom:10px!important}
   .btn .ic{width:16px;height:16px;transform:translateY(-0.5px)!important}
   /* ===== batch: hero / buttons / stats / who / AI / sponsor sizing ===== */
@@ -362,7 +362,7 @@
   .gold-tier{margin-top:23px;margin-bottom:42px!important}
   .partners{max-width:1060px;margin:60px auto 0;padding-top:48px;border-top:1px solid rgba(255,255,255,.12);border-top-color:rgba(255,255,255,.25)!important}
   /* stats: reduce top/bottom padding ~30% (96 -> 67) */
-  .proof-band{clip-path:none!important;background:transparent!important;position:relative;z-index:2;margin:0!important;overflow:visible;padding:67px 0!important}
+  .proof-band{clip-path:none!important;background:transparent!important;position:relative;z-index:2;margin:0!important;overflow:visible;padding:27px 0!important}
   /* who attends: icons +20% except Editors & Post Pros; tighter title/body */
   .who .ibox .ic{stroke-width:1.75;width:34px!important;height:34px!important}
   .who:nth-child(1) .ibox .ic{width:28px!important;height:28px!important}
@@ -380,7 +380,8 @@
   .wall.marketing .tile img[alt="Ripple Training"]{height:56px!important;max-width:220px!important;transform:translateX(-10px)!important}
   .btn .bt{display:inline-block!important;transform:translateY(-1px)!important}
   /* ===== batch 3 ===== */
-  .hero-sub{color:#e4ebfa;font-weight:500;max-width:680px;margin:0 auto 32px;text-shadow:0 2px 16px rgba(0,0,0,.6);font-size:clamp(17px,2.1vw,18px)!important;line-height:1.4!important;text-wrap:balance!important}
+  .hero-sub{color:#e4ebfa;font-weight:500;max-width:none;margin:0 auto 32px;text-shadow:0 2px 16px rgba(0,0,0,.6);font-size:clamp(17px,2.1vw,20px)!important;line-height:1.4!important;white-space:nowrap}
+  @media(max-width:700px){.hero-sub{white-space:normal;max-width:520px}}
   .hero-cta{display:flex;gap:29px;justify-content:center;flex-wrap:wrap;margin-top:15px!important}
   .partner-grid.gold{margin:14px auto 0!important}
   .city-d{color:#e6ebf6;font-size:clamp(14.5px,1.3vw,16.5px);max-width:580px;margin:0;line-height:1.55;text-shadow:0 2px 14px rgba(0,0,0,.6);text-wrap:balance!important}
@@ -399,31 +400,31 @@
   .wall.plat .tile img[alt="Adobe"]{height:22px!important;max-width:135px!important}
   .proof-grid .proof:nth-child(3) .pn{white-space:nowrap!important;text-wrap:nowrap;font-size:clamp(22px,2.3vw,32px)!important}
   .sec-desc{color:var(--ink-dim);font-size:16.5px;line-height:1.5!important;margin-top:10px!important}
-  .foot-inner{grid-template-columns:1fr auto auto!important;gap:44px!important;padding:53px 36px 38px!important}
+  .foot-inner{grid-template-columns:1fr auto auto!important;gap:95px!important;padding:53px 36px 38px!important}
   .city-cta .btn{padding-top:13px!important;padding-bottom:13px!important;margin-bottom:12px}
   .lb-overlay{position:fixed;inset:0;background:rgba(5,8,16,.86);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;z-index:300;padding:40px;cursor:zoom-out}
   .lb-overlay.open{display:flex}
   .lb-overlay img{max-width:min(1000px,92vw);max-height:86vh;border-radius:14px;box-shadow:0 0 0 1px rgba(255,255,255,.14),0 30px 80px rgba(0,0,0,.65),0 0 70px rgba(124,58,237,.35);cursor:default}
   .foot-inner > .foot-col:nth-child(2){transform:translateX(-20px)}
   /* Dan's wavy lines behind the sponsor wall, entering from left+right */
-  .sponsors-light{background:#fff!important;border-top:1px solid #ececf2!important;color-scheme:light;position:relative;overflow:hidden}
+  .sponsors-light{background:#fff!important;border-top:1px solid #ececf2!important;color-scheme:light;position:relative;overflow:hidden;padding:84px 0 56px!important}
   .sponsors-light::before{content:"";position:absolute;left:0;right:0;top:140px;aspect-ratio:2560/340;background:url(ppw-assets/wavy-lines.webp) center/100% 100% no-repeat;opacity:.55;pointer-events:none;z-index:0}
   .sponsors-light .wrap{position:relative;z-index:1}
   /* going-global band under the hero */
-  .global-band{position:relative;overflow:hidden;padding:96px 0;background:var(--bg-2)}
+  .global-band{position:relative;overflow:hidden;padding:96px 0 120px 0;background:var(--bg-2)}
   .gb-waves{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);pointer-events:none}
   .gb-wave-inner{position:relative;width:100%;aspect-ratio:2560/340}
   .gb-wave-img{width:100%;height:100%;display:block;opacity:.9}
   .global-band .wrap{position:relative;z-index:2}
   .gb-card{max-width:660px;margin:0 auto;background:#fff;border-radius:18px;padding:38px 44px;text-align:center;box-shadow:0 30px 80px rgba(0,0,0,.5)}
-  .gb-card p{margin:0 0 14px;color:#2b3550;font-size:16px;line-height:1.6;text-wrap:balance}
+  .gb-card p{margin:0 0 14px;color:#2b3550;font-size:16px;line-height:1.48;text-wrap:balance}
   .gb-card p:last-child{margin-bottom:0}
-  .gb-card .lead{color:#0e1626;font-size:17.5px;font-weight:700}
+  .gb-card .lead{color:#2c3b59;font-size:17.5px;font-weight:800;font-family:"Satoshi","Inter",sans-serif}
   .gb-card .lv{color:#e0603a;font-weight:700}
   .gb-card .ny{color:#2f6fd0;font-weight:700}
   .gb-card .ldn{color:#7c4bd0;font-weight:700}
   .gb-card .mum{color:#1d9b7a;font-weight:700}
-  .gb-pin{position:absolute;z-index:2;transform:translate(-50%,-100%);width:40px;height:46px;pointer-events:none}
+  .gb-pin{position:absolute;z-index:2;transform:translate(-40%,-97%);width:40px;height:46px;pointer-events:none}
   .gb-pin i{position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:26px;height:8px;border-radius:50%;background:radial-gradient(closest-side,rgba(20,25,45,.30),transparent 78%)}
   .gb-pin b{position:absolute;left:50%;top:0;width:38px;height:38px;margin-left:-19px;background:#fff;border:2.5px solid currentColor;border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 5px 12px rgba(20,25,45,.22);display:flex;align-items:center;justify-content:center}
   .gb-pin b span{transform:rotate(45deg);font-size:9.5px;font-weight:800;letter-spacing:.04em;color:currentColor}
@@ -431,12 +432,12 @@
   .gb-pin.p-mum{left:12%;top:9.7%;color:#1d9b7a}
   .gb-pin.p-nyc{left:20%;top:0.9%;color:#e08a2f}
   .gb-pin.p-lv{left:78%;top:16.5%;color:#e0603a}
-  .gb-pin.p-ldn{left:82%;top:28.5%;color:#2f6fd0}
+  .gb-pin.p-ldn{left:84%;top:39.5%;color:#2f6fd0}
   @media(max-width:900px){.gb-pin{display:none}.gb-card{padding:30px 26px;max-width:92%}.global-band{padding:70px 0}}
   #ai{position:relative;overflow:hidden;background-image:url(ppw-assets/ai-bg-global.webp)!important;background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important}
-  .sponsors-light .sec-head,.sponsors-light .tier-label,.sponsors-light .wall,.sponsors-light .partner-note{position:relative;z-index:1;background:#fff}
+  .sponsors-light .sec-head,.sponsors-light .tier-label,.sponsors-light .wall,.sponsors-light .partner-note{position:relative;z-index:1;background:#fff;box-shadow:0 0 0 60px #fff}
   .sponsors-light .sec-head{border-radius:12px;padding:10px 25px;margin-bottom:40px!important}
-  .sponsors-light .tier-label{color:#8a93a8!important;display:table;margin-left:auto;margin-right:auto;padding:6px 25px;border-radius:6px;margin-top:60px!important;margin-bottom:30px!important}
+  .sponsors-light .tier-label{color:#8a93a8!important;display:table;margin-left:auto;margin-right:auto;padding:6px 25px;border-radius:6px;margin-top:30px!important;margin-bottom:-3px!important}
   .sponsors-light .wall{border-radius:10px;padding:16px 25px!important}
   .sponsors-light .partner-note{display:table;margin-left:auto;margin-right:auto;padding:8px 25px;border-radius:6px;margin-top:52px!important}
   /* Who Attends: darkened attendee photo, full-bleed */
@@ -461,6 +462,11 @@
   <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></symbol>
   <symbol id="i-phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2.5"/><path d="M12 18h.01"/></symbol>
   <symbol id="i-building" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M8 10h.01M16 10h.01M8 14h.01M16 14h.01"/></symbol>
+  <symbol id="i-sparkle-ai" viewBox="0 0 24 24"><path d="M12 3q1 7 7 9-6 2-7 9-1-7-7-9 6-2 7-9Z"/><path d="M19 2.5q.4 1.8 2 2.3-1.6.5-2 2.3-.4-1.8-2-2.3 1.6-.5 2-2.3Z"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="9" cy="11" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-grad" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5v-5"/><path d="M22 10v6"/></symbol>
+  <symbol id="i-trend" viewBox="0 0 24 24"><path d="M3 17 9 11 13 15 21 6"/><path d="M21 6h-5"/><path d="M21 6v5"/></symbol>
+  <symbol id="i-tv" viewBox="0 0 24 24"><path d="m17 2-5 5-5-5"/><rect x="2" y="7" width="20" height="14" rx="2"/></symbol>
 </svg>
 <header class="nav">
   <div class="wrap nav-inner">
@@ -487,8 +493,8 @@
   <div class="wrap">
     <div class="hero-brand"><img class="hero-og" src="ppw-assets/ppw-global-logo.webp" alt="Post Production World Conference Global"></div>
     <div class="eyebrow"><span style="color:#ff8a4c">Las&nbsp;Vegas</span> · <span style="color:#5b9dff">New&nbsp;York</span> · <span style="color:#b794f6">London</span> · <span style="color:#43d9b8">Mumbai</span></div>
-    <h1 class="hero-h1">One conference. <span class="hl">Four major markets.</span></h1>
-    <p class="hero-sub">The world's leading training conference for video, TV, film, motion graphics, and AI. Four premier markets, all year long.</p>
+    <h1 class="hero-h1">One conference.<br>Four major markets.</h1>
+    <p class="hero-sub">The world's leading training conference for video, TV, film, motion graphics, and AI.</p>
     <div class="hero-cta" id="heroCta">
       <a class="btn gold" href="#locations"><span class="bt">Explore PPW Locations</span> <svg class="ic"><use href="#i-arrow"/></svg></a>
       <a class="btn" href="#attendees" style="background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.45);box-shadow:none;color:#fff"><span class="bt">Who attends</span></a>
@@ -545,8 +551,8 @@
   </div>
 </div>
 
-<section class="block" id="locations" style="padding-bottom:6px;text-align:center">
-  <div class="wrap"><div class="sec-head center" style="margin-bottom:0"><div class="sec-kicker">One marketing platform • four premier markets</div><h2 class="sec-title">2026 - 2027 Global Locations</h2></div></div>
+<section class="block" id="locations" style="text-align:center;display:flex;align-items:center;justify-content:center">
+  <div class="wrap"><div class="sec-head center" style="margin-bottom:0"><h2 class="sec-title">2026 - 2027 Global Locations</h2></div></div>
 </section>
 
 <a class="city-sec" href="new-york.html">
@@ -589,7 +595,7 @@
       <div class="who"><div class="ibox"><svg class="ic"><use href="#i-film"/></svg></div><h4>Editors &amp; Post Pros</h4><p>Video editors, colorists, and finishing artists working across film, TV, and streaming.</p></div>
       <div class="who"><div class="ibox"><svg class="ic"><use href="#i-spark"/></svg></div><h4>Motion &amp; VFX Artists</h4><p>Motion graphics designers and VFX creatives building for broadcast and brands.</p></div>
       <div class="who"><div class="ibox"><svg class="ic"><use href="#i-video"/></svg></div><h4>Producers &amp; DPs</h4><p>Producers, directors, and cinematographers in broadcast, corporate, and field production.</p></div>
-      <div class="who"><div class="ibox"><svg class="ic"><use href="#i-cpu"/></svg></div><h4>AI Creatives</h4><p>The fast-growing audience adopting generative and AI-assisted production workflows.</p></div>
+      <div class="who"><div class="ibox"><svg class="ic" style="fill:currentColor;stroke:none"><use href="#i-sparkle-ai"/></svg></div><h4>AI Creatives</h4><p>The fast-growing audience adopting generative and AI-assisted production workflows.</p></div>
       <div class="who"><div class="ibox"><svg class="ic"><use href="#i-phone"/></svg></div><h4>Content Creators</h4><p>Social-first and corporate creators scaling output across every platform.</p></div>
       <div class="who"><div class="ibox"><svg class="ic"><use href="#i-building"/></svg></div><h4>Corporate Video Teams</h4><p>In-house media teams producing at volume for global organizations.</p></div>
     </div>
@@ -600,8 +606,7 @@
   <div class="wrap">
     <div class="sec-head center">
       <h2 class="sec-title">The Post Production World<br class="np-br"> Networking Party</h2>
-      <div class="sec-kicker net-eyebrow">Networking is key in today’s world.</div>
-      <p class="sec-desc" style="margin-inline:auto">Join us in the evening for the industry's favorite social gathering. Build and strengthen connections with creatives and vendors from around the world.</p>
+      <p class="sec-desc" style="margin-inline:auto"><strong style="color:var(--ink);font-weight:800">Networking is key in today’s world.</strong> Join us in the evening for the industry's favorite social gathering. Build and strengthen connections with creatives and vendors from around the world.</p>
     </div>
 <div class="collage">
       <a class="big" href="ppw-assets/g-net-banner.webp" target="_blank"><img src="ppw-assets/g-net-banner.webp" alt="PPW networking party" loading="lazy"></a>

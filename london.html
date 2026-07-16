@@ -8,6 +8,13 @@
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link href="ppw-assets/site.css" rel="stylesheet">
+<style>
+  #who-attends-ldn{position:relative;overflow:hidden;background-image:url(ppw-assets/who-bg.webp)!important;background-size:cover!important;background-position:center 55%!important;background-repeat:no-repeat!important}
+  #who-attends-ldn::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,11,18,.90),rgba(8,11,18,.84) 45%,rgba(8,11,18,.93));pointer-events:none;z-index:0}
+  #who-attends-ldn .wrap{position:relative;z-index:1}
+  #who-attends-ldn .fcard{text-align:center;display:flex;flex-direction:column;align-items:center}
+  .host-mpts-logo{height:34px;width:auto;flex:none}
+</style>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -21,6 +28,9 @@
   <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></symbol>
   <symbol id="i-tools" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0 5 5l-7 7a4 4 0 0 1-5-5Z"/><path d="m9 9-4 4"/></symbol>
   <symbol id="i-party" viewBox="0 0 24 24"><path d="M2 22 13 11M5.5 8.5 9 12M2 22l5.5-1.5M2 22l1.5-5.5"/><path d="M14 6.5a3.5 3.5 0 0 1 3.5-3.5M22 10a3.5 3.5 0 0 0-3.5-3.5M18 13l1 1M14 2l1 1"/></symbol>
+  <symbol id="i-sparkle-ai" viewBox="0 0 24 24"><path d="M12 3q1 7 7 9-6 2-7 9-1-7-7-9 6-2 7-9Z"/><path d="M19 2.5q.4 1.8 2 2.3-1.6.5-2 2.3-.4-1.8-2-2.3 1.6-.5 2-2.3Z"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="9" cy="11" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-tv" viewBox="0 0 24 24"><path d="m17 2-5 5-5-5"/><rect x="2" y="7" width="20" height="14" rx="2"/></symbol>
 </svg>
 <header class="nav">
   <div class="nav-inner">
@@ -67,36 +77,37 @@
   </div>
 </section>
 
-<section class="block">
+<section class="block" id="who-attends-ldn">
   <div class="wrap">
     <div class="sec-head center"><div class="sec-kicker">The audience</div><h2 class="sec-title">Who attends</h2></div>
     <div class="cards3">
       <div class="fcard"><div class="ibox"><svg class="ic"><use href="#i-film"/></svg></div><h3>Editors &amp; Post Pros</h3><p>Video editors, colorists, and finishing artists across film, TV, and streaming.</p></div>
       <div class="fcard"><div class="ibox"><svg class="ic"><use href="#i-spark"/></svg></div><h3>Motion &amp; VFX Artists</h3><p>Motion graphics designers and VFX creatives building for broadcast and brands.</p></div>
       <div class="fcard"><div class="ibox"><svg class="ic"><use href="#i-video"/></svg></div><h3>Producers &amp; DPs</h3><p>Producers, directors, and cinematographers in broadcast, corporate, and field.</p></div>
-      <div class="fcard"><div class="ibox"><svg class="ic"><use href="#i-cpu"/></svg></div><h3>AI Creatives</h3><p>The fast-growing audience adopting generative and AI-assisted workflows.</p></div>
-      <div class="fcard"><div class="ibox"><svg class="ic"><use href="#i-tools"/></svg></div><h3>Broadcast Teams</h3><p>Broadcast and corporate video professionals across the UK and Europe.</p></div>
-      <div class="fcard"><div class="ibox"><svg class="ic"><use href="#i-party"/></svg></div><h3>The whole community</h3><p>Europe's creative professionals, together at MPTS.</p></div>
+      <div class="fcard"><div class="ibox"><svg class="ic" style="fill:currentColor;stroke:none"><use href="#i-sparkle-ai"/></svg></div><h3>AI Creatives</h3><p>The fast-growing audience adopting generative and AI-assisted workflows.</p></div>
+      <div class="fcard"><div class="ibox"><svg class="ic"><use href="#i-tv"/></svg></div><h3>Broadcast Teams</h3><p>Broadcast and corporate video professionals across the UK and Europe.</p></div>
+      <div class="fcard"><div class="ibox"><svg class="ic"><use href="#i-users"/></svg></div><h3>The whole community</h3><p>Europe's creative professionals, together at MPTS.</p></div>
     </div>
   </div>
 </section>
 
 <section class="block">
   <div class="wrap">
-    <div class="sec-head center"><div class="sec-kicker">Beyond the sessions</div><h2 class="sec-title">Hands-on &amp; after hours</h2></div>
+    <div class="sec-head center"><div class="sec-kicker">After hours</div><h2 class="sec-title">The Post Production World Networking Party</h2>
+      <p class="sec-desc" style="margin-inline:auto">Join us in the evening for the industry's favorite social gathering — build and strengthen connections with creatives from around Europe.</p></div>
     <div class="collage">
-      <a class="big" href="ppw-assets/g-field.webp" target="_blank"><img src="ppw-assets/g-field.webp" alt="PPW field workshop"></a>
-      <a href="ppw-assets/g-net-04.webp" target="_blank"><img src="ppw-assets/g-net-04.webp" alt="Networking"></a>
-      <a href="ppw-assets/g-net-06.webp" target="_blank"><img src="ppw-assets/g-net-06.webp" alt="Networking"></a>
-      <a href="ppw-assets/g-net-08.webp" target="_blank"><img src="ppw-assets/g-net-08.webp" alt="Networking"></a>
-      <a href="ppw-assets/g-net-13.webp" target="_blank"><img src="ppw-assets/g-net-13.webp" alt="Networking"></a>
+      <a class="big" href="ppw-assets/pty-026.webp" target="_blank"><img src="ppw-assets/pty-026.webp" alt="PPW networking party"></a>
+      <a href="ppw-assets/pty-115.webp" target="_blank"><img src="ppw-assets/pty-115.webp" alt="PPW networking party"></a>
+      <a href="ppw-assets/pty-031.webp" target="_blank"><img src="ppw-assets/pty-031.webp" alt="PPW networking party"></a>
+      <a href="ppw-assets/pty-028.webp" target="_blank"><img src="ppw-assets/pty-028.webp" alt="PPW networking party"></a>
+      <a href="ppw-assets/pty-117.webp" target="_blank"><img src="ppw-assets/pty-117.webp" alt="PPW networking party"></a>
     </div>
   </div>
 </section>
 <section class="block">
   <div class="wrap">
     <div class="host-mod">
-      <div class="host-badge">MPTS</div>
+      <img class="host-mpts-logo" src="ppw-assets/mpts-logo.webp" alt="MPTS">
       <div class="host-text"><h3>Part of MPTS London</h3><p>Post Production World London is presented in partnership with the Media Production & Technology Show at The Grand Hall, Olympia London.</p></div>
       <a class="btn ghost" href="https://www.mediaproductionshow.com/ppw-europe" target="_blank" rel="noopener"><span class="bt">Visit MPTS</span> <svg class="ic"><use href="#i-arrow"/></svg></a>
     </div>
@@ -107,9 +118,9 @@
   <div class="wrap">
     <div class="sec-head center"><div class="sec-kicker">Global partners</div><h2 class="sec-title">Trusted by the industry’s best</h2></div>
     <div class="partner-strip">
-      <img src="ppw-assets/spon-nvidia.webp" alt="NVIDIA" style="height:46px">
+      <img src="ppw-assets/spon-nvidia.webp" alt="NVIDIA" style="height:44px">
       <img src="ppw-assets/spon-dell.webp" alt="Dell Technologies" style="height:50px">
-      <img src="ppw-assets/spon-adobe.webp" alt="Adobe" style="height:34px">
+      <img src="ppw-assets/spon-adobe.webp" alt="Adobe" style="height:37px">
       <img src="ppw-assets/spon-maxon.webp" alt="Maxon" style="height:44px">
       <img src="ppw-assets/spon-bmd-ko.webp" alt="Blackmagic Design" style="height:42px">
       <img src="ppw-assets/spon-intel-ko.webp" alt="Intel" style="height:36px;transform:translateY(-2px)">
