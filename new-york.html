@@ -27,7 +27,7 @@
   .nav-links{display:flex;gap:22px;margin-left:auto;font-size:14px;color:var(--ink-dim)}
   .nav-links a{text-decoration:none}
   .nav-links a:hover{color:var(--ink)}
-  .btn.ghost{background:transparent;box-shadow:none;border:1.5px solid var(--line-2);color:var(--ink)}
+  .btn.ghost{background:rgba(255,255,255,.14);box-shadow:none;border:1px solid rgba(255,255,255,.45);color:#fff}
   @media(max-width:820px){.nav-links{display:none}}
   /* ---------- hero ---------- */
   .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12.5px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-2);font-weight:700;margin-bottom:18px}
@@ -64,13 +64,13 @@
   .hero-scrim{position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(10,14,23,.5) 0%,rgba(10,14,23,.06) 15%,transparent 40%,rgba(10,14,23,.5) 74%,rgba(10,14,23,.95) 97%,var(--bg))}
   .hero .wrap{position:relative;z-index:1;width:100%;text-align:center}
   .hero .eyebrow{justify-content:center}
-  .hero-sub{font-size:clamp(17px,2.1vw,18px);color:#e4ebfa;font-weight:500;max-width:680px;margin:0 auto 26px;line-height:1.4;text-shadow:0 2px 16px rgba(0,0,0,.6);margin-left:auto;margin-right:auto}
+  .hero-sub{font-size:clamp(17px,2.1vw,17px);color:#e4ebfa;font-weight:400;max-width:680px;margin:0 auto 36px;line-height:1.5;text-shadow:0 2px 16px rgba(0,0,0,.6);margin-left:auto;margin-right:auto}
   .hero-meta{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:30px;justify-content:center}
   .hero-cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:center}
   .note-reg{font-size:12.5px;color:var(--ink-faint);margin-top:14px;text-align:center}
   .hero .wrap > img{margin-left:auto!important;margin-right:auto!important}
   .submenu{position:sticky;top:85px;z-index:30;background:rgba(10,14,23,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-  .submenu .in{max-width:var(--maxw);margin:0 auto;padding:0 20px;display:flex;gap:26px;align-items:center;height:52px;overflow-x:auto}
+  .submenu .in{max-width:var(--maxw);margin:0 auto;padding:0 20px;display:flex;gap:46px;align-items:center;height:56px;overflow-x:auto}
   .submenu a{color:var(--ink-dim);text-decoration:none;font-weight:600;font-size:14px;white-space:nowrap;padding:4px 0}
   .submenu a:hover{color:var(--ink)}
   .submenu .lbl{color:var(--accent-2);font-size:11.5px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;margin-right:6px}
@@ -182,13 +182,13 @@
   .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
   .reveal.in{opacity:1;transform:none}
   /* clean skyline banner + content below */
-  .edition-banner{position:relative;height:clamp(380px,58vh,640px);background:url(ppw-assets/city-nyc-hi.jpg) center 36%/cover}
+  .edition-banner{position:relative;height:clamp(460px,72vh,800px);background:url(ppw-assets/city-nyc-hi.jpg) center 36%/cover}
   .edition-banner::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 0%,transparent 72%,rgba(10,14,23,.42) 88%,rgba(10,14,23,.9) 98%,var(--bg) 100%)}
   .edition-intro{text-align:center;padding:32px 0 40px}
   .edition-intro .wrap{max-width:760px;margin:0 auto;padding:0 20px}
   .edition-intro .eyebrow{justify-content:center}
-  .edition-intro .ny-wordmark{max-width:540px;width:100%;height:auto;display:block;margin:4px auto 22px;filter:drop-shadow(0 14px 40px rgba(0,0,0,.45))}
-  .edition-intro .hero-sub{margin:0 auto 24px}
+  .edition-intro .ny-wordmark{max-width:min(473px,86%);width:100%;height:auto;display:block;margin:0 auto 31px;padding-top:30px;filter:drop-shadow(0 14px 40px rgba(0,0,0,.45))}
+  .edition-intro .hero-sub{margin:0 auto 29px}
   .edition-intro .hero-meta{justify-content:center}
   .edition-intro .hero-cta{justify-content:center}
   .edition-intro .note-reg{text-align:center}
@@ -220,7 +220,7 @@
   .fb-link img{width:330px;max-width:100%;height:auto;display:block;border-radius:8px}
   .spon-bridge .sb-text{flex:1 1 440px;max-width:660px}
   .spon-bridge p{text-wrap:pretty}
-  .btn{display:inline-flex;align-items:center;gap:8px;color:#fff;text-decoration:none;font-weight:700;font-size:13.5px;padding:10px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.12);white-space:nowrap;background:linear-gradient(115deg,#8b5cf6 0%,#5b8def 55%,#22d3ee 125%);box-shadow:0 10px 30px rgba(99,102,241,.42);line-height:1;padding-top:13px!important;padding-bottom:13px!important}
+  .btn{display:inline-flex;align-items:center;gap:8px;color:#fff;text-decoration:none;font-weight:700;font-size:13.5px;padding:10px 16px;border-radius:999px;border:0;white-space:nowrap;background:linear-gradient(115deg,#8b5cf6 0%,#5b8def 55%,#22d3ee 125%);box-shadow:0 10px 30px rgba(99,102,241,.42);line-height:1;padding-top:13px!important;padding-bottom:13px!important}
   header.nav .btn{margin-left:10px;padding-top:10px!important;padding-bottom:10px!important}
   .btn .ic{transform:translateY(-0.5px)!important}
   .btn .bt{display:inline-block!important;transform:translateY(-1px)!important}
@@ -264,7 +264,6 @@
 <div class="edition-banner"></div>
 <section class="edition-intro">
   <div class="wrap">
-    <div class="eyebrow"><span class="dot"></span>Post Production World · New York</div>
     <img src="ppw-assets/wm-nyc.png" alt="Post Production World New York — October 20–21, 2026" class="ny-wordmark">
     <p class="hero-sub">Produced by FMC and NAB Show, this elite program for editors, producers, and motion designers in TV, film, and video delivers cutting-edge skills, AI mastery, and insider strategies — across six tracks in post, production, AI, corporate media, cinematography, and immersive media.</p>
     <div class="hero-meta">
@@ -276,16 +275,13 @@
       <a class="btn" href="#" onclick="return false"><span class="bt">Register on NAB Show</span> <svg class="sic"><use href="#i-arrow"/></svg></a>
       <a class="btn ghost" href="#program"><span class="bt">View the program</span></a>
     </div>
-    <div class="note-reg">Registration launches July 2026 via NAB Show. This page links out to the official registration.</div>
   </div>
 </section>
 
 <div class="submenu">
   <div class="in">
-    <span class="lbl">New York</span>
     <a href="#program">Program Grid</a>
     <a href="#sponsors">Sponsors</a>
-    <a href="#speakers">Speakers</a>
     <a href="ppw-sponsorships.html">Sponsor PPW</a>
   </div>
 </div>
@@ -294,8 +290,8 @@
   <div class="wrap">
     <div class="sec-head">
       <div class="sec-kicker">The Program</div>
-      <h2 class="sec-title">Two days · five rooms · all 60-minute sessions</h2>
-      <p class="sec-desc">Sessions are organized into tracks. Day 1 runs two rooms; Day 2 expands to three. Tap any day to explore the full grid.</p>
+      <h2 class="sec-title">Two days · five rooms · 60-minute sessions</h2>
+      <p class="sec-desc">Tap any day to explore the full grid.</p>
     </div>
 <div class="controls">
       <div class="seg day" role="tablist">
@@ -326,21 +322,11 @@
 
 <section class="block" id="sponsors">
   <div class="wrap">
-    <div class="sec-head center">
-      <div class="sec-kicker">Backed by the best</div>
-      <h2 class="sec-title">2026 Sponsors</h2>
-    </div>
-    <div class="tier-label">Platinum</div>
+    <div class="sec-head center"><div class="sec-kicker">Global partners</div><h2 class="sec-title">Trusted by the industry's best</h2></div>
     <div class="partner-strip">
-      <img src="ppw-assets/spon-adobe.webp" alt="Adobe" style="height:36px">
+      <img src="ppw-assets/spon-adobe.webp" alt="Adobe" style="height:37px">
       <img src="ppw-assets/spon-maxon.webp" alt="Maxon" style="height:44px">
-    </div>
-    <div class="tier-label">Gold</div>
-    <div class="partner-strip">
-      <img src="ppw-assets/spon-bmd-ko.webp" alt="Blackmagic Design" style="height:40px">
-    </div>
-    <div class="tier-label">Tabletop</div>
-    <div class="partner-strip">
+      <img src="ppw-assets/spon-bmd-ko.webp" alt="Blackmagic Design" style="height:42px">
       <img src="ppw-assets/ko-amd.webp" alt="AMD" style="height:27px">
       <img src="ppw-assets/ko-atomos.webp" alt="Atomos" style="height:34px">
       <img src="ppw-assets/ko-hp.webp" alt="HP" style="height:34px">

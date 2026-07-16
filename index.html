@@ -55,6 +55,7 @@
   .hero-bg{position:absolute;inset:0;z-index:0;background-size:cover;background-position:center center;opacity:1}
   .hero-scrim{position:absolute;inset:0;z-index:0;background:radial-gradient(110% 144% at 39% 50%,rgba(8,11,18,.5),transparent 127%),linear-gradient(180deg,rgba(8,11,18,.34) 0%,transparent 22%,transparent 60%,rgba(8,11,18,.58) 84%,rgba(8,11,18,.96) 99%,var(--bg))}
   .hero-h1 .hl{color:#bef1ff;-webkit-text-fill-color:#93c7ff}
+  .hero-h1 .hl2{color:rgba(135,223,250,.91);-webkit-text-fill-color:rgba(135,223,250,.91)}
   .hero-logo{height:74px;width:auto;margin:26px auto 28px;display:block;filter:drop-shadow(0 8px 30px rgba(0,0,0,.95))}
   .hero .wrap{position:relative;z-index:1}
   .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:14.5px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-2);font-weight:700;margin-bottom:24px;text-shadow:0 2px 10px rgba(0,0,0,.5)}
@@ -176,7 +177,7 @@
   #ai::after{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(8,11,18,.5),rgba(8,11,18,.72))}
   #ai .wrap{position:relative;z-index:1}
   .ai-wrap{position:relative;border:1px solid rgba(255,255,255,.1);border-radius:26px;padding:50px;background:rgba(10,14,24,.32);backdrop-filter:blur(3px)}
-  #ai .sec-desc{color:#dce4f5}
+  #ai .sec-desc{color:#86d3ff;font-size:17px;line-height:21px}
   .ai-wrap>*{position:relative;z-index:1}
   /* networking collage */
   .collage{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:152px;gap:12px}
@@ -186,10 +187,10 @@
   .collage .big{grid-column:span 2;grid-row:span 2}
   @media(max-width:700px){.collage{grid-template-columns:repeat(2,1fr);grid-auto-rows:128px}.collage .big{grid-column:span 2;grid-row:span 2}}
   @media(max-width:600px){.ai-wrap{padding:30px}}
-  .ai-cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}
+  .ai-cards{display:grid;grid-template-columns:1fr 1fr;gap:33px;margin-top:40px}
   @media(max-width:760px){.ai-cards{grid-template-columns:1fr}}
-  .ai-card h3{font-size:19px;margin:0 0 9px;font-weight:600}
-  .ai-card p{margin:0;color:#c2cee6;font-size:14.5px;line-height:1.65}
+  .ai-card h3{font-size:21px;margin:0 0 6px;font-weight:600;color:#ffdfa3}
+  .ai-card p{margin:0;color:#e5e9f0;font-size:16.5px;line-height:1.55}
   .ai-badge svg{width:50px;height:50px}
   .ai-badge .bl{font-size:13px;font-weight:700;letter-spacing:.2px;color:var(--ink);line-height:1.25}
   .ai-badge .bc{font-size:9.5px;letter-spacing:2px;text-transform:uppercase;color:var(--ink-dim);font-weight:600}
@@ -207,7 +208,7 @@
   .review-flag{max-width:var(--maxw);margin:18px auto 0;padding:10px 16px;font-size:12.5px;line-height:1.5;color:#f3cd72;background:rgba(245,196,81,.07);border:1px dashed rgba(245,196,81,.4);border-radius:10px}
   .review-flag b{color:#ffe6a6}
   .spon-bridge{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap;background:linear-gradient(160deg,rgba(124,58,237,.14),rgba(45,130,246,.05));border:1px solid var(--line-2);border-radius:20px;padding:30px 49px}
-  .spon-bridge .sb-h{font-family:"Satoshi","Inter",sans-serif;font-size:25px;font-weight:800;margin:8px 0 6px;letter-spacing:-.4px}
+  .spon-bridge .sb-h{font-family:"Satoshi","Inter",sans-serif;font-size:27px;font-weight:800;margin:8px 0 6px;letter-spacing:-.4px}
   @media(max-width:700px){.spon-bridge{padding:26px 24px}}
   footer{text-align:center;position:relative;overflow:hidden;border-top:1px solid var(--line);padding:0;margin-top:10px}
   .foot-glow{position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(124,58,237,.16) 55%,rgba(45,130,246,.13));pointer-events:none}
@@ -263,7 +264,7 @@
   .fb-link{display:inline-block}
   .fb-link img{width:328px;max-width:100%;height:auto;display:block;border-radius:8px}
   .spon-bridge .sb-text{flex:1 1 440px;max-width:660px}
-  .spon-bridge p{margin:0;color:var(--ink-dim);font-size:17px;line-height:1.45;text-wrap:pretty}
+  .spon-bridge p{margin:0;color:#d5dce9;font-size:17px;line-height:1.4;text-wrap:pretty}
   .upcoming{position:relative;overflow:hidden}
   .up-bg{position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,#251b50,#191540)}
   .up-bg::after{content:"";position:absolute;inset:0;background:url(ppw-assets/global-map.webp) center/cover;opacity:.18}
@@ -298,10 +299,12 @@
   section.block{border-top:1px solid var(--line);position:relative;padding:112px 0}
   .light-sec,#ai{padding:54px 0 84px}
   .sec-head{max-width:740px;margin-bottom:58px}
-  .sec-kicker{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent-2);font-weight:700;display:inline-block;margin-bottom:0px}
+  .sec-kicker{font-size:12px;letter-spacing:3.5px;text-transform:uppercase;color:var(--accent-2);font-weight:700;display:inline-block;margin-bottom:0px}
+  #ai .sec-kicker{margin-bottom:11px}
   .sec-title{font-size:clamp(28px,4vw,42px);font-weight:800;letter-spacing:-.8px;line-height:1.24;padding-bottom:.14em;background:linear-gradient(180deg,#fff,#c9d5ee);-webkit-background-clip:text;background-clip:text;color:transparent;margin-top:16px}
   .city-sec{border-top:0}
-  #locations{padding:40px 0 28px;min-height:auto}
+  #locations{padding:102px 0 2px;min-height:auto}
+  #networking{padding-top:0}
   .cards3,.who-grid{gap:22px}
   .hero-brand{display:flex;flex-direction:column;align-items:center;gap:12px;margin:0 auto 22px}
   .hero-og{height:85px;width:auto;filter:drop-shadow(0 8px 28px rgba(0,0,0,.85))}
@@ -373,7 +376,7 @@
   /* CTA + ghost button text nudged UP 2px; arrow position untouched */
   /* ===== batch 2: headline wrap, hero-sub sizing, AI cards center, sponsor balance, button down 1px ===== */
   .hero-h1{font-family:"Satoshi","Inter",sans-serif;font-size:clamp(28px,4.6vw,54px);font-weight:800;letter-spacing:-1px;line-height:1.1;padding-bottom:.08em;margin:0 auto 15px;max-width:none;background:linear-gradient(180deg,#fff,#c7d4ee);-webkit-background-clip:text;background-clip:text;color:transparent;white-space:normal!important}
-  .ai-card{background:rgba(18,27,47,.5);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:22px;box-shadow:0 16px 40px rgba(0,0,0,.3);text-align:center!important}
+  .ai-card{background:rgba(18,27,47,.5);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:28px 25px 37px 25px;box-shadow:0 16px 40px rgba(0,0,0,.3);text-align:center!important}
   .wall.plat .tile img[alt="Dell Technologies"]{max-width:185px!important;transform:translateY(2px)!important}
   .wall.plat .tile img[alt="Maxon"]{transform:translateY(2px)!important}
   .wall.marketing .tile img[alt="ProductionHUB"]{height:56px!important;max-width:220px!important}
@@ -435,14 +438,12 @@
   .gb-pin.p-ldn{left:84%;top:39.5%;color:#2f6fd0}
   @media(max-width:900px){.gb-pin{display:none}.gb-card{padding:30px 26px;max-width:92%}.global-band{padding:70px 0}}
   #ai{position:relative;overflow:hidden;background-image:url(ppw-assets/ai-bg-global.webp)!important;background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important}
-  .sponsors-light .sec-head,.sponsors-light .tier-label,.sponsors-light .wall,.sponsors-light .partner-note{position:relative;z-index:1;background:#fff;box-shadow:0 0 0 60px #fff}
-  .sponsors-light .sec-head{border-radius:12px;padding:10px 25px;margin-bottom:40px!important}
-  .sponsors-light .tier-label{color:#8a93a8!important;display:table;margin-left:auto;margin-right:auto;padding:6px 25px;border-radius:6px;margin-top:30px!important;margin-bottom:-3px!important}
-  .sponsors-light .wall{border-radius:10px;padding:16px 25px!important}
-  .sponsors-light .partner-note{display:table;margin-left:auto;margin-right:auto;padding:8px 25px;border-radius:6px;margin-top:52px!important}
+  .sponsors-light .wall-plate{position:relative;z-index:1;background:#fff;max-width:830px;margin:0 auto;border-radius:14px;padding:14px 36px 38px}
+  .sponsors-light .sec-head{margin-bottom:40px!important}
+  .sponsors-light .tier-label{color:#8a93a8!important;margin-top:30px!important;margin-bottom:22px!important}
+  .sponsors-light .partner-note{margin-top:44px!important}
   /* Who Attends: darkened attendee photo, full-bleed */
-  #attendees{position:relative;overflow:hidden;background-image:url(ppw-assets/who-bg.webp)!important;background-size:cover!important;background-position:center 55%!important;background-repeat:no-repeat!important}
-  #attendees::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,11,18,.90),rgba(8,11,18,.84) 45%,rgba(8,11,18,.93));pointer-events:none;z-index:0}
+  #attendees{position:relative;overflow:hidden;background:var(--bg-2)!important}
   #attendees .wrap{position:relative;z-index:1}
 </style>
 </head>
@@ -462,7 +463,7 @@
   <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></symbol>
   <symbol id="i-phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2.5"/><path d="M12 18h.01"/></symbol>
   <symbol id="i-building" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M8 10h.01M16 10h.01M8 14h.01M16 14h.01"/></symbol>
-  <symbol id="i-sparkle-ai" viewBox="0 0 24 24"><path d="M12 3q1 7 7 9-6 2-7 9-1-7-7-9 6-2 7-9Z"/><path d="M19 2.5q.4 1.8 2 2.3-1.6.5-2 2.3-.4-1.8-2-2.3 1.6-.5 2-2.3Z"/></symbol>
+  <symbol id="i-sparkle-ai" viewBox="0 0 24 24"><g transform="translate(-1 .3)"><path d="M12 3q1 7 7 9-6 2-7 9-1-7-7-9 6-2 7-9Z"/><path d="M19 2.5q.4 1.8 2 2.3-1.6.5-2 2.3-.4-1.8-2-2.3 1.6-.5 2-2.3Z"/></g></symbol>
   <symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="9" cy="11" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
   <symbol id="i-grad" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5v-5"/><path d="M22 10v6"/></symbol>
   <symbol id="i-trend" viewBox="0 0 24 24"><path d="M3 17 9 11 13 15 21 6"/><path d="M21 6h-5"/><path d="M21 6v5"/></symbol>
@@ -493,7 +494,7 @@
   <div class="wrap">
     <div class="hero-brand"><img class="hero-og" src="ppw-assets/ppw-global-logo.webp" alt="Post Production World Conference Global"></div>
     <div class="eyebrow"><span style="color:#ff8a4c">Las&nbsp;Vegas</span> · <span style="color:#5b9dff">New&nbsp;York</span> · <span style="color:#b794f6">London</span> · <span style="color:#43d9b8">Mumbai</span></div>
-    <h1 class="hero-h1">One conference.<br>Four major markets.</h1>
+    <h1 class="hero-h1">One conference.<br><span class="hl2">Four major markets.</span></h1>
     <p class="hero-sub">The world's leading training conference for video, TV, film, motion graphics, and AI.</p>
     <div class="hero-cta" id="heroCta">
       <a class="btn gold" href="#locations"><span class="bt">Explore PPW Locations</span> <svg class="ic"><use href="#i-arrow"/></svg></a>
@@ -662,6 +663,7 @@
 
 <section class="block sponsors-light">
   <div class="wrap">
+    <div class="wall-plate">
     <div class="sec-head center"><div class="sec-kicker">In good company</div><h2 class="sec-title">Brands that partner with PPW</h2></div>
     <div class="tier-label">Platinum</div>
     <div class="wall plat">
@@ -700,6 +702,7 @@
       <div class="tile"><img src="ppw-assets/t-productionhub.png" alt="ProductionHUB"></div>
       <div class="tile"><img src="ppw-assets/t-makingof.webp" alt="The Making Of"></div>
       <div class="tile"><img src="ppw-assets/t-ripple.webp" alt="Ripple Training"></div>
+    </div>
     </div>
   </div>
 </section>
