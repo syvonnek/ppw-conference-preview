@@ -212,7 +212,7 @@
   @media(max-width:700px){.spon-bridge{padding:26px 24px}}
   footer{text-align:center;position:relative;overflow:hidden;border-top:1px solid var(--line);padding:0;margin-top:10px}
   .foot-glow{position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(124,58,237,.16) 55%,rgba(45,130,246,.13));pointer-events:none}
-  .foot-inner{position:relative;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;padding:60px 24px 38px;text-align:left}
+  .foot-inner{position:relative;display:grid;grid-template-columns:1fr auto auto;gap:95px;padding:53px 36px 38px;text-align:left}
   .foot-ppw{height:68px;width:auto;margin-bottom:13px;display:block}
   .foot-brand p{color:#ffffff;font-size:15px;line-height:1.4;max-width:340px;margin:0 0 20px}
   .fb-btn{display:inline-flex;align-items:center;gap:10px;background:#1877f2;color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:11px 18px;border-radius:12px;box-shadow:0 10px 26px rgba(24,119,242,.4);transition:transform .15s}
@@ -304,7 +304,7 @@
   .sec-title{font-size:clamp(28px,4vw,42px);font-weight:800;letter-spacing:-.8px;line-height:1.24;padding-bottom:.14em;background:linear-gradient(180deg,#fff,#c9d5ee);-webkit-background-clip:text;background-clip:text;color:transparent;margin-top:16px}
   .city-sec{border-top:0}
   #locations{padding:102px 0 2px;min-height:auto}
-  #networking{padding-top:0}
+  #networking{padding:106px 0 128px}
   .cards3,.who-grid{gap:22px}
   .hero-brand{display:flex;flex-direction:column;align-items:center;gap:12px;margin:0 auto 22px}
   .hero-og{height:85px;width:auto;filter:drop-shadow(0 8px 28px rgba(0,0,0,.85))}
@@ -403,7 +403,6 @@
   .wall.plat .tile img[alt="Adobe"]{height:22px!important;max-width:135px!important}
   .proof-grid .proof:nth-child(3) .pn{white-space:nowrap!important;text-wrap:nowrap;font-size:clamp(22px,2.3vw,32px)!important}
   .sec-desc{color:var(--ink-dim);font-size:16.5px;line-height:1.5!important;margin-top:10px!important}
-  .foot-inner{grid-template-columns:1fr auto auto!important;gap:95px!important;padding:53px 36px 38px!important}
   .city-cta .btn{padding-top:13px!important;padding-bottom:13px!important;margin-bottom:12px}
   .lb-overlay{position:fixed;inset:0;background:rgba(5,8,16,.86);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;z-index:300;padding:40px;cursor:zoom-out}
   .lb-overlay.open{display:flex}
@@ -438,13 +437,28 @@
   .gb-pin.p-ldn{left:84%;top:39.5%;color:#2f6fd0}
   @media(max-width:900px){.gb-pin{display:none}.gb-card{padding:30px 26px;max-width:92%}.global-band{padding:70px 0}}
   #ai{position:relative;overflow:hidden;background-image:url(ppw-assets/ai-bg-global.webp)!important;background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important}
-  .sponsors-light .wall-plate{position:relative;z-index:1;background:#fff;max-width:830px;margin:0 auto;border-radius:14px;padding:14px 36px 38px}
+  .sponsors-light .wall-plate{position:relative;z-index:1;background:#fff;max-width:860px;margin:0 auto;border-radius:14px;padding:14px 36px 38px}
   .sponsors-light .sec-head{margin-bottom:40px!important}
   .sponsors-light .tier-label{color:#8a93a8!important;margin-top:30px!important;margin-bottom:22px!important}
   .sponsors-light .partner-note{margin-top:44px!important}
   /* Who Attends: darkened attendee photo, full-bleed */
   #attendees{position:relative;overflow:hidden;background:var(--bg-2)!important}
   #attendees .wrap{position:relative;z-index:1}
+  @media(max-width:600px){
+    section.block{padding:64px 0}
+    .hero{padding:84px 0 48px}
+    #locations{padding:64px 0 2px}
+    #networking{padding:64px 0 84px}
+    .light-sec,#ai{padding:46px 0 62px}
+    .global-band{padding:56px 0 72px}
+    .sponsors-light{padding:56px 0 40px!important}
+    .sponsors-light .wall-plate{padding:10px 18px 26px}
+    .ai-badges{grid-template-columns:repeat(3,1fr)!important;gap:10px!important}
+    .ai-badge{padding:12px 8px 14px}
+    .ai-badge-img{width:100%!important;max-width:86px}
+    .spon-bridge{justify-content:center;text-align:center}
+    .gb-card{padding:26px 20px}
+  }
 </style>
 </head>
 <body>
