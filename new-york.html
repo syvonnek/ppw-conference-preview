@@ -24,7 +24,7 @@
   header.nav{position:sticky;top:0;z-index:40;background:rgba(10,14,23,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
   .brand{font-weight:800;letter-spacing:.5px;font-size:18px;white-space:nowrap}
   .brand .bar{color:var(--accent-2)}
-  .nav-links{display:flex;gap:22px;margin-left:auto;font-size:14px;color:var(--ink-dim)}
+  .nav-links{display:flex;gap:40px;margin-left:auto;font-size:14px;color:var(--ink-dim)}
   .nav-links a{text-decoration:none}
   .nav-links a:hover{color:var(--ink)}
   .btn.ghost{background:rgba(255,255,255,.14);box-shadow:none;border:1px solid rgba(255,255,255,.45);color:#fff}
@@ -200,7 +200,7 @@
   .review-flag b{color:#ffe6a6}
   footer{color:var(--ink-faint);font-size:13px;text-align:center;position:relative;overflow:hidden;border-top:1px solid var(--line);padding:0;margin-top:10px}
   .foot-glow{position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(124,58,237,.16) 55%,rgba(45,130,246,.13));pointer-events:none}
-  .foot-inner{position:relative;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;padding:60px 24px 38px;text-align:left}
+  .foot-inner{position:relative;display:grid;grid-template-columns:1fr auto auto;gap:95px;padding:53px 36px 38px;text-align:left}
   .foot-ppw{height:42px;width:auto;margin-bottom:16px;display:block}
   .foot-brand p{color:var(--ink-dim);font-size:14px;line-height:1.6;max-width:330px;margin:0 0 20px}
   .fb-btn{display:inline-flex;align-items:center;gap:10px;background:#1877f2;color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:11px 18px;border-radius:12px;box-shadow:0 10px 26px rgba(24,119,242,.4);transition:transform .15s}
@@ -229,6 +229,8 @@
   #sponsors .partner-strip{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:26px 40px;margin-inline:auto}
   #sponsors .partner-strip img{opacity:.94;object-fit:contain;width:auto}
   #sponsors .sec-head{margin-bottom:26px;text-align:center;max-width:760px;margin-left:auto;margin-right:auto}
+  #sponsors .sec-title{font-family:"Satoshi","Inter",sans-serif;font-size:clamp(28px,4vw,42px);margin-top:18px;font-weight:800;letter-spacing:-.8px}
+  #sponsors .sec-kicker{letter-spacing:2.5px}
   #sponsors .partner-note{text-align:center;color:var(--ink-faint);font-size:13.5px;margin-top:28px}
   #sponsors .partner-note a{margin-left:7px;color:var(--accent-2);text-decoration:none;font-weight:600}
 </style>
@@ -325,13 +327,12 @@
   <div class="wrap">
     <div class="sec-head center"><div class="sec-kicker">Global partners</div><h2 class="sec-title">Trusted by the industry's best</h2></div>
     <div class="partner-strip">
+      <img src="ppw-assets/spon-nvidia.webp" alt="NVIDIA" style="height:44px">
+      <img src="ppw-assets/spon-dell.webp" alt="Dell Technologies" style="height:50px">
       <img src="ppw-assets/spon-adobe.webp" alt="Adobe" style="height:37px">
       <img src="ppw-assets/spon-maxon.webp" alt="Maxon" style="height:44px">
       <img src="ppw-assets/spon-bmd-ko.webp" alt="Blackmagic Design" style="height:42px">
-      <img src="ppw-assets/ko-amd.webp" alt="AMD" style="height:27px">
-      <img src="ppw-assets/ko-atomos.webp" alt="Atomos" style="height:34px">
-      <img src="ppw-assets/ko-hp.webp" alt="HP" style="height:34px">
-      <img src="ppw-assets/ko-fujifilm.webp" alt="Fujifilm" style="height:24px">
+      <img src="ppw-assets/spon-intel-ko.webp" alt="Intel" style="height:36px;transform:translateY(-2px)">
     </div>
     <p class="partner-note">A selection of PPW's global partners. <a href="ppw-sponsorships.html">Explore sponsorship &rarr;</a></p>
   </div>
