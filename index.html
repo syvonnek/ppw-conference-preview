@@ -465,6 +465,8 @@
     .spon-bridge{justify-content:center;text-align:center}
     .gb-card{padding:26px 20px}
   }
+  #sponsor-value::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,15,28,.90),rgba(10,15,28,.84) 45%,rgba(10,15,28,.94)),url(ppw-assets/conf-g4.jpg) center/cover no-repeat;pointer-events:none;z-index:0}
+  #sponsor-value .wrap{position:relative;z-index:1}
   .sv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1040px;margin:0 auto}
   @media(max-width:820px){.sv-grid{grid-template-columns:1fr}}
   .sv-card{background:linear-gradient(170deg,var(--panel-2),var(--panel));border:1px solid var(--line);border-radius:18px;padding:28px;text-align:center}
@@ -686,7 +688,7 @@
   </div>
 </section>
 
-<section class="block" id="sponsor-value">
+<section class="block" id="sponsor-value" style="position:relative;overflow:hidden">
   <div class="wrap">
     <div class="sec-head center">
       <div class="sec-kicker">Why brands partner with PPW</div>
