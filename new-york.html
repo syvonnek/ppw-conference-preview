@@ -103,7 +103,7 @@
   .collage .big{grid-column:span 2;grid-row:span 2}
   @media(max-width:700px){.collage{grid-template-columns:repeat(2,1fr);grid-auto-rows:128px}}
   .spon-by{display:flex;align-items:center;justify-content:center;gap:0;margin:-14px auto 30px;color:var(--ink-dim);font-size:14px;font-weight:600;letter-spacing:.02em}
-.spon-by img{height:36px;width:auto;margin-left:-3px}
+.spon-by img{height:36px;width:auto;margin-left:-6px}
   .legend{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 22px;width:fit-content;margin:0 auto 20px;background:rgba(19,28,48,.55);backdrop-filter:blur(10px);border:1px solid var(--line-2);border-radius:999px;padding:13px 30px;box-shadow:0 10px 30px rgba(0,0,0,.3)}
   .legend span{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--ink-dim)}
   .legend i{width:11px;height:11px;border-radius:3px;display:inline-block;transform:translateY(-1px)}
@@ -119,7 +119,7 @@
   .time-cell{display:flex;align-items:center;justify-content:flex-end;font-size:13px;font-weight:700;color:var(--ink-dim);padding:10px 12px;white-space:nowrap}
   .cell{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 19px;min-height:92px;display:flex;flex-direction:column;gap:7px;overflow:hidden}
   .cell.cont{border-top:3px solid var(--tc,#a78bfa);padding-top:15px}
-  .cell .ttl{font-weight:700;font-size:18px;line-height:1.5;color:#fff;text-wrap:pretty}
+  .cell .ttl{font-weight:700;font-size:18px;line-height:1.5;color:#fff;text-wrap:balance;overflow-wrap:break-word;hyphens:none}
   .cell .spk{font-size:12.5px;color:var(--ink-dim);margin-top:auto;display:flex;align-items:center;gap:6px}
   .cell .spk .av{width:18px;height:18px;border-radius:50%;background:linear-gradient(135deg,#3b4a72,#1c2742);font-size:9px;display:flex;align-items:center;justify-content:center;color:#cdd9f5;font-weight:800}
   .trk{display:block;font-size:10.5px;font-weight:800;letter-spacing:1.1px;text-transform:uppercase;padding:7px 15px;margin:-18px -19px 14px;color:#fff;border-radius:0}
@@ -207,9 +207,9 @@
   .review-flag b{color:#ffe6a6}
   footer{color:var(--ink-faint);font-size:13px;text-align:center;position:relative;overflow:hidden;border-top:1px solid var(--line);padding:0;margin-top:10px}
   .foot-glow{position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(124,58,237,.16) 55%,rgba(45,130,246,.13));pointer-events:none}
-  .foot-inner{position:relative;display:grid;grid-template-columns:1fr auto auto;gap:95px;padding:53px 36px 38px;text-align:left}
+  .foot-inner{position:relative;display:grid;grid-template-columns:1fr auto auto;gap:95px;padding:53px 24px 38px;text-align:left}
   .foot-ppw{height:68px;width:auto;margin-bottom:13px;display:block}
-  .foot-brand p{color:#ffffff;font-size:15px;line-height:1.4;max-width:340px;margin:0 0 20px}
+  .foot-brand p{color:#ffffff;font-size:14px;line-height:1.6;max-width:330px;margin:0 0 20px}
   .fb-btn{display:inline-flex;align-items:center;gap:10px;background:#1877f2;color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:11px 18px;border-radius:12px;box-shadow:0 10px 26px rgba(24,119,242,.4);transition:transform .15s}
   .fb-btn:hover{transform:translateY(-1px)}
   .fb-btn svg{width:18px;height:18px;fill:#fff}
@@ -282,7 +282,7 @@
       <span class="chip"><svg class="sic" style="color:var(--accent-2)"><use href="#i-ticket"/></svg> 6 tracks · 30+ sessions</span>
     </div>
     <div class="hero-cta">
-      <a class="btn" href="#" onclick="return false"><span class="bt">Register on NAB Show</span> <svg class="sic"><use href="#i-arrow"/></svg></a>
+      <a class="btn reg-btn" href="#" onclick="return false"><span class="bt">Register on NAB Show</span> <svg class="sic"><use href="#i-arrow"/></svg></a>
     </div>
   </div>
 </section>
@@ -320,13 +320,13 @@
 
 <section class="block" id="networking">
   <div class="wrap">
-    <div class="sec-head center" style="margin-bottom:20px"><div class="sec-kicker">After hours</div><h2 class="sec-title">The Post Production World Networking Party</h2></div>
+    <div class="sec-head center" style="margin-bottom:20px"><div class="sec-kicker">After hours</div><h2 class="sec-title">The Post Production World Networking Party</h2><p class="sec-desc" style="margin-inline:auto">Join us in the evening for the industry's favorite social gathering — build and strengthen connections with creatives, instructors, and partner brands from around the world.</p></div>
     <div class="spon-by"><span>Sponsored by</span><img src="ppw-assets/spon-adobe.webp" alt="Adobe"></div>
     <div class="collage">
       <a class="big" href="ppw-assets/g-net-banner.webp" target="_blank"><img src="ppw-assets/g-net-banner.webp" alt="PPW networking party" loading="lazy"></a>
-      <a href="ppw-assets/pty-027.webp" target="_blank"><img src="ppw-assets/pty-027.webp" alt="PPW networking party" loading="lazy"></a>
-      <a href="ppw-assets/pty-049.webp" target="_blank"><img src="ppw-assets/pty-049.webp" alt="PPW networking party" loading="lazy"></a>
       <a href="ppw-assets/g-net-04.webp" target="_blank"><img src="ppw-assets/g-net-04.webp" alt="PPW networking party" loading="lazy"></a>
+      <a href="ppw-assets/pty-049.webp" target="_blank"><img src="ppw-assets/pty-049.webp" alt="PPW networking party" loading="lazy"></a>
+      <a href="ppw-assets/pty-027.webp" target="_blank"><img src="ppw-assets/pty-027.webp" alt="PPW networking party" loading="lazy"></a>
       <a href="ppw-assets/pty-032.webp" target="_blank"><img src="ppw-assets/pty-032.webp" alt="PPW networking party" loading="lazy"></a>
     </div>
   </div>
