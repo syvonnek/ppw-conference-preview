@@ -242,7 +242,13 @@
   .deck-c .deck-bg{background-position:right center;background:url(ppw-assets/conf-bg3.jpg) center 30%/cover!important;background-image:url(ppw-assets/conf-c.webp)!important;background-size:cover!important;opacity:.16!important;filter:saturate(.8)}
   .deck-d .deck-bg{background:none!important}
   @media(max-width:760px){.cmp{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}}
-  .bonus-flower{display:block;width:100%;max-width:920px;margin:14px auto 6px}
+  .bonus-split{display:grid;grid-template-columns:0.85fr 1.15fr;gap:44px;align-items:center;max-width:1120px;margin:0 auto}
+  .bonus-copy{text-align:left}
+  .bonus-copy .sec-title{margin-top:14px}
+  .bonus-copy .sec-desc{margin-top:16px;max-width:none}
+  .bonus-copy .draft-note{margin-left:0;margin-right:0;text-align:left}
+  .bonus-flower{display:block;width:100%;max-width:640px;margin:0 auto}
+  @media(max-width:860px){.bonus-split{grid-template-columns:1fr;gap:24px}.bonus-copy{text-align:center}.bonus-copy .draft-note{text-align:center}}
   .draft-note{max-width:760px;margin:16px auto 0;padding:11px 18px;border:1px dashed rgba(246,207,106,.5);background:rgba(246,207,106,.07);border-radius:10px;color:#f3cd72;font-size:12.5px;line-height:1.5;text-align:center}
   .draft-note b{color:#ffe6a6}
 </style>
@@ -400,8 +406,15 @@
 <section class="block deck-sec deck-d">
   <div class="deck-bg"></div>
   <div class="wrap">
-    <div class="sec-head center"><div class="sec-kicker">Bonus Value Additions</div><h2 class="sec-title">Beyond the core benefits</h2><div class="draft-note"><b>DRAFT SECTION — FOR REVIEW.</b> Benefit list and diagram are placeholders pulled from the sponsorship deck; wording and inclusions still to be confirmed.</div><p class="sec-desc" style="margin-inline:auto;color:#cdd4ea">Platinum and Core partners unlock broader reach and lasting visibility well past the show floor.</p></div>
-    <img class="bonus-flower" src="ppw-assets/bonus-flower.webp" alt="Bonus value additions: demo tables, dedicated webinars, branded content, branded training tracks, database access, global platinum recognition">
+    <div class="bonus-split">
+      <div class="bonus-copy">
+        <div class="sec-kicker">Bonus Value Additions</div>
+        <h2 class="sec-title">Beyond the core benefits</h2>
+        <p class="sec-desc" style="color:#cdd4ea">Beyond the core Platinum benefits, PPW Global Sponsors unlock <strong style="color:#fff">broader reach and lasting visibility</strong> well past the show floor.</p>
+        <div class="draft-note"><b>DRAFT SECTION &mdash; FOR REVIEW.</b> Benefit list and diagram are placeholders pulled from the sponsorship deck; wording and inclusions still to be confirmed.</div>
+      </div>
+      <img class="bonus-flower" src="ppw-assets/bonus-flower.webp" alt="Bonus value additions: demo tables, dedicated webinars, branded content, branded training tracks, database access, global platinum recognition">
+    </div>
   </div>
 </section>
 

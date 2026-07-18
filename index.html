@@ -189,8 +189,8 @@
   @media(max-width:600px){.ai-wrap{padding:30px}}
   .ai-cards{display:grid;grid-template-columns:1fr 1fr;gap:33px;margin-top:40px}
   @media(max-width:760px){.ai-cards{grid-template-columns:1fr}}
-  .ai-card h3{font-size:21px;margin:0 0 6px;font-weight:600;color:#ffdfa3}
-  .ai-card p{margin:0;color:#e5e9f0;font-size:16.5px;line-height:1.55}
+  .ai-card h3{font-size:22px;margin:0 0 14px;font-weight:600;color:#f19399}
+  .ai-card p{margin:0;color:#c3c5c8;font-size:16.5px;line-height:1.45}
   .ai-badge svg{width:50px;height:50px}
   .ai-badge .bl{font-size:13px;font-weight:700;letter-spacing:.2px;color:var(--ink);line-height:1.25}
   .ai-badge .bc{font-size:9.5px;letter-spacing:2px;text-transform:uppercase;color:var(--ink-dim);font-weight:600}
@@ -207,7 +207,7 @@
   .review-strip b{color:#ffe6a6}
   .review-flag{max-width:var(--maxw);margin:18px auto 0;padding:10px 16px;font-size:12.5px;line-height:1.5;color:#f3cd72;background:rgba(245,196,81,.07);border:1px dashed rgba(245,196,81,.4);border-radius:10px}
   .review-flag b{color:#ffe6a6}
-  .spon-bridge{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap;background:linear-gradient(160deg,rgba(124,58,237,.14),rgba(45,130,246,.05));border:1px solid var(--line-2);border-radius:20px;padding:30px 49px}
+  .spon-bridge{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap;background:linear-gradient(160deg,rgba(124,58,237,.22),rgba(45,130,246,.10));border:1px solid var(--line-2);border-radius:20px;padding:30px 49px}
   .spon-bridge .sb-h{font-family:"Satoshi","Inter",sans-serif;font-size:27px;font-weight:800;margin:8px 0 6px;letter-spacing:-.4px}
   @media(max-width:700px){.spon-bridge{padding:26px 24px}}
   footer{text-align:center;position:relative;overflow:hidden;border-top:1px solid var(--line);padding:0;margin-top:0}
@@ -301,13 +301,14 @@
   .light-sec,#ai{padding:54px 0 84px}
   .sec-head{max-width:740px;margin-bottom:58px}
   #networking .sec-head{margin-bottom:32px}
+  #attendees .sec-head{margin-bottom:36px}
   .sec-kicker{font-size:12px;letter-spacing:3.5px;text-transform:uppercase;color:var(--accent-2);font-weight:700;display:inline-block;margin-bottom:0px}
   #ai .sec-kicker{margin-bottom:11px}
   .sec-title{font-size:clamp(28px,4vw,42px);font-weight:800;letter-spacing:-.8px;line-height:1.24;padding-bottom:.14em;background:linear-gradient(180deg,#fff,#c9d5ee);-webkit-background-clip:text;background-clip:text;color:transparent;margin-top:16px}
   .city-sec{border-top:0}
   #locations{padding:97px 0 0;min-height:auto}
   #locations .sec-title{font-size:44px}
-  #networking{padding:106px 0 128px}
+  #networking{padding:128px 0 128px}
   .cards3,.who-grid{gap:22px}
   .hero-brand{display:flex;flex-direction:column;align-items:center;gap:12px;margin:0 auto 33px}
   .hero-og{height:85px;width:auto;filter:drop-shadow(0 8px 28px rgba(0,0,0,.85))}
@@ -318,7 +319,7 @@
   .spon-bridge p,.spon-bridge .sb-text p{text-wrap:balance;max-width:640px}
   /* white sponsor wall */
   .sponsors-light .sec-kicker{color:#7c3aed!important}
-  .sponsors-light .sec-title{color:#0e1626!important;-webkit-text-fill-color:#0e1626!important;background:none!important}
+  .sponsors-light .sec-title{color:#0e1626!important;-webkit-text-fill-color:#0e1626!important;background:none!important;margin-top:20px}
   @media(max-width:760px){.wall .tile img{height:34px!important;max-width:130px!important}}
   /* AI badges: one line + glass card */
   .ai-badges{display:flex;justify-content:center;margin-top:44px;flex-wrap:nowrap!important;gap:14px!important;max-width:1120px;margin-inline:auto}
@@ -329,7 +330,7 @@
   /* AI face bg full-bleed + more visible */
   /* text up 1px, arrow unchanged */
   .ai-badges{display:grid!important;grid-template-columns:repeat(7,1fr)!important;gap:16px!important;justify-items:stretch!important;max-width:1140px;margin-inline:auto}
-  .ai-badge{display:flex;align-items:center;justify-content:center;background:rgba(18,27,47,.5);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:16px 10px 18px;width:100%!important}
+  .ai-badge{display:flex;align-items:center;justify-content:center;background:rgba(18,27,47,.5);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:18px 14px 20px;width:100%!important}
   .ai-wrap .sec-title,.ai-wrap .sec-kicker,.ai-wrap .sec-desc{text-shadow:0 2px 18px rgba(0,0,0,.8)}
   @media(max-width:820px){.ai-badges{grid-template-columns:repeat(4,1fr)!important}}
   /* proof band: clean diagonal (no bg peep), centered middle stat */
@@ -339,7 +340,7 @@
   .proof{padding:0 clamp(20px,3vw,46px)!important;text-align:center!important}
   .proof:first-child{padding-left:clamp(20px,3vw,46px)!important}
   .proof:not(:last-child){border-right:1px solid rgba(255,255,255,.14)!important}
-  .proof .prow{display:flex;gap:15px;margin-top:7px;justify-content:center!important}
+  .proof .prow{display:flex;gap:15px;margin-top:4px;justify-content:center!important}
   .proof .pc{margin:0;color:#d7ddf2;font-size:clamp(14.5px,1.25vw,17px);line-height:1.4;max-width:23ch;font-weight:500;margin-left:auto;margin-right:auto}
   /* more space below Locations heading */
   #locations .sec-head{margin-bottom:78px!important}
@@ -404,7 +405,7 @@
   .dd-menu{position:absolute;top:calc(100% + 18px);left:50%;transform:translateX(-50%) translateY(8px);background:var(--panel-2);border:1px solid var(--line-2);border-radius:16px;padding:8px;opacity:0;visibility:hidden;transition:.18s ease;box-shadow:var(--shadow);z-index:70;min-width:300px!important}
   .dd-menu .c{font-weight:700;font-size:14px;color:var(--ink);white-space:nowrap!important}
   .wall.plat .tile img[alt="Adobe"]{height:22px!important;max-width:135px!important}
-  .proof-grid .proof:nth-child(3) .pn{white-space:nowrap!important;text-wrap:nowrap;font-size:clamp(22px,2.3vw,32px)!important}
+  .proof-grid .proof:nth-child(3) .pn{white-space:nowrap!important;text-wrap:nowrap;font-size:clamp(22px,2.3vw,33px)!important}
   .sec-desc{color:var(--ink-dim);font-size:16.5px;line-height:1.5!important;margin-top:10px!important}
   .city-cta .btn{padding-top:13px!important;padding-bottom:13px!important;margin-bottom:12px}
   .lb-overlay{position:fixed;inset:0;background:rgba(5,8,16,.86);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;z-index:300;padding:40px;cursor:zoom-out}
@@ -424,7 +425,7 @@
   .gb-card{max-width:660px;margin:0 auto;background:#fff;border-radius:18px;padding:38px 44px;text-align:center;box-shadow:0 30px 80px rgba(0,0,0,.5)}
   .gb-card p{margin:0 0 14px;color:#2b3550;font-size:16px;line-height:1.48;text-wrap:balance}
   .gb-card p:last-child{margin-bottom:0}
-  .gb-card .lead{color:#2c3b59;font-size:17.5px;font-weight:800;font-family:"Satoshi","Inter",sans-serif}
+  .gb-card .lead{color:#2c3b59;font-size:18px;font-weight:500;font-family:"Satoshi","Inter",sans-serif}
   .gb-card .lv{color:#e0603a;font-weight:700}
   .gb-card .ny{color:#2f6fd0;font-weight:700}
   .gb-card .ldn{color:#7c4bd0;font-weight:700}
@@ -442,8 +443,8 @@
   #ai{position:relative;overflow:hidden;background-image:url(ppw-assets/ai-bg-global.webp)!important;background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important}
   .sponsors-light .wall-plate{position:relative;z-index:1;background:#fff;max-width:860px;margin:0 auto;border-radius:14px;padding:44px 36px 38px}
   .sponsors-light .sec-head{margin-bottom:40px!important}
-  .sponsors-light .tier-label{color:#8a93a8!important;margin-top:30px!important;margin-bottom:22px!important}
-  .sponsors-light .wall.gold + .tier-label{margin-top:56px!important}
+  .sponsors-light .tier-label{color:#8a93a8!important;margin-top:30px!important;margin-bottom:10px!important}
+  .sponsors-light .wall.gold + .tier-label{margin-top:35px!important}
   .sponsors-light .partner-note{margin-top:44px!important}
   /* Who Attends: darkened attendee photo, full-bleed */
   #attendees{position:relative;overflow:hidden;background:var(--bg-2)!important;scroll-margin-top:86px}
@@ -465,8 +466,6 @@
     .spon-bridge{justify-content:center;text-align:center}
     .gb-card{padding:26px 20px}
   }
-  #sponsor-value::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,15,28,.90),rgba(10,15,28,.84) 45%,rgba(10,15,28,.94)),url(ppw-assets/conf-g4.jpg) center/cover no-repeat;pointer-events:none;z-index:0}
-  #sponsor-value .wrap{position:relative;z-index:1}
   .sv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1040px;margin:0 auto}
   @media(max-width:820px){.sv-grid{grid-template-columns:1fr}}
   .sv-card{background:linear-gradient(170deg,var(--panel-2),var(--panel));border:1px solid var(--line);border-radius:18px;padding:28px;text-align:center}
@@ -688,7 +687,7 @@
   </div>
 </section>
 
-<section class="block" id="sponsor-value" style="position:relative;overflow:hidden">
+<section class="block" id="sponsor-value">
   <div class="wrap">
     <div class="sec-head center">
       <div class="sec-kicker">Why brands partner with PPW</div>
