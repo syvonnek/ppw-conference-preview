@@ -117,28 +117,23 @@
   .gh{font-weight:800;font-size:13px;letter-spacing:.5px;color:var(--ink);padding:10px 12px;text-transform:uppercase;text-align:center}
   .gh.time-h{color:var(--ink-faint)}
   .time-cell{display:flex;align-items:center;justify-content:flex-end;font-size:13px;font-weight:700;color:var(--ink-dim);padding:10px 12px;white-space:nowrap}
-  .cell{background:var(--panel);border:1px solid var(--line);border-left-width:3px;border-radius:10px;padding:18px 19px;min-height:92px;display:flex;flex-direction:column;gap:7px}
+  .cell{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 19px;min-height:92px;display:flex;flex-direction:column;gap:7px;overflow:hidden}
+  .cell.cont{border-top:3px solid var(--tc,#a78bfa);padding-top:15px}
   .cell .ttl{font-weight:700;font-size:18px;line-height:1.5;color:#fff;text-wrap:pretty}
   .cell .spk{font-size:12.5px;color:var(--ink-dim);margin-top:auto;display:flex;align-items:center;gap:6px}
   .cell .spk .av{width:18px;height:18px;border-radius:50%;background:linear-gradient(135deg,#3b4a72,#1c2742);font-size:9px;display:flex;align-items:center;justify-content:center;color:#cdd9f5;font-weight:800}
-  .trk{align-self:flex-start;font-size:10.5px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;padding:3px 8px;border-radius:999px}
+  .trk{display:block;font-size:10.5px;font-weight:800;letter-spacing:1.1px;text-transform:uppercase;padding:7px 15px;margin:-18px -19px 14px;color:#fff;border-radius:0}
   .cell.empty{background:transparent;border-style:dashed;border-left-width:1px;min-height:92px}
   .keynote{grid-column:2 / -1;background:linear-gradient(180deg,rgba(167,139,250,.15),rgba(167,139,250,.05));border:1px solid rgba(167,139,250,.42);border-left:3px solid #a78bfa;border-radius:10px;padding:14px;display:flex;align-items:center;justify-content:center;gap:12px}
   .keynote .kx{font-size:10.5px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#c4b5fd;background:rgba(167,139,250,.16);padding:4px 9px;border-radius:999px}
   .keynote .ktt{font-weight:800;font-size:15px;color:#fff}
-  /* track color accents */
-  .t-post{border-left-color:var(--t-post)}
-  .trk.t-post{background:rgba(167,139,250,.16);color:var(--t-post)}
-  .t-craft{border-left-color:var(--t-craft)}
-  .trk.t-craft{background:rgba(45,212,191,.16);color:var(--t-craft)}
-  .t-ai{border-left-color:var(--t-ai)}
-  .trk.t-ai{background:rgba(96,165,250,.16);color:var(--t-ai)}
-  .t-immersive{border-left-color:var(--t-immersive)}
-  .trk.t-immersive{background:rgba(244,114,182,.16);color:var(--t-immersive)}
-  .t-creator{border-left-color:var(--t-creator)}
-  .trk.t-creator{background:rgba(251,146,60,.16);color:var(--t-creator)}
-  .t-corp{border-left-color:var(--t-corp)}
-  .trk.t-corp{background:rgba(74,222,128,.16);color:var(--t-corp)}
+  /* track color accents: solid band header + continuation top-edge */
+  .cell.t-post{--tc:var(--t-post)}   .trk.t-post{background:linear-gradient(90deg,#7c5cf0,#a78bfa)}
+  .cell.t-craft{--tc:var(--t-craft)} .trk.t-craft{background:linear-gradient(90deg,#0d9488,#2dd4bf);color:#04231f}
+  .cell.t-ai{--tc:var(--t-ai)}       .trk.t-ai{background:linear-gradient(90deg,#3b82f6,#60a5fa)}
+  .cell.t-immersive{--tc:var(--t-immersive)} .trk.t-immersive{background:linear-gradient(90deg,#e0468f,#f472b6)}
+  .cell.t-creator{--tc:var(--t-creator)}     .trk.t-creator{background:linear-gradient(90deg,#ea7317,#fb923c);color:#2a1400}
+  .cell.t-corp{--tc:var(--t-corp)}   .trk.t-corp{background:linear-gradient(90deg,#22a95a,#4ade80);color:#04240f}
   .i-post{background:var(--t-post)}
   .i-craft{background:var(--t-craft)}
   .i-ai{background:var(--t-ai)}
@@ -234,7 +229,7 @@
   .fb-link img{width:330px;max-width:100%;height:auto;display:block;border-radius:8px}
   .spon-bridge .sb-text{flex:1 1 440px;max-width:660px}
   .spon-bridge p{text-wrap:pretty}
-  .btn{display:inline-flex;align-items:center;gap:8px;color:#fff;text-decoration:none;font-weight:700;font-size:13.5px;padding:10px 16px;border-radius:999px;border:0;white-space:nowrap;background:linear-gradient(115deg,#8b5cf6 0%,#5b8def 55%,#22d3ee 125%);box-shadow:0 10px 30px rgba(99,102,241,.42);line-height:1;padding-top:13px!important;padding-bottom:13px!important}
+  .btn{display:inline-flex;align-items:center;gap:8px;color:#fff;text-decoration:none;font-weight:700;font-size:13.5px;padding:10px 16px;border-radius:999px;border:0;white-space:nowrap;background:linear-gradient(180deg,#4f7df9,#2f5fe0);box-shadow:0 8px 20px rgba(47,95,224,.32),inset 0 1px 0 rgba(255,255,255,.32);line-height:1;padding-top:13px!important;padding-bottom:13px!important}
   header.nav .btn{margin-left:10px;padding-top:10px!important;padding-bottom:10px!important}
   .btn .ic{transform:translateY(-0.5px)!important}
   .btn .bt{display:inline-block!important;transform:translateY(-1px)!important}
@@ -342,7 +337,7 @@
     <div class="sec-head center"><div class="sec-kicker">Global partners</div><h2 class="sec-title">Trusted by the industry's best</h2></div>
     <div class="partner-strip">
       <img src="ppw-assets/spon-nvidia.webp" alt="NVIDIA" style="height:44px">
-      <img src="ppw-assets/spon-dell.webp" alt="Dell Technologies" style="height:50px">
+      <img src="ppw-assets/spon-dell.webp" alt="Dell Technologies" style="height:52px;transform:translateY(2px)">
       <img src="ppw-assets/spon-adobe.webp" alt="Adobe" style="height:37px">
       <img src="ppw-assets/spon-maxon.webp" alt="Maxon" style="height:44px">
       <img src="ppw-assets/spon-bmd-ko.webp" alt="Blackmagic Design" style="height:45px">
@@ -434,11 +429,13 @@ const DAYS = {
   ]}
 };
 
-function cellHTML(se){
+function cellHTML(se, showBand){
   if(!se) return `<div class="cell empty"></div>`;
   const tk = TRACK[se.k];
-  return `<div class="cell t-${tk.c}">
-    <span class="trk t-${tk.c}">${tk.s}</span>
+  const band = showBand ? `<span class="trk t-${tk.c}">${tk.s}</span>` : '';
+  const cls = showBand ? '' : ' cont';
+  return `<div class="cell t-${tk.c}${cls}">
+    ${band}
     <div class="ttl">${se.t}</div>
     <div class="spk"><span class="av">${initials(se.s)}</span>${se.s}</div>
   </div>`;
@@ -449,12 +446,19 @@ function renderDay(d, gridId){
   const grid = document.getElementById(gridId);
   grid.style.gridTemplateColumns = `110px repeat(${cols}, minmax(180px, 1fr))`;
   let h = `<div class="gh time-h"></div>` + day.rooms.map(r=>`<div class="gh">${r}</div>`).join('');
+  const prevTrack = new Array(cols).fill(null);
   day.slots.forEach(sl=>{
     h += `<div class="time-cell">${sl.time}</div>`;
     if(sl.key){
       h += `<div class="keynote"><span class="kx">Keynote</span><span class="ktt">${sl.key}</span></div>`;
+      prevTrack.fill(null);
     } else {
-      for(let i=0;i<cols;i++) h += cellHTML(sl.ses[i]);
+      for(let i=0;i<cols;i++){
+        const se = sl.ses[i];
+        const k = se ? se.k : null;
+        h += cellHTML(se, k !== prevTrack[i]);
+        prevTrack[i] = k;
+      }
     }
   });
   grid.innerHTML = h;

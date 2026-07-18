@@ -10,6 +10,8 @@
 <link href="ppw-assets/site.css" rel="stylesheet">
 <style>
   #who-attends-ldn{position:relative;overflow:hidden;background:var(--bg-2)!important}
+  #who-attends-ldn::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,18,32,.90),rgba(12,18,32,.84) 45%,rgba(12,18,32,.95)),url(ppw-assets/conf-c.webp) center/cover no-repeat;pointer-events:none;z-index:0}
+  #who-attends-ldn .wrap{position:relative;z-index:1}
   #who-attends-ldn .wrap{position:relative;z-index:1}
   #who-attends-ldn .fcard{text-align:center;display:flex;flex-direction:column;align-items:center}
   .host-mpts-logo{height:38px;width:auto;flex:none;margin-right:18px}
@@ -119,7 +121,7 @@
     <div class="sec-head center trusted"><div class="sec-kicker">Global partners</div><h2 class="sec-title">Trusted by the industry’s best</h2></div>
     <div class="partner-strip">
       <img src="ppw-assets/spon-nvidia.webp" alt="NVIDIA" style="height:44px">
-      <img src="ppw-assets/spon-dell.webp" alt="Dell Technologies" style="height:50px">
+      <img src="ppw-assets/spon-dell.webp" alt="Dell Technologies" style="height:52px;transform:translateY(2px)">
       <img src="ppw-assets/spon-adobe.webp" alt="Adobe" style="height:37px">
       <img src="ppw-assets/spon-maxon.webp" alt="Maxon" style="height:44px">
       <img src="ppw-assets/spon-bmd-ko.webp" alt="Blackmagic Design" style="height:45px">

@@ -3,7 +3,7 @@
   --bg:#080b12; --bg-2:#0e1422; --panel:#121b2e; --panel-2:#172138;
   --line:#212d49; --line-2:#2c3a5c; --ink:#eef2fb; --ink-dim:#a3b2d2; --ink-faint:#6b7b9e;
   --accent:#3b82f6; --accent-2:#2dd4ff;
-  --grad:linear-gradient(115deg,#8b5cf6 0%,#5b8def 55%,#22d3ee 125%);
+  --grad:linear-gradient(180deg,#4f7df9,#2f5fe0);
   --radius:18px; --maxw:1200px; --shadow:0 24px 60px rgba(0,0,0,.45);
 }
 *{box-sizing:border-box}
@@ -51,7 +51,7 @@ header.nav{position:sticky;top:0;z-index:60;background:rgba(8,11,18,.8);backdrop
 .dd-menu .d{font-size:12.5px;color:var(--ink-faint);white-space:nowrap}
 .dd-menu .all{justify-content:center;color:var(--accent-2);font-weight:700;font-size:13px;margin-top:2px;border-top:1px solid var(--line);border-radius:0 0 11px 11px}
 .btn{display:inline-flex;align-items:center;gap:7px;background:var(--grad);color:#fff;text-decoration:none;font-weight:700;font-size:14px;
-  padding:13px 22px;border-radius:999px;box-shadow:0 10px 30px rgba(99,102,241,.42);white-space:nowrap;transition:transform .15s,box-shadow .15s}
+  padding:13px 22px;border-radius:999px;box-shadow:0 8px 20px rgba(47,95,224,.32),inset 0 1px 0 rgba(255,255,255,.32);white-space:nowrap;transition:transform .15s,box-shadow .15s}
 .btn:hover{transform:translateY(-1px);box-shadow:0 14px 40px rgba(99,102,241,.6)}
 .btn .ic{width:16px;height:16px}
 .btn.ghost{background:transparent;box-shadow:none;border:1.5px solid var(--line-2);color:var(--ink)}

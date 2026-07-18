@@ -14,7 +14,9 @@
   .cards4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
   .cards4 .fcard{text-align:center;display:flex;flex-direction:column;align-items:center}
   .cards4 .fcard p{line-height:1.52}
-  #unique-section{padding-top:96px;padding-bottom:96px}
+  #unique-section{padding-top:96px;padding-bottom:96px;position:relative;overflow:hidden}
+  #unique-section::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,18,32,.90),rgba(12,18,32,.84) 45%,rgba(12,18,32,.95)),url(ppw-assets/conf-g1.jpg) center/cover no-repeat;pointer-events:none;z-index:0}
+  #unique-section .wrap{position:relative;z-index:1}
   @media(max-width:900px){.cards4{grid-template-columns:1fr 1fr}}
   @media(max-width:560px){.cards4{grid-template-columns:1fr}}
   .sessions{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:960px;margin:0 auto;text-align:left}
@@ -224,7 +226,7 @@
     <div class="sec-head center trusted"><div class="sec-kicker">Global partners</div><h2 class="sec-title">Trusted by the industry's best</h2></div>
     <div class="partner-strip">
       <img src="ppw-assets/spon-nvidia.webp" alt="NVIDIA" style="height:44px">
-      <img src="ppw-assets/spon-dell.webp" alt="Dell Technologies" style="height:50px">
+      <img src="ppw-assets/spon-dell.webp" alt="Dell Technologies" style="height:52px;transform:translateY(2px)">
       <img src="ppw-assets/spon-adobe.webp" alt="Adobe" style="height:37px">
       <img src="ppw-assets/spon-maxon.webp" alt="Maxon" style="height:44px">
       <img src="ppw-assets/spon-bmd-ko.webp" alt="Blackmagic Design" style="height:45px">
