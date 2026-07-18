@@ -92,6 +92,16 @@
   .hint{font-size:13px;color:var(--ink-faint);background:var(--panel);border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin-bottom:18px;display:flex;gap:9px;align-items:flex-start}
   .hint b{color:var(--ink-dim)}
   /* ---------- legend ---------- */
+  .day-head{font-family:"Sora",sans-serif;font-weight:800;font-size:19px;color:var(--ink);margin:30px 0 14px;display:flex;align-items:center;gap:14px}
+  .day-head::after{content:"";flex:1;height:1px;background:var(--line)}
+  .collage{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:152px;gap:12px}
+  .collage a{overflow:hidden;border-radius:14px;border:1px solid var(--line);display:block}
+  .collage img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s}
+  .collage a:hover img{transform:scale(1.05)}
+  .collage .big{grid-column:span 2;grid-row:span 2}
+  @media(max-width:700px){.collage{grid-template-columns:repeat(2,1fr);grid-auto-rows:128px}}
+  .spon-by{display:flex;align-items:center;justify-content:center;gap:14px;margin:-14px auto 30px;color:var(--ink-dim);font-size:14px;font-weight:600;letter-spacing:.04em}
+.spon-by img{height:36px;width:auto}
   .legend{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 22px;width:fit-content;margin:0 auto 20px;background:rgba(19,28,48,.55);backdrop-filter:blur(10px);border:1px solid var(--line-2);border-radius:999px;padding:13px 30px;box-shadow:0 10px 30px rgba(0,0,0,.3)}
   .legend span{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--ink-dim)}
   .legend i{width:11px;height:11px;border-radius:3px;display:inline-block;transform:translateY(-1px)}
@@ -102,11 +112,11 @@
   .grid-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
   .sched-grid{display:grid;gap:10px;min-width:640px}
   .sched-stack{display:none}
-  .gh{font-weight:800;font-size:13px;letter-spacing:.5px;color:var(--ink);padding:10px 12px;text-transform:uppercase}
+  .gh{font-weight:800;font-size:13px;letter-spacing:.5px;color:var(--ink);padding:10px 12px;text-transform:uppercase;text-align:center}
   .gh.time-h{color:var(--ink-faint)}
   .time-cell{display:flex;align-items:center;justify-content:flex-end;font-size:13px;font-weight:700;color:var(--ink-dim);padding:10px 12px;white-space:nowrap}
   .cell{background:var(--panel);border:1px solid var(--line);border-left-width:3px;border-radius:10px;padding:18px 19px;min-height:92px;display:flex;flex-direction:column;gap:7px}
-  .cell .ttl{font-weight:700;font-size:14px;line-height:1.8;color:#fff}
+  .cell .ttl{font-weight:700;font-size:15px;line-height:1.8;color:#fff}
   .cell .spk{font-size:12.5px;color:var(--ink-dim);margin-top:auto;display:flex;align-items:center;gap:6px}
   .cell .spk .av{width:18px;height:18px;border-radius:50%;background:linear-gradient(135deg,#3b4a72,#1c2742);font-size:9px;display:flex;align-items:center;justify-content:center;color:#cdd9f5;font-weight:800}
   .trk{align-self:flex-start;font-size:10.5px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;padding:3px 8px;border-radius:999px}
@@ -276,7 +286,6 @@
     </div>
     <div class="hero-cta">
       <a class="btn" href="#" onclick="return false"><span class="bt">Register on NAB Show</span> <svg class="sic"><use href="#i-arrow"/></svg></a>
-      <a class="btn ghost" href="#program"><span class="bt">View the program</span></a>
     </div>
   </div>
 </section>
@@ -293,16 +302,8 @@
   <div class="wrap">
     <div class="sec-head">
       <div class="sec-kicker">The Program</div>
-      <h2 class="sec-title">Two days · five rooms · 60-minute sessions</h2>
-      <p class="sec-desc">Tap any day to explore the full grid.</p>
+      <h2 class="sec-title">Two days · two rooms · 60-minute sessions</h2>
     </div>
-<div class="controls">
-      <div class="seg day" role="tablist">
-        <button class="active" data-day="1" onclick="setDay(1)">Tue · Oct 20</button>
-        <button data-day="2" onclick="setDay(2)">Wed · Oct 21</button>
-      </div>
-    </div>
-
     <div class="legend">
       <span><i class="i-post"></i>Post &amp; Motion Graphics</span>
       <span><i class="i-craft"></i>Production Craft</span>
@@ -313,12 +314,29 @@
       <span><i class="i-key"></i>Keynote</span>
     </div>
 
-    <div class="schedule-wrap" id="schedWrap">
-      <div class="grid-scroll">
-        <div class="sched-grid" id="grid"></div>
-      </div>
+    <div class="day-head">Tuesday · October 20</div>
+    <div class="schedule-wrap">
+      <div class="grid-scroll"><div class="sched-grid" id="grid1"></div></div>
       <div class="scroll-hint"><span>Swipe to see all rooms</span><span class="arrow">→</span></div>
-      <div class="sched-stack" id="stack"></div>
+    </div>
+    <div class="day-head">Wednesday · October 21</div>
+    <div class="schedule-wrap">
+      <div class="grid-scroll"><div class="sched-grid" id="grid2"></div></div>
+      <div class="scroll-hint"><span>Swipe to see all rooms</span><span class="arrow">→</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="networking">
+  <div class="wrap">
+    <div class="sec-head center" style="margin-bottom:20px"><div class="sec-kicker">After hours</div><h2 class="sec-title">The Post Production World Networking Party</h2></div>
+    <div class="spon-by"><span>Sponsored by</span><img src="ppw-assets/spon-adobe.webp" alt="Adobe"></div>
+    <div class="collage">
+      <a class="big" href="ppw-assets/g-net-banner.webp" target="_blank"><img src="ppw-assets/g-net-banner.webp" alt="PPW networking party" loading="lazy"></a>
+      <a href="ppw-assets/pty-027.webp" target="_blank"><img src="ppw-assets/pty-027.webp" alt="PPW networking party" loading="lazy"></a>
+      <a href="ppw-assets/pty-049.webp" target="_blank"><img src="ppw-assets/pty-049.webp" alt="PPW networking party" loading="lazy"></a>
+      <a href="ppw-assets/g-net-04.webp" target="_blank"><img src="ppw-assets/g-net-04.webp" alt="PPW networking party" loading="lazy"></a>
+      <a href="ppw-assets/pty-032.webp" target="_blank"><img src="ppw-assets/pty-032.webp" alt="PPW networking party" loading="lazy"></a>
     </div>
   </div>
 </section>
@@ -400,32 +418,25 @@ const DAYS = {
       {t:"The Age of Experience: Getting Started with Immersive Video",s:"Gary Adcock",k:"Immersive Media"},
       {t:"Streamline Editing and AI Tools in DaVinci Resolve",s:"Jeff Greenberg",k:"Artificial Intelligence"}]}
   ]},
-  2:{rooms:["Room 1","Room 2","Room 3"],slots:[
+  2:{rooms:["Room 1","Room 2"],slots:[
     {time:"9:00 – 10:00",ses:[
       {t:"Advanced Vectors and Shape Layers Techniques in After Effects",s:"Eran Stern",k:"Post Production & Motion Graphics"},
-      {t:"Location Scout Like a Pro: Smoother Productions from Better PrePro",s:"Rachel Longman",k:"Production Craft"},
-      {t:"Privacy-First AI Tools: Local Tools You Can Use Today",s:"Jeff Greenberg",k:"Artificial Intelligence"}]},
+      {t:"Location Scout Like a Pro: Smoother Productions from Better PrePro",s:"Rachel Longman",k:"Production Craft"}]},
     {time:"10:15 – 11:15",ses:[
       {t:"Cinema 4D: High-Impact Motion Graphics Techniques for Production",s:"Rich Harrington",k:"Post Production & Motion Graphics"},
-      {t:"Stay on Target: Project Management Essentials for Video Pros",s:"Rich Harrington",k:"Production Craft"},
-      {t:"Is Generative AI Changing Cinema?",s:"Gary Adcock",k:"Artificial Intelligence"}]},
+      {t:"Stay on Target: Project Management Essentials for Video Pros",s:"Rich Harrington",k:"Production Craft"}]},
     {time:"11:30 – 12:30",ses:[
       {t:"Faster Motion Graphics Workflows for Editors using Maxon Tools",s:"Jeff Greenberg",k:"Post Production & Motion Graphics"},
-      {t:"Blackmagic Session",s:"Blackmagic Design",k:"Production Craft"},
-      {t:"Reimagining Video Editing Workflows with AI Tools",s:"Luisa Winters",k:"Artificial Intelligence"}]},
+      {t:"Blackmagic Session",s:"Blackmagic Design",k:"Production Craft"}]},
     {time:"12:45 – 1:45",key:"Adobe Keynote — The Future of Editing Begins in Premiere"},
     {time:"2:00 – 3:00",ses:[
       {t:"What Brands Want from Content Creators",s:"Rich Harrington",k:"Creator & Brand Content"},
-      {t:"Collaborating with Clients: Translating Vision into Video",s:"Rachel Longman",k:"Corporate & Media Production"},
-      {t:"Rethinking VFX in the Age of Generative AI",s:"Eran Stern",k:"Artificial Intelligence"}]},
+      {t:"Collaborating with Clients: Translating Vision into Video",s:"Rachel Longman",k:"Corporate & Media Production"}]},
     {time:"3:15 – 4:15",ses:[
       {t:"Simple Content, Captivating Stories: Crafting Brand Engagement through Narrative",s:"Rachel Longman",k:"Creator & Brand Content"},
-      {t:"Building Branded Templates for Repeat Corporate Video Needs",s:"Luisa Winters",k:"Corporate & Media Production"},
-      {t:"Privacy-First AI Tools: Local Tools You Can Use Today",s:"Jeff Greenberg",k:"Artificial Intelligence"}]}
+      {t:"Building Branded Templates for Repeat Corporate Video Needs",s:"Luisa Winters",k:"Corporate & Media Production"}]}
   ]}
 };
-
-let curDay = 1;
 
 function cellHTML(se){
   if(!se) return `<div class="cell empty"></div>`;
@@ -436,13 +447,11 @@ function cellHTML(se){
     <div class="spk"><span class="av">${initials(se.s)}</span>${se.s}</div>
   </div>`;
 }
-
-function render(){
-  const day = DAYS[curDay];
+function renderDay(d, gridId){
+  const day = DAYS[d];
   const cols = day.rooms.length;
-  const grid = document.getElementById('grid');
+  const grid = document.getElementById(gridId);
   grid.style.gridTemplateColumns = `110px repeat(${cols}, minmax(180px, 1fr))`;
-
   let h = `<div class="gh time-h"></div>` + day.rooms.map(r=>`<div class="gh">${r}</div>`).join('');
   day.slots.forEach(sl=>{
     h += `<div class="time-cell">${sl.time}</div>`;
@@ -453,48 +462,9 @@ function render(){
     }
   });
   grid.innerHTML = h;
-
-  // stack (polished)
-  const stack = document.getElementById('stack');
-  let s = '';
-  day.slots.forEach(sl=>{
-    s += `<div class="slot"><div class="slot-time">${sl.time}<span class="ln"></span></div>`;
-    if(sl.key){
-      s += `<div class="scard key"><div class="room" style="color:var(--gold)">Keynote</div><div class="ttl">${sl.key}</div></div>`;
-    } else {
-      sl.ses.forEach((se,i)=>{
-        if(!se) return;
-        const tk = TRACK[se.k];
-        s += `<div class="scard t-${tk.c}">
-          <div class="room">${day.rooms[i]} · ${tk.s}</div>
-          <div class="ttl">${se.t}</div>
-          <div class="meta"><div class="spk"><span class="av">${initials(se.s)}</span>${se.s}</div></div>
-        </div>`;
-      });
-    }
-    s += `</div>`;
-  });
-  stack.innerHTML = s;
 }
-
-function setDay(d){
-  curDay = d;
-  document.querySelectorAll('.seg.day button').forEach(b=>b.classList.toggle('active', +b.dataset.day===d));
-  render();
-}
-function setMode(m){
-  document.body.className = 'mode-'+m;
-  document.querySelectorAll('.seg.mode button').forEach(b=>b.classList.toggle('active', b.dataset.mode===m));
-}
-function toggleSim(){
-  const w = document.getElementById('schedWrap');
-  const btn = document.getElementById('simBtn');
-  const on = w.classList.toggle('sim');
-  btn.classList.toggle('on', on);
-  btn.textContent = on ? 'Exit phone view' : 'Simulate phone';
-}
-
-render();
+renderDay(1,'grid1');
+renderDay(2,'grid2');
 </script>
 <script>(function(){try{var els=[].slice.call(document.querySelectorAll("section.block .sec-head,.loc,.who,.fcard,.ai-wrap,.collage,.cta-strip,.pillar,.rcard,.extra,.cmp,.hero-stats"));els.forEach(function(el){el.classList.add("reveal");});function check(){var h=window.innerHeight||800;for(var i=els.length-1;i>=0;i--){if(els[i].getBoundingClientRect().top<h*0.9){els[i].classList.add("in");els.splice(i,1);}}}check();window.addEventListener("scroll",check,{passive:true});window.addEventListener("resize",check);setTimeout(check,250);setTimeout(function(){els.forEach(function(el){el.classList.add("in");});els=[];},2600);}catch(e){}})();</script>
 </body>

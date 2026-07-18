@@ -27,7 +27,7 @@
   header.nav{position:sticky;top:0;z-index:60;background:rgba(8,11,18,.78);backdrop-filter:blur(16px) saturate(1.2);border-bottom:1px solid var(--line)}
   .nav-inner{display:flex;align-items:center;gap:22px;height:86px}
   .nav-logo{height:34px;width:auto;display:block}
-  .nav-links{display:flex;gap:30px;margin-left:auto;align-items:center;font-size:14.5px}
+  .nav-links{display:flex;gap:40px;margin-left:auto;align-items:center;font-size:14.5px}
   .nav-links a{text-decoration:none;color:var(--ink-dim);font-weight:500;transition:color .15s}
   .nav-links a:hover,.nav-links a.active{color:var(--ink)}
   .dd{position:relative;display:flex;align-items:center}
@@ -138,7 +138,7 @@
   .review-flag b{color:#ffe6a6}
   footer{text-align:center;position:relative;overflow:hidden;border-top:1px solid var(--line);padding:0;margin-top:10px}
   .foot-glow{position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(124,58,237,.16) 55%,rgba(45,130,246,.13));pointer-events:none}
-  .foot-inner{position:relative;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;padding:60px 24px 38px;text-align:left}
+  .foot-inner{position:relative;display:grid;grid-template-columns:1fr auto auto;gap:95px;padding:53px 36px 38px;text-align:left}
   .foot-ppw{height:42px;width:auto;margin-bottom:16px;display:block}
   .foot-brand p{color:var(--ink-dim);font-size:14px;line-height:1.6;max-width:330px;margin:0 0 20px}
   .fb-btn{display:inline-flex;align-items:center;gap:10px;background:#1877f2;color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:11px 18px;border-radius:12px;box-shadow:0 10px 26px rgba(24,119,242,.4);transition:transform .15s}
@@ -241,6 +241,7 @@
   .deck-c .deck-bg{background-position:right center;background:url(ppw-assets/conf-bg3.jpg) center 30%/cover!important;background-image:url(ppw-assets/conf-c.webp)!important;background-size:cover!important;opacity:.16!important;filter:saturate(.8)}
   .deck-d .deck-bg{background:none!important}
   @media(max-width:760px){.cmp{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}}
+  .bonus-flower{display:block;width:100%;max-width:920px;margin:14px auto 6px}
 </style>
 </head>
 <body>
@@ -347,7 +348,6 @@
       <a href="ppw-assets/conf-g3.jpg" target="_blank"><img src="ppw-assets/conf-g3.jpg" alt="" loading="lazy"></a>
       <a href="ppw-assets/conf-g4.jpg" target="_blank"><img src="ppw-assets/conf-g4.jpg" alt="" loading="lazy"></a>
       <a href="ppw-assets/conf-g2.jpg" target="_blank"><img src="ppw-assets/conf-g2.jpg" alt="" loading="lazy"></a>
-      <a href="ppw-assets/conf-g5.jpg" target="_blank"><img src="ppw-assets/conf-g5.jpg" alt="" loading="lazy"></a>
     </div>
   </div>
 </section>
@@ -397,14 +397,7 @@
   <div class="deck-bg"></div>
   <div class="wrap">
     <div class="sec-head center"><div class="sec-kicker">Bonus Value Additions</div><h2 class="sec-title">Beyond the core benefits</h2><p class="sec-desc" style="margin-inline:auto;color:#cdd4ea">Platinum and Core partners unlock broader reach and lasting visibility well past the show floor.</p></div>
-    <div class="bonus-grid">
-      <div class="bonus c1"><svg class="ic"><use href="#i-pin"/></svg><h4>Demo Tables</h4><p>Prime high-traffic placement after training sessions (select events).</p></div>
-      <div class="bonus c4"><svg class="ic"><use href="#i-play"/></svg><h4>Dedicated Webinars</h4><p>Quarterly webinars co-produced by FMC and your team.</p></div>
-      <div class="bonus c2"><svg class="ic"><use href="#i-screen"/></svg><h4>Branded Content</h4><p>Articles, video spotlights, and tutorials co-developed with FMC.</p></div>
-      <div class="bonus c3"><svg class="ic"><use href="#i-grad"/></svg><h4>Branded Training Tracks</h4><p>Showcase your solutions in tracks built to engage and convert.</p></div>
-      <div class="bonus c6"><svg class="ic"><use href="#i-db"/></svg><h4>Database Access</h4><p>Opt-in attendee data from each event in your program.</p></div>
-      <div class="bonus c5"><svg class="ic"><use href="#i-star"/></svg><h4>Global Platinum Recognition</h4><p>Top-tier brand recognition across all marketing assets, all year.</p></div>
-    </div>
+    <img class="bonus-flower" src="ppw-assets/bonus-flower.webp" alt="Bonus value additions: demo tables, dedicated webinars, branded content, branded training tracks, database access, global platinum recognition">
   </div>
 </section>
 

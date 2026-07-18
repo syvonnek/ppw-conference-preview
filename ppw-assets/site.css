@@ -234,3 +234,6 @@ header.nav .btn{padding-top:10px;padding-bottom:10px}
 .cta-strip p{text-wrap:balance}
 
 .foot-inner > .foot-col:nth-child(2){transform:translateX(-20px)}
+
+.spon-by{display:flex;align-items:center;justify-content:center;gap:14px;margin:-14px auto 30px;color:var(--ink-dim);font-size:14px;font-weight:600;letter-spacing:.04em}
+.spon-by img{height:36px;width:auto}
