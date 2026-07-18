@@ -24,7 +24,7 @@
   header.nav{position:sticky;top:0;z-index:40;background:rgba(10,14,23,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
   .brand{font-weight:800;letter-spacing:.5px;font-size:18px;white-space:nowrap}
   .brand .bar{color:var(--accent-2)}
-  .nav-links{display:flex;gap:40px;margin-left:auto;font-size:14px;color:var(--ink-dim)}
+  .nav-links{display:flex;gap:40px;margin-left:auto;align-items:center;font-size:14.5px;color:var(--ink-dim)}
   .nav-links a{text-decoration:none}
   .nav-links a:hover{color:var(--ink)}
   .btn.ghost{background:rgba(255,255,255,.14);box-shadow:none;border:1px solid rgba(255,255,255,.45);color:#fff}
@@ -80,7 +80,8 @@
   .sec-desc{color:var(--ink-dim);max-width:680px;margin-top:10px;font-size:15.5px}
   /* ---------- controls row ---------- */
   .controls{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin:8px 0 17px}
-  #program .sec-head{margin-bottom:16px}
+  #program .sec-head{margin-bottom:16px;text-align:center;margin-left:auto;margin-right:auto}
+  .sec-head.center{text-align:center;margin-left:auto;margin-right:auto}
   .seg{display:inline-flex;background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:4px}
   .seg button{border:0;background:transparent;color:var(--ink-dim);font-weight:700;font-size:14px;padding:9px 18px;border-radius:999px;cursor:pointer;font-family:inherit;transition:.15s}
   .seg button.active{background:linear-gradient(180deg,var(--accent),#2563eb);color:#fff;box-shadow:0 4px 14px rgba(37,99,235,.4)}
@@ -92,7 +93,8 @@
   .hint{font-size:13px;color:var(--ink-faint);background:var(--panel);border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin-bottom:18px;display:flex;gap:9px;align-items:flex-start}
   .hint b{color:var(--ink-dim)}
   /* ---------- legend ---------- */
-  .day-head{font-family:"Sora",sans-serif;font-weight:800;font-size:19px;color:var(--ink);margin:30px 0 14px;display:flex;align-items:center;gap:14px}
+  .day-head{font-family:"Sora",sans-serif;font-weight:800;font-size:19px;color:var(--ink);margin:30px 0 14px;display:flex;align-items:center;justify-content:center;gap:14px}
+  .day-head::before{content:"";flex:1;height:1px;background:var(--line)}
   .day-head::after{content:"";flex:1;height:1px;background:var(--line)}
   .collage{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:152px;gap:12px}
   .collage a{overflow:hidden;border-radius:14px;border:1px solid var(--line);display:block}
@@ -100,8 +102,8 @@
   .collage a:hover img{transform:scale(1.05)}
   .collage .big{grid-column:span 2;grid-row:span 2}
   @media(max-width:700px){.collage{grid-template-columns:repeat(2,1fr);grid-auto-rows:128px}}
-  .spon-by{display:flex;align-items:center;justify-content:center;gap:14px;margin:-14px auto 30px;color:var(--ink-dim);font-size:14px;font-weight:600;letter-spacing:.04em}
-.spon-by img{height:36px;width:auto}
+  .spon-by{display:flex;align-items:center;justify-content:center;gap:0;margin:-14px auto 30px;color:var(--ink-dim);font-size:14px;font-weight:600;letter-spacing:.02em}
+.spon-by img{height:36px;width:auto;margin-left:-3px}
   .legend{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 22px;width:fit-content;margin:0 auto 20px;background:rgba(19,28,48,.55);backdrop-filter:blur(10px);border:1px solid var(--line-2);border-radius:999px;padding:13px 30px;box-shadow:0 10px 30px rgba(0,0,0,.3)}
   .legend span{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--ink-dim)}
   .legend i{width:11px;height:11px;border-radius:3px;display:inline-block;transform:translateY(-1px)}
@@ -116,13 +118,13 @@
   .gh.time-h{color:var(--ink-faint)}
   .time-cell{display:flex;align-items:center;justify-content:flex-end;font-size:13px;font-weight:700;color:var(--ink-dim);padding:10px 12px;white-space:nowrap}
   .cell{background:var(--panel);border:1px solid var(--line);border-left-width:3px;border-radius:10px;padding:18px 19px;min-height:92px;display:flex;flex-direction:column;gap:7px}
-  .cell .ttl{font-weight:700;font-size:15px;line-height:1.8;color:#fff}
+  .cell .ttl{font-weight:700;font-size:18px;line-height:1.5;color:#fff;text-wrap:pretty}
   .cell .spk{font-size:12.5px;color:var(--ink-dim);margin-top:auto;display:flex;align-items:center;gap:6px}
   .cell .spk .av{width:18px;height:18px;border-radius:50%;background:linear-gradient(135deg,#3b4a72,#1c2742);font-size:9px;display:flex;align-items:center;justify-content:center;color:#cdd9f5;font-weight:800}
   .trk{align-self:flex-start;font-size:10.5px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;padding:3px 8px;border-radius:999px}
   .cell.empty{background:transparent;border-style:dashed;border-left-width:1px;min-height:92px}
-  .keynote{grid-column:2 / -1;background:linear-gradient(180deg,rgba(245,196,81,.14),rgba(245,196,81,.05));border:1px solid rgba(245,196,81,.4);border-left:3px solid var(--gold);border-radius:10px;padding:14px;display:flex;align-items:center;gap:12px}
-  .keynote .kx{font-size:10.5px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--gold);background:rgba(245,196,81,.14);padding:4px 9px;border-radius:999px}
+  .keynote{grid-column:2 / -1;background:linear-gradient(180deg,rgba(167,139,250,.15),rgba(167,139,250,.05));border:1px solid rgba(167,139,250,.42);border-left:3px solid #a78bfa;border-radius:10px;padding:14px;display:flex;align-items:center;justify-content:center;gap:12px}
+  .keynote .kx{font-size:10.5px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#c4b5fd;background:rgba(167,139,250,.16);padding:4px 9px;border-radius:999px}
   .keynote .ktt{font-weight:800;font-size:15px;color:#fff}
   /* track color accents */
   .t-post{border-left-color:var(--t-post)}
@@ -193,7 +195,7 @@
   .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
   .reveal.in{opacity:1;transform:none}
   /* clean skyline banner + content below */
-  .edition-banner{position:relative;height:clamp(460px,72vh,800px);background:url(ppw-assets/city-nyc-hi.jpg) center 36%/cover}
+  .edition-banner{position:relative;height:clamp(432px,68vh,772px);background:url(ppw-assets/city-nyc-hi.jpg) center 36%/cover}
   @media(max-width:760px){.edition-banner{height:clamp(280px,46vh,420px)}}
   .edition-banner::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 0%,transparent 72%,rgba(10,14,23,.42) 88%,rgba(10,14,23,.9) 98%,var(--bg) 100%)}
   .edition-intro{text-align:center;padding:32px 0 40px}
@@ -211,8 +213,8 @@
   footer{color:var(--ink-faint);font-size:13px;text-align:center;position:relative;overflow:hidden;border-top:1px solid var(--line);padding:0;margin-top:10px}
   .foot-glow{position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(124,58,237,.16) 55%,rgba(45,130,246,.13));pointer-events:none}
   .foot-inner{position:relative;display:grid;grid-template-columns:1fr auto auto;gap:95px;padding:53px 36px 38px;text-align:left}
-  .foot-ppw{height:42px;width:auto;margin-bottom:16px;display:block}
-  .foot-brand p{color:var(--ink-dim);font-size:14px;line-height:1.6;max-width:330px;margin:0 0 20px}
+  .foot-ppw{height:68px;width:auto;margin-bottom:13px;display:block}
+  .foot-brand p{color:#ffffff;font-size:15px;line-height:1.4;max-width:340px;margin:0 0 20px}
   .fb-btn{display:inline-flex;align-items:center;gap:10px;background:#1877f2;color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:11px 18px;border-radius:12px;box-shadow:0 10px 26px rgba(24,119,242,.4);transition:transform .15s}
   .fb-btn:hover{transform:translateY(-1px)}
   .fb-btn svg{width:18px;height:18px;fill:#fff}
@@ -239,7 +241,7 @@
   #sponsors .partner-strip{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:26px 40px;margin-inline:auto}
   #sponsors .partner-strip img{opacity:.94;object-fit:contain;width:auto}
   #sponsors .sec-head{margin-bottom:26px;text-align:center;max-width:760px;margin-left:auto;margin-right:auto}
-  #sponsors .sec-title{font-family:"Satoshi","Inter",sans-serif;font-size:clamp(28px,4vw,42px);margin-top:18px;font-weight:800;letter-spacing:-.8px}
+  #sponsors .sec-title{font-family:"Satoshi","Inter",sans-serif;font-size:clamp(28px,4vw,42px);margin-top:24px;font-weight:700;letter-spacing:-.9px}
   #sponsors .sec-kicker{letter-spacing:2.5px}
   #sponsors .partner-note{text-align:center;color:var(--ink-faint);font-size:13.5px;margin-top:28px}
   #sponsors .partner-note a{margin-left:7px;color:var(--accent-2);text-decoration:none;font-weight:600}
@@ -290,13 +292,7 @@
   </div>
 </section>
 
-<div class="submenu">
-  <div class="in">
-    <a href="#program">Program Grid</a>
-    <a href="#sponsors">Sponsors</a>
-    <a href="ppw-sponsorships.html">Sponsor PPW</a>
-  </div>
-</div>
+
 
 <section class="block" id="program">
   <div class="wrap">
@@ -349,7 +345,7 @@
       <img src="ppw-assets/spon-dell.webp" alt="Dell Technologies" style="height:50px">
       <img src="ppw-assets/spon-adobe.webp" alt="Adobe" style="height:37px">
       <img src="ppw-assets/spon-maxon.webp" alt="Maxon" style="height:44px">
-      <img src="ppw-assets/spon-bmd-ko.webp" alt="Blackmagic Design" style="height:42px">
+      <img src="ppw-assets/spon-bmd-ko.webp" alt="Blackmagic Design" style="height:45px">
       <img src="ppw-assets/spon-intel-ko.webp" alt="Intel" style="height:36px;transform:translateY(-2px)">
     </div>
     <p class="partner-note">A selection of PPW's global partners. <a href="ppw-sponsorships.html">Explore sponsorship &rarr;</a></p>
