@@ -213,6 +213,7 @@
   footer{text-align:center;position:relative;overflow:hidden;border-top:1px solid var(--line);padding:0;margin-top:0}
   .foot-glow{position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(124,58,237,.16) 55%,rgba(45,130,246,.13));pointer-events:none}
   .foot-inner{position:relative;display:grid;grid-template-columns:1fr auto auto;gap:95px;padding:53px 24px 38px;text-align:left}
+  .foot-inner > .foot-col:nth-child(2){padding-right:11px}
   .foot-ppw{height:68px;width:auto;margin-bottom:13px;display:block}
   .foot-brand p{color:#ffffff;font-size:14px;line-height:1.6;max-width:330px;margin:0 0 20px}
   .fb-btn{display:inline-flex;align-items:center;gap:10px;background:#1877f2;color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:11px 18px;border-radius:12px;box-shadow:0 10px 26px rgba(24,119,242,.4);transition:transform .15s}
@@ -299,6 +300,7 @@
   section.block{border-top:1px solid var(--line);position:relative;padding:112px 0}
   .light-sec,#ai{padding:54px 0 84px}
   .sec-head{max-width:740px;margin-bottom:58px}
+  #networking .sec-head{margin-bottom:32px}
   .sec-kicker{font-size:12px;letter-spacing:3.5px;text-transform:uppercase;color:var(--accent-2);font-weight:700;display:inline-block;margin-bottom:0px}
   #ai .sec-kicker{margin-bottom:11px}
   .sec-title{font-size:clamp(28px,4vw,42px);font-weight:800;letter-spacing:-.8px;line-height:1.24;padding-bottom:.14em;background:linear-gradient(180deg,#fff,#c9d5ee);-webkit-background-clip:text;background-clip:text;color:transparent;margin-top:16px}
@@ -345,7 +347,7 @@
   .city-cta{text-align:center!important;display:flex;flex-direction:column;align-items:center}
   .city-date{color:#fff;font-weight:700;font-size:21px;margin-bottom:14px;white-space:nowrap;text-shadow:0 2px 12px rgba(0,0,0,.6);text-align:center}
   /* sponsor wall: pure white, no boxes, bigger logos, dark-mode safe */
-  .wall{gap:42px 60px!important}
+  .wall{gap:17px 60px!important}
   .wall.plat{max-width:1040px!important}
   .wall.gold{max-width:470px!important}
   .wall .tile{background:none!important;box-shadow:none!important;padding:0!important;height:auto!important;border-radius:0!important}
@@ -410,7 +412,7 @@
   .lb-overlay img{max-width:min(1000px,92vw);max-height:86vh;border-radius:14px;box-shadow:0 0 0 1px rgba(255,255,255,.14),0 30px 80px rgba(0,0,0,.65),0 0 70px rgba(124,58,237,.35);cursor:default}
   .foot-inner > .foot-col:nth-child(2){transform:translateX(-20px)}
   /* Dan's wavy lines behind the sponsor wall, entering from left+right */
-  .sponsors-light{background:linear-gradient(160deg,#13203c,#0c1424)!important;border-top:1px solid var(--line)!important;position:relative;overflow:hidden;padding:84px 0 56px!important}
+  .sponsors-light{background:linear-gradient(160deg,#13203c,#0c1424)!important;border-top:1px solid var(--line)!important;position:relative;overflow:hidden;padding:84px 0 84px!important}
   .sponsors-light::before{content:"";position:absolute;left:0;right:0;top:140px;aspect-ratio:2560/340;background:url(ppw-assets/wavy-lines.webp) center/100% 100% no-repeat;opacity:.7;pointer-events:none;z-index:0}
   .sponsors-light .wrap{position:relative;z-index:1}
   /* going-global band under the hero */
@@ -441,9 +443,10 @@
   .sponsors-light .wall-plate{position:relative;z-index:1;background:#fff;max-width:860px;margin:0 auto;border-radius:14px;padding:44px 36px 38px}
   .sponsors-light .sec-head{margin-bottom:40px!important}
   .sponsors-light .tier-label{color:#8a93a8!important;margin-top:30px!important;margin-bottom:22px!important}
+  .sponsors-light .wall.gold + .tier-label{margin-top:56px!important}
   .sponsors-light .partner-note{margin-top:44px!important}
   /* Who Attends: darkened attendee photo, full-bleed */
-  #attendees{position:relative;overflow:hidden;background:var(--bg-2)!important}
+  #attendees{position:relative;overflow:hidden;background:var(--bg-2)!important;scroll-margin-top:86px}
   #attendees::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,18,32,.90),rgba(12,18,32,.84) 45%,rgba(12,18,32,.95)),url(ppw-assets/conf-g1.jpg) center/cover no-repeat;pointer-events:none;z-index:0}
   #attendees .wrap{position:relative;z-index:1}
   #attendees .wrap{position:relative;z-index:1}
@@ -478,7 +481,7 @@
   .alt-heads li b{color:var(--ink);font-weight:700}
   #sponsor::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,15,28,.90),rgba(10,15,28,.84) 45%,rgba(10,15,28,.94)),url(ppw-assets/conf-g3.jpg) center/cover no-repeat;pointer-events:none;z-index:0}
   #sponsor .wrap{position:relative;z-index:1}
-  .spon-by img{margin-left:-6px}
+  .spon-by img{margin-left:-9px}
   .foot-bottom .small{font-size:11.5px}
 </style>
 </head>
@@ -568,7 +571,7 @@
   </div>
   <div class="wrap">
     <div class="gb-card">
-      <p class="lead">Post Production World is the creative-technology industry's only <strong>year-round, multi-market training platform</strong>.</p>
+      <p class="lead">Post Production World is the creative-technology industry's only <strong>global, year-round, multi-market training platform</strong>.</p>
       <p>From NAB Show <span class="lv">Las Vegas</span> and <span class="ny">New York</span> to MPTS <span class="ldn">London</span> and Broadcast India <span class="mum">Mumbai</span>, <strong>one partnership</strong> puts you in front of working creatives on three continents.</p>
     </div>
   </div>
