@@ -240,6 +240,63 @@
   #sponsors .sec-kicker{letter-spacing:2.5px}
   #sponsors .partner-note{text-align:center;color:var(--ink-faint);font-size:13.5px;margin-top:28px}
   #sponsors .partner-note a{margin-left:7px;color:var(--accent-2);text-decoration:none;font-weight:600}
+
+  /* ===== Ben additions: speakers / feedback / tickets / orgs / contact ===== */
+  .elise-note{max-width:900px;margin:0 auto 24px;padding:12px 18px;border:1px dashed #3aa0c8;background:rgba(45,160,200,.09);border-radius:10px;color:#8fd6ef;font-size:12.5px;line-height:1.55;text-align:center}
+  .elise-note b{color:#c9f0ff}
+  /* speakers */
+  .spk-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:1100px;margin:0 auto}
+  @media(max-width:900px){.spk-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.spk-grid{grid-template-columns:1fr}}
+  .spk-card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px 22px 22px;display:flex;flex-direction:column}
+  .spk-av{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#1c2742,#28365c);border:1.5px solid var(--accent-2);color:#8fe6ff;font-weight:800;font-size:17px;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+  .spk-name{font-family:"Sora",sans-serif;font-weight:800;font-size:16px;color:#fff;margin:0 0 8px}
+  .spk-bio{color:var(--ink-dim);font-size:13px;line-height:1.5;margin:0 0 14px;flex:1}
+  .spk-tag{font-size:9.5px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:var(--accent-2);background:rgba(34,211,238,.1);border:1px solid rgba(34,211,238,.28);border-radius:6px;padding:5px 9px;align-self:flex-start}
+  /* attendee feedback */
+  .fb-sec{position:relative;overflow:hidden;background:linear-gradient(160deg,#0d1b30,#0a1424)}
+  .fb-title .hl{font-style:italic;color:var(--accent-2);-webkit-text-fill-color:var(--accent-2)}
+  .fb-bar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;border:1px solid var(--line-2);border-radius:12px;padding:12px 20px;margin:0 auto 18px;max-width:1000px;background:rgba(255,255,255,.02)}
+  .fb-bar .l{font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--ink-faint)}
+  .fb-bar .r{font-size:13px;font-weight:700;color:var(--accent-2)}
+  .fb-list{max-width:1000px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+  .fb-row{display:flex;align-items:center;justify-content:space-between;gap:20px;background:rgba(255,255,255,.025);border:1px solid var(--line);border-radius:12px;padding:20px 24px}
+  .fb-q{flex:1}
+  .fb-q p{margin:0 0 8px;font-size:16px;line-height:1.5;color:#eaf1ff;font-style:italic}
+  .fb-q .role{font-size:10.5px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;color:var(--ink-faint)}
+  .fb-stars{color:#f5c451;font-size:14px;letter-spacing:2px;white-space:nowrap}
+  /* tickets */
+  .tk-wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;max-width:1000px;margin:0 auto}
+  @media(max-width:820px){.tk-wrap{grid-template-columns:1fr}}
+  .tk-card{background:var(--panel);border:1px solid var(--line-2);border-radius:16px;padding:30px 32px;position:relative}
+  .tk-card.primary{border-color:var(--accent-2);box-shadow:0 0 0 1px rgba(34,211,238,.25)}
+  .tk-badge{position:absolute;top:18px;right:20px;font-size:9.5px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;color:#04121a;background:var(--accent-2);border-radius:6px;padding:4px 9px}
+  .tk-name{font-family:"Sora",sans-serif;font-weight:800;font-size:18px;color:#fff;margin:0 0 4px}
+  .tk-price{font-family:"Sora",sans-serif;font-weight:800;font-size:52px;color:var(--accent-2);line-height:1;margin:8px 0 2px;letter-spacing:-1px}
+  .tk-price sup{font-size:24px;vertical-align:super;margin-right:2px}
+  .tk-sub{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink-faint);margin-bottom:18px}
+  .tk-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:11px}
+  .tk-list li{display:flex;gap:10px;font-size:13.5px;line-height:1.45;color:var(--ink-dim)}
+  .tk-list li::before{content:"\2713";color:var(--accent-2);font-weight:800;flex:none}
+  .tk-list li b{color:#fff;font-weight:700}
+  .tk-covers h4{font-family:"Sora",sans-serif;font-size:15px;color:#fff;margin:0 0 12px}
+  .tk-covers p{color:var(--ink-dim);font-size:13.5px;line-height:1.55;margin:0 0 16px}
+  .tk-reg{display:block;text-align:center;margin-top:22px;background:linear-gradient(180deg,#f0862f,#e0741d);color:#fff;font-weight:800;font-size:14px;letter-spacing:.3px;padding:14px;border-radius:10px;text-decoration:none}
+  /* world's leading orgs */
+  .orgs{text-align:center}
+  .orgs .draft-box{max-width:820px;margin:14px auto 0;padding:26px 28px;border:1px dashed var(--line-2);border-radius:14px;background:rgba(255,255,255,.02);color:var(--ink-dim);font-size:14px;line-height:1.6}
+  /* get in touch */
+  .git-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1040px;margin:0 auto}
+  @media(max-width:820px){.git-grid{grid-template-columns:1fr}}
+  .git-card{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--accent-2);border-radius:14px;padding:28px 26px;text-align:center;display:flex;flex-direction:column;align-items:center}
+  .git-card.spon{border-top-color:#f0862f}
+  .git-av{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#1c2742,#28365c);border:1.5px solid var(--line-2);color:#9fb4e6;font-weight:800;font-size:19px;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+  .git-kick{font-size:10px;font-weight:800;letter-spacing:1.6px;text-transform:uppercase;color:var(--ink-faint);margin-bottom:8px}
+  .git-name{font-family:"Sora",sans-serif;font-weight:800;font-size:16px;color:#fff;margin:0}
+  .git-role{color:var(--accent-2);font-size:12.5px;font-weight:600;margin:3px 0 12px}
+  .git-desc{color:var(--ink-dim);font-size:13px;line-height:1.5;margin:0 0 16px;flex:1}
+  .git-email{font-size:12px;font-weight:700;letter-spacing:.3px;color:var(--accent-2);text-decoration:none;border:1px solid rgba(34,211,238,.3);border-radius:8px;padding:9px 14px;text-transform:uppercase}
+  .git-card.spon .git-email{color:#f6a25a;border-color:rgba(240,134,47,.35)}
 </style>
 </head>
 <!-- DATE-DISCREPANCY (internal): PPW uses Oct 20-21, 2026; NAB Show NY public site lists Oct 21-22, 2026. Preserving PPW dates pending source-of-truth confirmation. -->
@@ -318,6 +375,68 @@
   </div>
 </section>
 
+<section class="block" id="speakers">
+  <div class="wrap">
+    <div class="sec-head center"><div class="sec-kicker">The faculty</div><h2 class="sec-title">Learn from the people who wrote the workflow</h2></div>
+    <div class="elise-note"><b>Elise — please confirm this speaker lineup for New York.</b> Bios pulled from Ben's mockup. Real headshots can replace the initials avatars once we have them (see missing-photo list); we only have Eran, Luisa &amp; Rachel on file so far.</div>
+    <div class="spk-grid">
+      <div class="spk-card"><div class="spk-av">ES</div><div class="spk-name">Eran Stern</div><p class="spk-bio">Motion designer &amp; After Effects expert. 25+ years in post-production. Adobe Certified Instructor.</p><span class="spk-tag">Motion Graphics</span></div>
+      <div class="spk-card"><div class="spk-av">RH</div><div class="spk-name">Rich Harrington</div><p class="spk-bio">Program Manager, PPW. Author, educator, and one of the most recognized voices in video production training.</p><span class="spk-tag">Editing · Production</span></div>
+      <div class="spk-card"><div class="spk-av">GA</div><div class="spk-name">Gary Adcock</div><p class="spk-bio">Veteran cinematographer and camera-systems specialist with deep expertise in emerging camera workflows.</p><span class="spk-tag">Camera · Cinematography</span></div>
+      <div class="spk-card"><div class="spk-av">LW</div><div class="spk-name">Luisa Winters</div><p class="spk-bio">Premiere Pro specialist and AI-tools educator with expertise in modern editing workflows and production strategy.</p><span class="spk-tag">Editing · AI Workflows</span></div>
+      <div class="spk-card"><div class="spk-av">JG</div><div class="spk-name">Jeff Greenberg</div><p class="spk-bio">One of the industry's most respected Premiere Pro educators. Consultant and trainer to major studios and broadcasters.</p><span class="spk-tag">Premiere Pro · Editing</span></div>
+      <div class="spk-card"><div class="spk-av">RL</div><div class="spk-name">Rachel Longman</div><p class="spk-bio">Producer, editor, and workflow strategist specializing in AI-assisted production pipelines and content creation at scale.</p><span class="spk-tag">Production · AI</span></div>
+      <div class="spk-card"><div class="spk-av">NH</div><div class="spk-name">Nick Harauz</div><p class="spk-bio">Motion graphics, design, and After Effects expert. International trainer and Adobe Certified Instructor.</p><span class="spk-tag">Motion Graphics · AE</span></div>
+      <div class="spk-card"><div class="spk-av">AS</div><div class="spk-name">Abba Shapiro</div><p class="spk-bio">Filmmaker, educator, and Premiere Pro authority with decades of experience training professionals at the highest level.</p><span class="spk-tag">Premiere Pro · Film</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="block fb-sec">
+  <div class="wrap">
+    <div class="sec-head center"><div class="sec-kicker">What attendees say</div><h2 class="sec-title fb-title">Heard from the <span class="hl">room.</span></h2><p class="sec-desc" style="margin-inline:auto">Exit-survey responses from PPW Las Vegas 2026 attendees.</p></div>
+    <div class="elise-note"><b>Elise — please confirm these quotes and the 91.75% rating are approved for publication.</b> Sourced from Ben's mockup; verify wording and that they can be attributed as shown.</div>
+    <div class="fb-bar"><span class="l">Attendee feedback · PPW Las Vegas 2026</span><span class="r">91.75% overall rating</span></div>
+    <div class="fb-list">
+      <div class="fb-row"><div class="fb-q"><p>"The AI sessions were the most in-demand content of the conference &mdash; and PPW had more of them, and better ones, than anywhere else at NAB."</p><span class="role">VFX Supervisor</span></div><span class="fb-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+      <div class="fb-row"><div class="fb-q"><p>"I travel from London every year for PPW. The quality of instruction is worth the flight. There is nothing like it anywhere in Europe."</p><span class="role">Editor · London</span></div><span class="fb-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+      <div class="fb-row"><div class="fb-q"><p>"Gary Adcock's session on camera workflows was the most technically rigorous thing I attended all week. He doesn't talk down to the audience."</p><span class="role">Director of Photography</span></div><span class="fb-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="tickets">
+  <div class="wrap">
+    <div class="sec-head center"><div class="sec-kicker">Registration</div><h2 class="sec-title">One pass. Everything included.</h2><p class="sec-desc" style="margin-inline:auto">PPW New York is built around a single full-access pass. One price gets you into every session, every workshop, and every room across both conference days &mdash; no tiers, no add-ons, no restrictions.</p></div>
+    <div class="elise-note"><b>Elise / Syvonne — date check needed.</b> Ben's mockup lists conference days as <b>Oct 21&ndash;22</b>, but the program grid and hero currently say <b>Oct 20&ndash;21</b>. Please confirm the correct dates before this goes live.</div>
+    <div class="tk-wrap">
+      <div class="tk-card primary">
+        <span class="tk-badge">Most Popular</span>
+        <div class="tk-name">PPW Full Conference Pass</div>
+        <div class="tk-price"><sup>$</sup>799</div>
+        <div class="tk-sub">Per person · All-access · Both days</div>
+        <ul class="tk-list">
+          <li><b>All sessions, all rooms, all days</b> &mdash; complete access to the full PPW New York program with no add-ons required.</li>
+          <li><b>All workshop tracks</b> &mdash; Editing, AI &amp; Emerging Tech, Color &amp; Motion, Audio, Photography &amp; Video, VR/Immersive, Business &amp; Career.</li>
+          <li><b>NAB Show New York floor access</b> &mdash; included with your PPW registration.</li>
+          <li>Networking events and the PPW Party.</li>
+        </ul>
+        <a class="tk-reg" href="#" onclick="return false">Register Now &mdash; $799</a>
+      </div>
+      <div class="tk-card tk-covers">
+        <h4>What your pass covers</h4>
+        <p>Your single $799 pass is a full all-access credential for the entire PPW New York conference. There are no tiered passes, no per-session fees, and no room restrictions. Walk into any session on either day.</p>
+        <ul class="tk-list">
+          <li>All conference sessions &mdash; no pre-selection needed.</li>
+          <li>All hands-on workshops &mdash; just show up.</li>
+          <li>Access to all conference rooms on both event days.</li>
+          <li>NAB Show New York full floor access.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="block" id="networking">
   <div class="wrap">
     <div class="sec-head center" style="margin-bottom:20px"><div class="sec-kicker">After hours</div><h2 class="sec-title">The Post Production World Networking Party</h2><p class="sec-desc" style="margin-inline:auto">Join us in the evening for the industry's favorite social gathering — build and strengthen connections with creatives, instructors, and partner brands from around the world.</p></div>
@@ -329,6 +448,14 @@
       <a href="ppw-assets/pty-027.webp" target="_blank"><img src="ppw-assets/pty-027.webp" alt="PPW networking party" loading="lazy"></a>
       <a href="ppw-assets/pty-032.webp" target="_blank"><img src="ppw-assets/pty-032.webp" alt="PPW networking party" loading="lazy"></a>
     </div>
+  </div>
+</section>
+
+<section class="block orgs" id="orgs">
+  <div class="wrap">
+    <div class="sec-head center"><div class="sec-kicker">In good company</div><h2 class="sec-title">The world's leading organizations learn at PPW</h2></div>
+    <div class="elise-note"><b>Elise &mdash; this is the section Ben flagged (comment #5).</b> He wants to trace back an earlier version we built that used this exact heading. Once you locate it, we'll drop the real attendee-organization logos / content in here. Placeholder below until then.</div>
+    <div class="draft-box"><b>DRAFT / PLACEHOLDER.</b><br>Attendees join PPW from the world's leading studios, streamers, broadcasters, agencies, and global brands &mdash; the same roster reflected in the PPW Las Vegas attendee data (Disney, Amazon Prime Video, Apple, NHK, MLB Network, Sony, Walmart, Deloitte, and hundreds more). Final logo lockup / copy to be restored from the earlier version Elise is tracing back.</div>
   </div>
 </section>
 
@@ -344,6 +471,40 @@
       <img src="ppw-assets/spon-intel-ko.webp" alt="Intel" style="height:36px;transform:translateY(-2px)">
     </div>
     <p class="partner-note">A selection of PPW's global partners. <a href="ppw-sponsorships.html">Explore sponsorship &rarr;</a></p>
+  </div>
+</section>
+
+
+<section class="block" id="contact">
+  <div class="wrap">
+    <div class="sec-head center"><div class="sec-kicker">Contact</div><h2 class="sec-title">Get in touch.</h2><p class="sec-desc" style="margin-inline:auto">Reach the right person directly &mdash; whether you're interested in sponsoring, need help with marketing and press, or have a general question about PPW New York 2026.</p></div>
+    <div class="elise-note"><b>Elise &mdash; please confirm names, titles &amp; email addresses below.</b> Real headshots for Megan, Tyree &amp; you should replace the initials avatars once supplied (none are on file yet).</div>
+    <div class="git-grid">
+      <div class="git-card spon">
+        <div class="git-av">MB</div>
+        <div class="git-kick">Sponsorship</div>
+        <div class="git-name">Megan Belka</div>
+        <div class="git-role">Event &amp; Projects Manager</div>
+        <p class="git-desc">Sponsorship packages, tabletop opportunities, and partner inquiries for PPW New York 2026.</p>
+        <a class="git-email" href="mailto:meganb@fmctraining.com">meganb@fmctraining.com</a>
+      </div>
+      <div class="git-card">
+        <div class="git-av">TP</div>
+        <div class="git-kick">Marketing &amp; Press</div>
+        <div class="git-name">Tyree Peters</div>
+        <div class="git-role">Marketing Manager</div>
+        <p class="git-desc">Press accreditation, media partnerships, social-media collaboration, and marketing inquiries.</p>
+        <a class="git-email" href="mailto:tyreep@fmctraining.com">tyreep@fmctraining.com</a>
+      </div>
+      <div class="git-card">
+        <div class="git-av">EO</div>
+        <div class="git-kick">General Inquiries</div>
+        <div class="git-name">Elise O'Brien</div>
+        <div class="git-role">Director of Events</div>
+        <p class="git-desc">All other questions &mdash; registration, group rates, speaker inquiries, accessibility, and event logistics.</p>
+        <a class="git-email" href="mailto:eliseo@fmctraining.com">eliseo@fmctraining.com</a>
+      </div>
+    </div>
   </div>
 </section>
 
