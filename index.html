@@ -336,6 +336,7 @@
   .proof-band::before{content:"";position:absolute;left:0;right:0;top:-36px;bottom:-36px;background:linear-gradient(115deg,#311e54 0%,#241a47 48%,#171833 100%);transform:skewY(-1.15deg);z-index:-1}
   .proof-band .wrap{position:relative;z-index:1}
   .proof-grid{grid-template-columns:repeat(3,1fr)!important;align-items:start}
+  @media(max-width:780px){.proof-grid{grid-template-columns:1fr!important;gap:30px}}
   .proof{padding:0 clamp(20px,3vw,46px)!important;text-align:center!important}
   .proof:first-child{padding-left:clamp(20px,3vw,46px)!important}
   .proof:not(:last-child){border-right:1px solid rgba(255,255,255,.14)!important}
