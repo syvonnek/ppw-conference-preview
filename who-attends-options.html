@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PPW — "Who Attends" background: 3 options</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#080b12;--ink:#eef2fb;--dim:#a3b2d2;--faint:#6b7b9e;--line:#212d49;--cyan:#2dd4ff}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Poppins",sans-serif}
+  .head{max-width:1180px;margin:0 auto;padding:52px 22px 14px;text-align:center}
+  h1{font-size:clamp(24px,3.4vw,32px);font-weight:800;margin:0 0 10px;letter-spacing:-.5px}
+  .head p{color:var(--dim);font-size:15px;margin:0 auto 6px;max-width:640px;line-height:1.6}
+  .head .ask{color:var(--cyan);font-weight:600;margin-top:14px}
+  .nav{position:sticky;top:0;z-index:50;background:rgba(8,11,18,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 22px;display:flex;gap:10px;justify-content:center}
+  .nav a{color:var(--dim);text-decoration:none;font-size:13px;font-weight:600;border:1px solid var(--line);border-radius:999px;padding:6px 16px}
+  .nav a:hover{color:var(--cyan);border-color:var(--cyan)}
+  .opt{position:relative;overflow:hidden;border-top:1px solid var(--line)}
+  .opt .bg{position:absolute;inset:0;background-size:cover;background-position:center 45%}
+  .opt .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,18,32,.90),rgba(12,18,32,.84) 45%,rgba(12,18,32,.93))}
+  .opt .inner{position:relative;max-width:1180px;margin:0 auto;padding:70px 22px 86px}
+  .tag{display:inline-block;background:var(--cyan);color:#04121a;font-weight:800;font-size:13px;letter-spacing:1px;text-transform:uppercase;padding:7px 18px;border-radius:8px;margin-bottom:30px}
+  .kick{color:var(--cyan);font-size:12px;letter-spacing:3px;text-transform:uppercase;font-weight:700;text-align:center}
+  .ttl{font-size:clamp(26px,4vw,38px);font-weight:800;text-align:center;margin:8px 0 12px;letter-spacing:-.5px}
+  .sub{color:var(--dim);text-align:center;max-width:600px;margin:0 auto 40px;font-size:15px;line-height:1.55}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  @media(max-width:900px){.grid{grid-template-columns:1fr}}
+  .card{background:rgba(18,27,47,.55);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:30px 24px;text-align:center;display:flex;flex-direction:column;align-items:center}
+  .ibox{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:22px}
+  .card h4{margin:0 0 8px;font-size:17px;font-weight:700}
+  .card p{margin:0;color:var(--dim);font-size:13.5px;line-height:1.55}
+  .foot{max-width:1180px;margin:0 auto;padding:44px 22px 90px;color:var(--faint);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<div class="head">
+  <h1>"Who Attends" — pick a background</h1>
+  <p>Three options for the photo behind the <strong>Who Attends PPW</strong> section on the homepage. Each one below is the complete section exactly as it would appear, so you can judge it properly.</p>
+  <p>All shots are from the edited PPW Las Vegas 2026 selections.</p>
+  <p class="ask">Just reply with A, B or C.</p>
+</div>
+<div class="nav"><a href="#A">Option A</a><a href="#B">Option B</a><a href="#C">Option C</a></div>
+<div id="out"></div>
+<div class="foot">Post&#124;Production World &middot; background options for review</div>
+<script>
+var opts=[['A',5,'Full room, standing'],['B',8,'Classroom rows, wide'],['C',10,'Audience &amp; stage']];
+var cards=[
+ ['🎬','#3aa6ff','Editors &amp; Post Pros','Video editors, colorists, and finishing artists working across film, TV, and streaming.'],
+ ['✦','#a78bfa','Motion &amp; VFX Artists','Motion graphics designers and VFX creatives building for broadcast and brands.'],
+ ['🎥','#fb923c','Producers &amp; DPs','Producers, directors, and cinematographers in broadcast, corporate, and field production.'],
+ ['✨','#2dd4bf','AI Creatives','The fast-growing audience adopting generative and AI-assisted production workflows.'],
+ ['📱','#f472b6','Content Creators','Social-first and corporate creators scaling output across every platform.'],
+ ['🏢','#f6cf6a','Corporate Video Teams','In-house media teams producing at volume for global organizations.']
+];
+var out='';
+opts.forEach(function(o){
+  var c='';
+  cards.forEach(function(k){c+='<div class="card"><div class="ibox" style="background:'+k[1]+'22;color:'+k[1]+'">'+k[0]+'</div><h4>'+k[2]+'</h4><p>'+k[3]+'</p></div>';});
+  out+='<section class="opt" id="'+o[0]+'"><div class="bg" style="background-image:url(ppw-assets/who-options/opt-'+o[1]+'.webp)"></div><div class="scrim"></div>'
+   +'<div class="inner"><div style="text-align:center"><span class="tag">Option '+o[0]+'</span></div>'
+   +'<div class="kick">Conference attendees</div><div class="ttl">Who Attends PPW</div>'
+   +'<p class="sub">The editors, artists, producers, and creators who shape what the industry makes &mdash; and who come to PPW to sharpen their craft.</p>'
+   +'<div class="grid">'+c+'</div></div></section>';
+});
+document.getElementById('out').innerHTML=out;
+</script>
+</body>
+</html>
