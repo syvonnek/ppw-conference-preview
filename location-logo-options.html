@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PPW — Location logos on event tiles</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#eef2fb;--dim:#a3b2d2;--faint:#6b7b9e;--cyan:#2dd4ff;--line:#212d49;--bg:#080b12;--amber:#f6cf6a}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Poppins",sans-serif}
+  .head{max-width:1120px;margin:0 auto;padding:46px 22px 8px;text-align:center}
+  h1{font-size:clamp(23px,3.2vw,30px);font-weight:800;margin:0 0 8px}
+  .head p{color:var(--dim);font-size:14.5px;margin:0 auto 6px;max-width:720px;line-height:1.6}
+  .head b{color:var(--cyan)}
+  .nav{position:sticky;top:0;z-index:50;background:rgba(8,11,18,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:11px 14px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+  .nav a{color:var(--dim);text-decoration:none;font-size:12.5px;font-weight:600;border:1px solid var(--line);border-radius:999px;padding:6px 14px}
+  .nav a:hover{color:var(--cyan);border-color:var(--cyan)}
+  .sec{max-width:1120px;margin:0 auto;padding:30px 22px 6px}
+  .lbl{display:inline-block;background:var(--cyan);color:#04121a;font-weight:800;font-size:13px;letter-spacing:.5px;text-transform:uppercase;padding:6px 14px;border-radius:6px}
+  .desc{color:var(--dim);font-size:13.5px;margin:10px 2px 18px;max-width:840px;line-height:1.6}
+  .tile{position:relative;height:270px;border-radius:16px;overflow:hidden;border:1px solid var(--line);margin-bottom:15px}
+  .tile .img{position:absolute;inset:0;background-size:cover;background-position:center}
+  .tile .sc{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,11,18,.24) 0%,transparent 30%,rgba(8,11,18,.74) 74%,rgba(8,11,18,.93))}
+  .tile .info{position:absolute;left:0;right:0;bottom:0;padding:0 30px 24px;display:flex;align-items:flex-end;justify-content:space-between;gap:20px;z-index:2}
+  .ev{font-size:11.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--cyan);font-weight:700}
+  .h{font-size:24px;font-weight:800;margin:2px 0 4px;letter-spacing:-.5px}
+  .d{color:#e6ebf6;font-size:12.5px;max-width:400px;margin:0;line-height:1.5}
+  .dt{color:#fff;font-weight:700;font-size:16px;white-space:nowrap}
+  .plate{background:rgba(8,11,18,.55);backdrop-filter:blur(9px);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:10px 14px 9px}
+  .plate img{width:190px;display:block}
+  /* A: bare top-right */
+  .A .wm{position:absolute;top:18px;right:24px;z-index:3;width:200px;filter:drop-shadow(0 3px 12px rgba(0,0,0,.65))}
+  /* B: plate top-right */
+  .B .plate{position:absolute;top:16px;right:22px;z-index:3}
+  /* C: plate top-left */
+  .C .plate{position:absolute;top:16px;left:22px;z-index:3}
+  /* D: logo above the title */
+  .D .wm{width:200px;display:block;margin-bottom:12px;filter:drop-shadow(0 3px 12px rgba(0,0,0,.6))}
+  .verdict{background:rgba(45,212,255,.07);border:1px solid var(--line);border-radius:12px;padding:16px 20px;color:var(--dim);font-size:13.5px;line-height:1.6;margin:6px 0 10px}
+  .verdict b{color:var(--cyan)}
+</style>
+</head>
+<body>
+<div class="head">
+  <h1>Location logos on the event tiles</h1>
+  <p>Four ways to place each location's PPW wordmark on its own homepage tile. Each is shown on a <b>dark photo (New York)</b> and a <b>bright photo (Mumbai)</b> so you can see how it holds up either way.</p>
+  <p>The frosted "glass plate" keeps the full-colour logo crisp on any photo.</p>
+</div>
+<div class="nav"><a href="#A">A · Bare</a><a href="#B">B · Plate top-right</a><a href="#C">C · Plate top-left</a><a href="#D">D · Above the title</a></div>
+
+<div class="sec" id="A"><span class="lbl">A — Bare wordmark, top-right</span>
+  <p class="desc">Logo directly on the photo. Lightest, but note how it fades on the bright Mumbai sunset.</p>
+  <div id="tA"></div></div>
+
+<div class="sec" id="B"><span class="lbl">B — Glass plate, top-right</span>
+  <p class="desc">Logo on a frosted panel, top-right corner.</p>
+  <div id="tB"></div></div>
+
+<div class="sec" id="C"><span class="lbl">C — Glass plate, top-left</span>
+  <p class="desc">Same panel, moved to the top-left corner (opposite side from the date).</p>
+  <div id="tC"></div></div>
+
+<div class="sec" id="D"><span class="lbl">D — Logo above the title</span>
+  <p class="desc">Logo sits inside the text block, directly above the location headline — reads as a lockup rather than a stamp.</p>
+  <div id="tD"></div>
+  <div class="verdict"><b>My recommendation: B or C (glass plate).</b> On the bright Mumbai tile the bare logo (A) washes out; the plate fixes it everywhere. C (top-left) keeps the logo clear of the date on the right. D is elegant but the logo competes a little with the headline right below it.</div>
+</div>
+
+<div style="max-width:1120px;margin:0 auto;padding:6px 22px 80px;color:var(--faint);font-size:12.5px;text-align:center">PPW &middot; location-logo options for review</div>
+
+<script>
+var cities=[
+ ['ppw-assets/city-nyc-hi.jpg','ppw-assets/wm-nyc.png','at NAB Show New York','Post&#124;Production World New York','Oct 20-21, 2026'],
+ ['ppw-assets/city-mumbai-hi.jpg','ppw-assets/wm-mumbai-sa.webp','at Broadcast India · Mumbai','Post Production World • South Asia','October 22-23, 2026']
+];
+function tile(mode,c){
+  var mark='';
+  if(mode==='A') mark='<img class="wm" src="'+c[1]+'" alt="">';
+  else if(mode==='B'||mode==='C') mark='<div class="plate"><img src="'+c[1]+'" alt=""></div>';
+  var titleblock = mode==='D'
+    ? '<img class="wm" src="'+c[1]+'" alt=""><div class="ev">'+c[2]+'</div><div class="h">'+c[3]+'</div>'
+    : '<div class="ev">'+c[2]+'</div><div class="h">'+c[3]+'</div>';
+  return '<div class="tile '+mode+'"><div class="img" style="background-image:url('+c[0]+')"></div><div class="sc"></div>'+mark
+    +'<div class="info"><div>'+titleblock+'</div><div class="dt">'+c[4]+'</div></div></div>';
+}
+['A','B','C','D'].forEach(function(m){
+  document.getElementById('t'+m).innerHTML = cities.map(function(c){return tile(m,c);}).join('');
+});
+</script>
+</body>
+</html>
