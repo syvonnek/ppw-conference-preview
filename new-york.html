@@ -256,6 +256,8 @@
   .spk-tag{font-size:9.5px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:var(--accent-2);background:rgba(34,211,238,.1);border:1px solid rgba(34,211,238,.28);border-radius:6px;padding:5px 9px;align-self:flex-start}
   /* attendee feedback */
   .fb-sec{position:relative;overflow:hidden;background:linear-gradient(160deg,#0d1b30,#0a1424)}
+  .fb-sec::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,20,36,.88),rgba(10,20,36,.82) 45%,rgba(10,20,36,.92)),url(ppw-assets/ny-session-bg.webp) center/cover no-repeat;pointer-events:none;z-index:0}
+  .fb-sec .wrap{position:relative;z-index:1}
   .fb-title .hl{font-style:italic;color:var(--accent-2);-webkit-text-fill-color:var(--accent-2)}
   .fb-bar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;border:1px solid var(--line-2);border-radius:12px;padding:12px 20px;margin:0 auto 18px;max-width:1000px;background:rgba(255,255,255,.02)}
   .fb-bar .l{font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--ink-faint)}
